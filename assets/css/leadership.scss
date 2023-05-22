@@ -1,0 +1,135 @@
+@font-face {
+  src: url("../fonts/Avenir Heavy.ttf");
+  font-family: Avenir-Heavy,sans-serif;
+}
+@font-face{
+  src: url("../fonts/AvenirLTStd-Roman.otf");
+  font-family: Avenir-Roman,sans-serif;
+}
+*{
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: Avenir-Heavy, sans-serif;
+}
+body{
+  padding: 0 20px;
+  .header{
+
+    font{
+      display: inline-block;
+      margin-top: 30px;
+      color: #00B3EF;
+      font-size: 18px;
+    }
+    ul{
+      margin-top: 30px;
+      float: right;
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 3vw;
+      li{
+        margin-left: 3vw;
+        outline: none;
+
+        a{
+          color: #000000;
+          font-size: 16px;
+          outline: none;
+          &:hover{
+            opacity: 0.8;
+          }
+        }
+      }
+      .showmenu{
+        display: none;
+        .product-menu{
+          position: absolute;
+          display: flex;
+          text-align: center;
+          width: 10%;
+          margin: auto;
+          border: thin solid #00B3EF;
+          border-radius: 10px;
+          justify-content: center;
+          align-items: center;
+          background: black;
+          z-index: 10;
+          li{
+            margin: 0.2vw 1.5vw 0 0;
+            width: 100%;
+            a{
+              color: white;
+              font-size: 16px;
+              &:hover{
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .container{
+    text-align: center;
+    h3{
+      text-align: center;
+      font-size: 45px;
+    }
+    .head-span{
+      display: block;
+      text-align: center;
+      font-size: 16px;
+      opacity: 50%;
+
+    }
+    .group{
+      margin-top: 50px;
+      display: inline-block;
+      width: 80%;
+      height: 800px;
+
+      .mic{
+        text-align: center;
+        float: left;
+        padding-left: 15px;
+        width: 50%;
+
+
+        img{
+          display: inline-block;
+        }
+        h3{
+          text-align: center;
+          font-size: 26px;
+
+        }
+        span{
+          display: inline-block;
+          font-size: 20px;
+          width: 50%;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px){
+    .header{
+      font{
+        display: none;
+      }
+      ul{
+        position: absolute;
+        left: 0;
+      }
+    }
+    .container{
+      position: relative;
+      top: 75px;
+      .group{
+        .mic{
+          width: 100%;
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+}

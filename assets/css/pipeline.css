@@ -1,0 +1,236 @@
+@font-face {
+  src: url("../fonts/Avenir Heavy.ttf");
+  font-family: Avenir-Heavy, sans-serif;
+}
+@font-face {
+  src: url("../fonts/AvenirLTStd-Roman.otf");
+  font-family: Avenir-Roman, sans-serif;
+}
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: Avenir-Heavy, sans-serif;
+}
+
+body {
+  padding: 0 20px;
+}
+body .header font {
+  display: inline-block;
+  margin-top: 30px;
+  color: #00B3EF;
+  font-size: 18px;
+}
+body .header ul {
+  margin-top: 30px;
+  float: right;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 3vw;
+}
+body .header ul li {
+  margin-left: 3vw;
+  outline: none;
+}
+body .header ul li a {
+  color: #000000;
+  font-size: 16px;
+  outline: none;
+}
+body .header ul li a:hover {
+  opacity: 0.8;
+}
+body .header .showmenu {
+  display: none;
+}
+body .header .showmenu .product-menu {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  width: 10%;
+  margin: auto;
+  border: thin solid #00B3EF;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  z-index: 10;
+}
+body .header .showmenu .product-menu li {
+  margin: 0.2vw 1.5vw 0 0;
+  width: 100%;
+}
+body .header .showmenu .product-menu li a {
+  color: white;
+  font-size: 16px;
+}
+body .container h1 {
+  text-align: center;
+  font-size: 45px;
+}
+body .container .tab-span1 {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #696969;
+}
+body .container .tab-span2 {
+  display: block;
+  text-align: center;
+  width: 35%;
+  margin: 20px auto 0;
+  font-size: 20px;
+}
+body .container .piplist {
+  box-shadow: 0 2px 2px 0 #979797;
+  margin-left: 12%;
+  float: left;
+  margin-top: 50px;
+  width: 30%;
+  height: 175px;
+  display: flex;
+  align-items: center;
+}
+body .container .piplist .imgarea {
+  width: 30%;
+  background-color: #001423;
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container .piplist .test {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+body .container .piplist .test span {
+  display: block;
+  margin-left: 1vw;
+  margin-top: 0.5vw;
+}
+body .container .piplist .test span:nth-child(1) {
+  font-size: 26px;
+}
+body .container .piplist .test span:nth-child(2) {
+  font-size: 20px;
+}
+body .container .piplist .test span:nth-child(3) {
+  background-color: #C1F9D0;
+  border-radius: 10px;
+  padding: 0 1vw;
+  font-size: 12px;
+  height: 16px;
+  line-height: 18px;
+}
+body .container .piplist2 {
+  box-shadow: 0 2px 2px 0 #979797;
+  margin-left: 12%;
+  float: left;
+  margin-top: 50px;
+  width: 30%;
+  height: 175px;
+  display: flex;
+  align-items: center;
+}
+body .container .piplist2 .imgarea {
+  width: 30%;
+  background-color: #FEA50C;
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container .piplist2 .test {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+body .container .piplist2 .test span {
+  display: block;
+  margin-left: 1vw;
+  margin-top: 0.5vw;
+}
+body .container .piplist2 .test span:nth-child(1) {
+  font-size: 26px;
+}
+body .container .piplist2 .test span:nth-child(2) {
+  font-size: 20px;
+}
+body .container .piplist2 .test span:nth-child(3) {
+  background-color: #C1F9D0;
+  border-radius: 10px;
+  padding: 0 1vw;
+  font-size: 12px;
+  height: 16px;
+  line-height: 18px;
+}
+body .container .research {
+  margin-top: 400px;
+}
+body .container .research h1 {
+  text-align: center;
+  font-size: 45px;
+}
+body .container .research .tab-span1 {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #696969;
+}
+body .container .research .tab-span2 {
+  display: block;
+  text-align: center;
+  width: 35%;
+  margin: 20px auto 0;
+  font-size: 20px;
+}
+body .container .research ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px auto 0;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+body .container .research ul li {
+  margin: 0 20px;
+}
+@media screen and (max-width: 768px) {
+  body .header font {
+    display: none;
+  }
+  body .header ul {
+    position: absolute;
+    left: 0;
+  }
+  body .container {
+    position: absolute;
+    top: 10vw;
+  }
+  body .container .piplist {
+    width: 100%;
+    float: right;
+  }
+  body .container .piplist2 {
+    width: 100%;
+    float: right;
+  }
+}
+@media screen and (max-width: 500px) {
+  body .container .piplist {
+    width: 100%;
+    float: right;
+  }
+  body .container .piplist2 {
+    width: 100%;
+    float: right;
+  }
+}
+
+/*# sourceMappingURL=pipeline.css.map */

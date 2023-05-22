@@ -1,0 +1,234 @@
+@font-face {
+  src: url("../fonts/Avenir Heavy.ttf");
+  font-family: Avenir-Heavy,sans-serif;
+}
+@font-face{
+  src: url("../fonts/AvenirLTStd-Roman.otf");
+  font-family: Avenir-Roman,sans-serif;
+}
+*{
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: Avenir-Heavy, sans-serif;
+}
+body{
+  padding: 0 20px;
+  background-color: #F5FDFF;
+  .header{
+
+    font{
+      display: inline-block;
+      margin-top: 30px;
+      color: #00B3EF;
+      font-size: 18px;
+    }
+    ul{
+      margin-top: 30px;
+      float: right;
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 3vw;
+      li{
+        margin-left: 3vw;
+        outline: none;
+
+        a{
+          color: #000000;
+          font-size: 16px;
+          outline: none;
+          &:hover{
+            opacity: 0.8;
+          }
+        }
+        .showmenu{
+          display: none;
+          .product-menu{
+            position: absolute;
+            display: flex;
+            text-align: center;
+            width: 10%;
+            margin: auto;
+            border: thin solid #00B3EF;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            background: black;
+            z-index: 10;
+            li{
+              margin: 0.2vw 1.5vw 0 0;
+              width: 100%;
+              a{
+                color: white;
+                font-size: 16px;
+                &:hover{
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    h3{
+      text-align: center;
+      font-size: 38px;
+      margin-top: 100px;
+    }
+    span{
+      margin-top: 15px;
+      display: block;
+      font-size: 26px;
+      text-align: center;
+      width: 68%;
+    }
+    button{
+      border: none;
+      background-color: #00D2EF;
+      width: 154px;
+      height: 60px;
+      color: white;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      outline: none;
+      margin-top: 10px;
+      transition: 500ms all ease-in-out;
+      &:hover{
+        border: thin solid #00D2EF;
+        background-color: white;
+        color: #00D2EF;
+        font-weight: 700;
+      }
+    }
+  }
+  .container{
+    width: 100%;
+    height: 876px;
+    form{
+      width: 50%;
+      height: 876px;
+      position: relative;
+      float: left;
+      h1{
+        margin-left: 20%;
+        padding-top: 50px;
+      }
+      span{
+        display: block;
+        margin-left: 20%;
+        margin-top: 5px;
+      }
+      .letstalk{
+        font-size: 16px;
+        opacity: 0.5;
+      }
+      .span-explain{
+        font-size: 20px;
+        width: 50%;
+      }
+      input{
+        display: block;
+        margin-left: 20%;
+        margin-top: 32px;
+        width: 50%;
+        height: 60px;
+        padding-left: 25px;
+        font-size: 16px;
+        border: 1px solid #00B3EF;
+        border-radius: 10px;
+        outline: none;
+      }
+      .tab-label{
+        margin: 70px auto auto;
+        display: none;
+        .testlabel{
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          width: 100%;
+          .loginsuccess{
+            font-size:18px;
+            text-align: left;
+            font-weight: 700;
+            &::placeholder{
+              color: black;
+            }
+          }
+          img{
+            width: 48px;
+            height: 48px;
+
+          }
+        }
+      }
+      textarea{
+        display: block;
+        width: 50%;
+        margin-left: 20%;
+        margin-top: 25px;
+        height: 187px;
+        border-radius: 10px;
+        outline: none;
+        border: 1px solid #00B3EF;
+        padding-left: 25px;
+        font-size: 16px;
+        resize: none;
+
+      }
+      button{
+        width: 15%;
+        height: 60px;
+        border-radius: 10px;
+        outline: none;
+        background-color: #00D2EF;
+        color: white;
+        font-size: 16px;
+        border: none;
+        margin-top: 25px;
+        cursor: pointer;
+        transition: 500ms all ease-in-out;
+        &:hover{
+          background-color: #F9F9F9;
+          color: #00D2EF;
+          border: 1px solid #00D2EF;
+          transform: scale(1.05);
+
+        }
+      position: absolute;
+        right: 30%;
+      }
+    }
+    .closeimg{
+      max-width: 50%;
+    }
+
+  }
+
+
+  @media (max-width: 768px) {
+    .header{
+      font{
+        display: none;
+      }
+      ul{
+        position: absolute;
+        left: 0;
+      }
+    }
+    .container{
+      position: relative;
+      top: 50px;
+      .closeimg{
+        display: none;
+      }
+      form{
+        width: 80%;
+        button{
+          width: 30%;
+        }
+      }
+    }
+    }
+
+  }
+
