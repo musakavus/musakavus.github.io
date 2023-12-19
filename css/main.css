@@ -10770,13 +10770,14 @@ body {
     body .token_sale_elemantor .token_sale_elemantor_area p:last-child {
       margin-top: 16px;
       margin-bottom: 64px;
-      color: #2E3880;
+      color: #FFF;
       font-family: "Roboto", monospace;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-      text-align: center; }
+      text-align: center;
+      opacity: 0.8; }
   body .steps_elemantor {
     height: auto;
     flex-shrink: 0;
@@ -11833,7 +11834,7 @@ body {
         body .packets_elemantor section .no_contrats {
           margin: auto !important; }
       body .packets_elemantor .row .card_area {
-        padding: 48px 12px !important; }
+        padding: 48px 24px !important; }
       body .footer .footer-top {
         padding-top: 0 !important;
         margin: 36px 0; }

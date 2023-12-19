@@ -690,13 +690,14 @@ body {
 
         margin-top: 16px;
         margin-bottom: 64px;
-        color: #2E3880;
+        color: #FFF;
         font-family: "Roboto", monospace;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         text-align: center;
+        opacity: 0.8;
       }
 
 
@@ -2466,7 +2467,7 @@ body {
       .row {
 
         .card_area {
-          padding: 48px 12px !important;
+          padding: 48px 24px !important;
         }
       }
     }
@@ -2659,8 +2660,8 @@ body {
         margin-top: 12px;
         gap: 4px;
 
-        .btn_first{
-            margin-top: 12px;
+        .btn_first {
+          margin-top: 12px;
         }
 
         .text-center {
