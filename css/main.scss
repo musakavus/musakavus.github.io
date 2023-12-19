@@ -148,7 +148,6 @@ body {
 
     .left_menu {
       display: flex;
-      width: 194px;
       justify-content: space-between;
       align-items: center;
       flex-shrink: 0;
@@ -2316,8 +2315,12 @@ body {
       padding: 0;
 
       .left_menu {
+        margin: 0;
+        padding: 0;
+
         .logo {
           display: flex;
+          margin-left: 8px;
 
           img {
             width: 36px;
@@ -2344,18 +2347,17 @@ body {
       }
 
       .phone_menu {
-        margin-right: 18px;
+        margin-right: 8px;
         display: flex;
-        width: 38.4px;
+        width: auto;
         height: 26px;
         justify-content: space-between;
         align-items: center;
         flex-shrink: 0;
         color: #FFFFFF;
+        padding: 0;
 
         .menu_line {
-          width: 38.4px;
-          height: 26.4px;
           flex-shrink: 0;
           fill: #FFF;
         }

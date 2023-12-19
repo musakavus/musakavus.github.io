@@ -10402,7 +10402,6 @@ body {
     align-items: center; }
     body .header_main .left_menu {
       display: flex;
-      width: 194px;
       justify-content: space-between;
       align-items: center;
       flex-shrink: 0;
@@ -11766,30 +11765,33 @@ body {
         display: none; }
       body .header_main {
         padding: 0; }
-        body .header_main .left_menu .logo {
-          display: flex; }
-          body .header_main .left_menu .logo img {
-            width: 36px; }
-          body .header_main .left_menu .logo .line {
-            display: none; }
-          body .header_main .left_menu .logo .logo_baslik {
-            display: none; }
+        body .header_main .left_menu {
+          margin: 0;
+          padding: 0; }
+          body .header_main .left_menu .logo {
+            display: flex;
+            margin-left: 8px; }
+            body .header_main .left_menu .logo img {
+              width: 36px; }
+            body .header_main .left_menu .logo .line {
+              display: none; }
+            body .header_main .left_menu .logo .logo_baslik {
+              display: none; }
         body .header_main .middle_menu {
           display: none; }
         body .header_main .right_menu {
           display: none; }
         body .header_main .phone_menu {
-          margin-right: 18px;
+          margin-right: 8px;
           display: flex;
-          width: 38.4px;
+          width: auto;
           height: 26px;
           justify-content: space-between;
           align-items: center;
           flex-shrink: 0;
-          color: #FFFFFF; }
+          color: #FFFFFF;
+          padding: 0; }
           body .header_main .phone_menu .menu_line {
-            width: 38.4px;
-            height: 26.4px;
             flex-shrink: 0;
             fill: #FFF; }
       body .elemantor .elemantor_content .elemantor_content_inside {
