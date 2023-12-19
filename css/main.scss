@@ -2532,6 +2532,31 @@ body {
         padding: 50px 0 45px;
         margin: 0;
 
+        .adress_wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .adress_1 {
+            padding: 12px 0 !important;
+            text-align: center;
+          }
+
+        }
+
+        .follow_wrapper {
+          margin-top: 0 !important;
+
+          p {
+            color: #FFF;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
+        }
+
         .login_with_btn_area {
           padding-right: 1rem !important;
           text-align: left !important;
@@ -2541,16 +2566,29 @@ body {
 
       .login_text_explain {
         gap: 0 !important;
+        width: 100%;
+        justify-content: space-evenly;
       }
 
       .forgot_text {
         margin: 0 24px;
+        text-align: center;
       }
 
       .input-group {
         padding: 0 24px;
       }
 
+      .contact__form-input {
+        padding: 0 24px;
+      }
+
+    }
+
+    .get_intouch {
+      padding-bottom: 0 !important;
+      padding-top: 0 !important;
+      margin-top: 32px;
     }
 
 
