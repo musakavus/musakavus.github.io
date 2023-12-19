@@ -11870,6 +11870,8 @@ body {
             flex-wrap: nowrap; }
         body .login_row .login_text_explain {
           gap: 0 !important; }
+        body .login_row .input-group {
+          padding: 0 24px; }
       body .transaction {
         padding: 24px 24px !important; }
         body .transaction .search_wrapper .search_control_area .input-group input {
