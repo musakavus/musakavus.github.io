@@ -11923,6 +11923,8 @@ body {
         body .element_chart .col_input_chart {
           margin-top: 12px;
           gap: 4px; }
+          body .element_chart .col_input_chart .btn_first {
+            margin-top: 12px; }
           body .element_chart .col_input_chart .text-center svg {
             margin-bottom: 12px; }
           body .element_chart .col_input_chart .bottom_paragraph {
