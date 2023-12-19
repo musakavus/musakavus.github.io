@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
           rel="stylesheet">
+
 </head>
 <body>
 <div class="container-fluid">
@@ -129,6 +130,7 @@
                             <p class="text-center net_apy">NET APY</p>
                             <p class="text-center apy_value">4.52%</p>
                             <div>
+                                <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
                                 <canvas style="width: auto !important; height: 0 !important;"
                                         id="myDoughnutChart"></canvas>
 
@@ -143,7 +145,8 @@
                                 <div class="col-3 supplied_piece">
                                     <div class="">
                                         <p>Assets
-                                            <svg class="d-none d-sm-inline" xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            <svg class="d-none d-sm-inline" xmlns="http://www.w3.org/2000/svg"
+                                                 width="25" height="24"
                                                  viewBox="0 0 25 24" fill="none">
                                                 <path d="M12.2646 2C17.7874 2 22.2646 6.47715 22.2646 12C22.2646 17.5228 17.7874 22 12.2646 22C6.7418 22 2.26465 17.5228 2.26465 12C2.26465 6.47715 6.7418 2 12.2646 2ZM12.2646 3.5C7.57023 3.5 3.76465 7.30558 3.76465 12C3.76465 16.6944 7.57023 20.5 12.2646 20.5C16.959 20.5 20.7646 16.6944 20.7646 12C20.7646 7.30558 16.959 3.5 12.2646 3.5ZM7.73432 9.96967C8.02721 9.67678 8.50209 9.67678 8.79498 9.96967L12.2646 13.4393L15.7343 9.96967C16.0272 9.67678 16.502 9.67678 16.7949 9.96967C17.0878 10.2626 17.0878 10.7374 16.7949 11.0303L12.7949 15.0303C12.502 15.3232 12.0272 15.3232 11.7343 15.0303L7.73432 11.0303C7.44143 10.7374 7.44143 10.2626 7.73432 9.96967Z"
                                                       fill="white"/>
@@ -171,7 +174,8 @@
                                 <div class="col-3 supplied_piece">
                                     <div class="">
                                         <p>APY
-                                            <svg class="d-none d-sm-inline" xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            <svg class="d-none d-sm-inline" xmlns="http://www.w3.org/2000/svg"
+                                                 width="25" height="24"
                                                  viewBox="0 0 25 24" fill="none">
                                                 <path d="M12.2646 2C17.7874 2 22.2646 6.47715 22.2646 12C22.2646 17.5228 17.7874 22 12.2646 22C6.7418 22 2.26465 17.5228 2.26465 12C2.26465 6.47715 6.7418 2 12.2646 2ZM12.2646 3.5C7.57023 3.5 3.76465 7.30558 3.76465 12C3.76465 16.6944 7.57023 20.5 12.2646 20.5C16.959 20.5 20.7646 16.6944 20.7646 12C20.7646 7.30558 16.959 3.5 12.2646 3.5ZM7.73432 9.96967C8.02721 9.67678 8.50209 9.67678 8.79498 9.96967L12.2646 13.4393L15.7343 9.96967C16.0272 9.67678 16.502 9.67678 16.7949 9.96967C17.0878 10.2626 17.0878 10.7374 16.7949 11.0303L12.7949 15.0303C12.502 15.3232 12.0272 15.3232 11.7343 15.0303L7.73432 11.0303C7.44143 10.7374 7.44143 10.2626 7.73432 9.96967Z"
                                                       fill="white"/>
@@ -185,7 +189,8 @@
                                 <div class="col-3 supplied_piece">
                                     <div class="">
                                         <p>Balance
-                                            <svg class="d-none d-sm-inline" xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            <svg class="d-none d-sm-inline" xmlns="http://www.w3.org/2000/svg"
+                                                 width="25" height="24"
                                                  viewBox="0 0 25 24" fill="none">
                                                 <path d="M12.2646 2C17.7874 2 22.2646 6.47715 22.2646 12C22.2646 17.5228 17.7874 22 12.2646 22C6.7418 22 2.26465 17.5228 2.26465 12C2.26465 6.47715 6.7418 2 12.2646 2ZM12.2646 3.5C7.57023 3.5 3.76465 7.30558 3.76465 12C3.76465 16.6944 7.57023 20.5 12.2646 20.5C16.959 20.5 20.7646 16.6944 20.7646 12C20.7646 7.30558 16.959 3.5 12.2646 3.5ZM7.73432 9.96967C8.02721 9.67678 8.50209 9.67678 8.79498 9.96967L12.2646 13.4393L15.7343 9.96967C16.0272 9.67678 16.502 9.67678 16.7949 9.96967C17.0878 10.2626 17.0878 10.7374 16.7949 11.0303L12.7949 15.0303C12.502 15.3232 12.0272 15.3232 11.7343 15.0303L7.73432 11.0303C7.44143 10.7374 7.44143 10.2626 7.73432 9.96967Z"
                                                       fill="white"/>
@@ -199,7 +204,8 @@
                                 <div class="col-3 supplied_piece">
                                     <div class="">
                                         <p>Collactable
-                                            <svg class="d-none d-sm-inline" xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            <svg class="d-none d-sm-inline" xmlns="http://www.w3.org/2000/svg"
+                                                 width="25" height="24"
                                                  viewBox="0 0 25 24" fill="none">
                                                 <path d="M12.2646 2C17.7874 2 22.2646 6.47715 22.2646 12C22.2646 17.5228 17.7874 22 12.2646 22C6.7418 22 2.26465 17.5228 2.26465 12C2.26465 6.47715 6.7418 2 12.2646 2ZM12.2646 3.5C7.57023 3.5 3.76465 7.30558 3.76465 12C3.76465 16.6944 7.57023 20.5 12.2646 20.5C16.959 20.5 20.7646 16.6944 20.7646 12C20.7646 7.30558 16.959 3.5 12.2646 3.5ZM7.73432 9.96967C8.02721 9.67678 8.50209 9.67678 8.79498 9.96967L12.2646 13.4393L15.7343 9.96967C16.0272 9.67678 16.502 9.67678 16.7949 9.96967C17.0878 10.2626 17.0878 10.7374 16.7949 11.0303L12.7949 15.0303C12.502 15.3232 12.0272 15.3232 11.7343 15.0303L7.73432 11.0303C7.44143 10.7374 7.44143 10.2626 7.73432 9.96967Z"
                                                       fill="white"/>
@@ -734,7 +740,8 @@
     </div>
 </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         var ctx = document.getElementById('myDoughnutChart').getContext('2d');
@@ -748,8 +755,10 @@
         };
 
         var options = {
+
+
             responsive: true,
-            maintainAspectRatio: false,
+            maintainAspectRatio: true,
             cutoutPercentage: 60,
             legend: {
                 display: true,
