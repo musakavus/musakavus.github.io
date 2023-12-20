@@ -11630,6 +11630,156 @@ body {
           background: var(--Dark-Blue, #091835); }
         body .wallet .bottom_wallet .xyzq .supplied_right .table tbody tr td {
           background: var(--Dark-Blue, #091835); }
+  body .chart_elements_wrapper .chart_area .chart_elemetns_top {
+    padding: 12px 12px;
+    border-radius: 4px;
+    background: var(--Light-Blue, #1C2D4A); }
+    body .chart_elements_wrapper .chart_area .chart_elemetns_top .heading_area {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      body .chart_elements_wrapper .chart_area .chart_elemetns_top .heading_area span {
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal; }
+      body .chart_elements_wrapper .chart_area .chart_elemetns_top .heading_area .btn-transparent {
+        border-radius: 12px;
+        background: #071838;
+        border: none;
+        color: #FFF;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 8px;
+        padding-bottom: 8px; }
+  body .chart_elements_wrapper .chart_area .search_chart {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    body .chart_elements_wrapper .chart_area .search_chart .input-group .input-group-text {
+      background: transparent;
+      border: none;
+      padding-right: 0;
+      padding-left: 0; }
+    body .chart_elements_wrapper .chart_area .search_chart .input-group input {
+      background: transparent;
+      border: none;
+      color: #FFF;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal; }
+    body .chart_elements_wrapper .chart_area .search_chart .input-group ::placeholder {
+      color: #FFF;
+      opacity: 0.5; }
+    body .chart_elements_wrapper .chart_area .search_chart .nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      border-radius: 4px;
+      background: var(--Dark-Blue, #091835); }
+      body .chart_elements_wrapper .chart_area .search_chart .nav .nav-item {
+        border-radius: 8px;
+        margin-left: 8px; }
+        body .chart_elements_wrapper .chart_area .search_chart .nav .nav-item .nav-link {
+          color: #FFF;
+          font-size: 10px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          padding-right: 0.5rem;
+          padding-left: 0.5rem; }
+        body .chart_elements_wrapper .chart_area .search_chart .nav .nav-item .active {
+          background: #FFB352;
+          border-radius: 8px; }
+  body .chart_right_area .elements_area_wrapper {
+    display: flex;
+    gap: 2rem; }
+    body .chart_right_area .elements_area_wrapper .elements_area {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem; }
+      body .chart_right_area .elements_area_wrapper .elements_area .price_elements div:first-child {
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal; }
+      body .chart_right_area .elements_area_wrapper .elements_area .price_elements div:last-child {
+        color: #FFF;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        opacity: 0.5; }
+  body .chart_right_area .elements_wallet_wrapper .budiv {
+    gap: 0.5rem; }
+    body .chart_right_area .elements_wallet_wrapper .budiv .wallet_elements {
+      border-radius: 25px;
+      background: var(--Light-Blue, #1C2D4A);
+      display: flex;
+      align-items: center;
+      padding: 8px 12px;
+      gap: 1rem; }
+      body .chart_right_area .elements_wallet_wrapper .budiv .wallet_elements .wallet_elements_piece div {
+        color: #FFF;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal; }
+        body .chart_right_area .elements_wallet_wrapper .budiv .wallet_elements .wallet_elements_piece div span {
+          color: rgba(255, 255, 255, 0.5);
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          opacity: 0.5; }
+  body .table-responsive {
+    margin-top: 12px; }
+    body .table-responsive .table thead tr {
+      border-radius: 4px; }
+      body .table-responsive .table thead tr th {
+        color: #FFF;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background: transparent; }
+    body .table-responsive .table tbody tr:nth-child(odd) th {
+      color: #FFF;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      background: var(--Dark-Blue, #091835); }
+    body .table-responsive .table tbody tr:nth-child(odd) td {
+      background: var(--Dark-Blue, #091835);
+      color: #FFF;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal; }
+    body .table-responsive .table tbody tr:nth-child(even) th {
+      color: #FFF;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      background: transparent; }
+    body .table-responsive .table tbody tr:nth-child(even) td {
+      color: #FFF;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      background: transparent; }
   @media (min-width: 768px) and (max-width: 992px) {
     body {
       /* Özel stil kuralları buraya gelecek */ }

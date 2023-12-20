@@ -10,5 +10,9 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Chart.js" level="application" />
     <orderEntry type="library" name="chart.js" level="application" />
+    <orderEntry type="library" name="d3.v5" level="application" />
+    <orderEntry type="library" name="chartjs-chart-financial" level="application" />
+    <orderEntry type="library" name="chartjs-adapter-luxon" level="application" />
+    <orderEntry type="library" name="luxon" level="application" />
   </component>
 </module>

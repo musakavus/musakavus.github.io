@@ -2039,6 +2039,251 @@ body {
 
   }
 
+  .chart_elements_wrapper {
+    .chart_area {
+      .chart_elemetns_top {
+        padding: 12px 12px;
+        border-radius: 4px;
+        background: var(--Light-Blue, #1C2D4A);
+
+        .heading_area {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          span {
+            color: #FFF;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+
+          .btn-transparent {
+            border-radius: 12px;
+            background: #071838;
+            border: none;
+            color: #FFF;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-top: 8px;
+            padding-bottom: 8px;
+          }
+
+        }
+      }
+
+      .search_chart {
+        margin-top: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .input-group {
+
+          .input-group-text {
+            background: transparent;
+            border: none;
+            padding-right: 0;
+            padding-left: 0;
+          }
+
+          input {
+            background: transparent;
+            border: none;
+            color: #FFF;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+          }
+
+          ::placeholder {
+            color: #FFF;
+            opacity: 0.5;
+
+          }
+        }
+
+        .nav {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: nowrap;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          border-radius: 4px;
+          background: var(--Dark-Blue, #091835);
+
+
+          .nav-item {
+            border-radius: 8px;
+            margin-left: 8px;
+
+            .nav-link {
+              color: #FFF;
+              font-size: 10px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              padding-right: 0.5rem;
+              padding-left: 0.5rem;
+
+            }
+
+            .active {
+              background: #FFB352;
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .chart_right_area {
+
+    .elements_area_wrapper {
+      display: flex;
+      gap: 2rem;
+
+      .elements_area {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        .price_elements {
+          div:first-child {
+            color: #FFF;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+
+          div:last-child {
+            color: #FFF;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    .elements_wallet_wrapper {
+      .budiv {
+        gap: 0.5rem;
+
+        .wallet_elements {
+          border-radius: 25px;
+          background: var(--Light-Blue, #1C2D4A);
+          display: flex;
+          align-items: center;
+          padding: 8px 12px;
+          gap: 1rem;
+
+          .wallet_elements_piece {
+            div {
+              color: #FFF;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+
+              span {
+                color: rgba(255, 255, 255, 0.50);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                opacity: 0.5;
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+
+  }
+
+  .table-responsive {
+    margin-top: 12px;
+
+    .table {
+
+      thead {
+        tr {
+          border-radius: 4px;
+
+          th {
+            color: #FFF;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            background: transparent;
+
+          }
+        }
+
+      }
+
+      tbody {
+        tr:nth-child(odd) {
+          th {
+            color: #FFF;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            background: var(--Dark-Blue, #091835);
+          }
+
+          td {
+            background: var(--Dark-Blue, #091835);
+            color: #FFF;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+
+
+        }
+
+        tr:nth-child(even) {
+          th {
+            color: #FFF;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            background: transparent;
+          }
+
+          td {
+            color: #FFF;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            background: transparent;
+          }
+
+
+        }
+      }
+    }
+  }
+
 
   @media (min-width: 768px) and (max-width: 992px) {
     /* Özel stil kuralları buraya gelecek */
