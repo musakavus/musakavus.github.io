@@ -12008,7 +12008,9 @@ body {
         body .table_chart .table_chart_area {
           padding: 12px 18px; }
       body .chart_right_area .elements_wallet_wrapper .budiv .wallet_elements {
-        border-radius: 8px; }
+        border-radius: 8px;
+        height: 153px;
+        justify-content: space-between; }
       body .chart_right_area .elements_area_wrapper .elements_area {
         padding: 8px 0 !important; }
       body .chart_right_area .row_buy_sel .col-6 .btn-transparent {
