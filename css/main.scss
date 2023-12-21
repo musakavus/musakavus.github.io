@@ -2211,6 +2211,105 @@ body {
 
     }
 
+    .buy_options {
+      margin-top: 8px;
+
+
+      a {
+        color: #FFF;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-decoration: none;
+        padding: 4px 8px;
+      }
+
+    }
+
+    .bought {
+      padding: 24px 16px;
+      border-radius: 4px;
+      border-right: 1px solid #000;
+      background: var(--Light-Blue, #1C2D4A);
+      margin-top: 16px;
+      margin-bottom: 16px;
+
+      .heading_elements {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        svg {
+          width: 16px;
+          height: 16px;
+          stroke-width: 1px;
+          stroke: rgba(255, 255, 255, 0.50);
+          color: #FFF;
+        }
+
+        span {
+          color: #FFF;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+
+      .buy_area {
+        margin-top: 48px;
+
+        .want_buy {
+          display: flex;
+          align-items: baseline;
+          flex-wrap: nowrap;
+
+          p {
+            color: #D9D9D9;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            opacity: 0.5;
+
+          }
+
+          input {
+
+            border-radius: 12px;
+            color: #D9D9D9;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border: none;
+            background: var(--Dark-Blue, #091835);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+          }
+
+          .button_and_eth {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+          }
+
+          ::placeholder {
+            color: #D9D9D9;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-align: center;
+          }
+
+
+        }
+      }
+    }
+
 
   }
 
