@@ -2489,10 +2489,6 @@ body {
 
     }
 
-    .wallet_elements:first-child {
-      display: none !important;
-    }
-
 
   }
 
@@ -2708,24 +2704,42 @@ body {
       }
     }
 
-    .row_buy_sel {
+    .chart_right_area {
+      .elements_wallet_wrapper {
 
-      .col-6 {
-        .btn-transparent {
-          position: absolute;
-          top: 2rem;
-          right: 2rem;
-        }
+        .budiv {
 
-        .bought {
-          .buy_area {
-            margin-top: 16px !important;
+          .wallet_elements {
+            border-radius: 8px;
           }
         }
-
-
       }
 
+      .elements_area_wrapper {
+        .elements_area {
+          padding: 8px 0 !important;
+        }
+      }
+
+      .row_buy_sel {
+
+        .col-6 {
+          .btn-transparent {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+          }
+
+          .bought {
+            .buy_area {
+              margin-top: 16px !important;
+            }
+          }
+
+
+        }
+
+      }
     }
 
 
@@ -2905,6 +2919,45 @@ body {
         .card_area {
           padding: 48px 24px !important;
         }
+      }
+    }
+    .chart_right_area {
+      .elements_wallet_wrapper {
+
+        .budiv {
+
+          .wallet_elements {
+            border-radius: 8px;
+            height: 153px;
+            justify-content: space-between;
+          }
+        }
+      }
+
+      .elements_area_wrapper {
+        .elements_area {
+          padding: 8px 0 !important;
+        }
+      }
+
+      .row_buy_sel {
+
+        .col-6 {
+          .btn-transparent {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+          }
+
+          .bought {
+            .buy_area {
+              margin-top: 16px !important;
+            }
+          }
+
+
+        }
+
       }
     }
 

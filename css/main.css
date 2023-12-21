@@ -11900,9 +11900,7 @@ body {
         top: 2rem;
         right: 2rem; }
       body .chart_right_area .row_buy_sel .bought .buy_area {
-        margin-top: 16px !important; }
-      body .wallet_elements:first-child {
-        display: none !important; } }
+        margin-top: 16px !important; } }
   @media (min-width: 576px) and (max-width: 768px) {
     body {
       /* Özel stil kuralları buraya gelecek */ }
@@ -12009,11 +12007,15 @@ body {
         padding: 0 36px; }
         body .table_chart .table_chart_area {
           padding: 12px 18px; }
-      body .row_buy_sel .col-6 .btn-transparent {
+      body .chart_right_area .elements_wallet_wrapper .budiv .wallet_elements {
+        border-radius: 8px; }
+      body .chart_right_area .elements_area_wrapper .elements_area {
+        padding: 8px 0 !important; }
+      body .chart_right_area .row_buy_sel .col-6 .btn-transparent {
         position: absolute;
         top: 2rem;
         right: 2rem; }
-      body .row_buy_sel .col-6 .bought .buy_area {
+      body .chart_right_area .row_buy_sel .col-6 .bought .buy_area {
         margin-top: 16px !important; } }
   @media (max-width: 576px) {
     body {
@@ -12096,6 +12098,18 @@ body {
           margin: auto !important; }
       body .packets_elemantor .row .card_area {
         padding: 48px 24px !important; }
+      body .chart_right_area .elements_wallet_wrapper .budiv .wallet_elements {
+        border-radius: 8px;
+        height: 153px;
+        justify-content: space-between; }
+      body .chart_right_area .elements_area_wrapper .elements_area {
+        padding: 8px 0 !important; }
+      body .chart_right_area .row_buy_sel .col-6 .btn-transparent {
+        position: absolute;
+        top: 2rem;
+        right: 2rem; }
+      body .chart_right_area .row_buy_sel .col-6 .bought .buy_area {
+        margin-top: 16px !important; }
       body .footer .footer-top {
         padding-top: 0 !important;
         margin: 36px 0; }
