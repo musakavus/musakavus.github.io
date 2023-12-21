@@ -2406,6 +2406,23 @@ body {
     }
   }
 
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .elements_area {
+      padding: 8px 0;
+    }
+
+    .wallet_elements {
+      height: 75px;
+    }
+
+    .chart_right_area {
+      .btn-transparent {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+      }
+    }
+  }
 
   @media (min-width: 768px) and (max-width: 992px) {
     /* Özel stil kuralları buraya gelecek */
@@ -2444,6 +2461,38 @@ body {
         }
       }
     }
+
+    .chart_right_area {
+      .row {
+        .elements_area_wrapper {
+          display: block;
+        }
+
+
+      }
+
+      .row_buy_sel {
+
+        .btn-transparent {
+          position: absolute;
+          top: 2rem;
+          right: 2rem;
+
+        }
+
+        .bought {
+          .buy_area {
+            margin-top: 16px !important;
+          }
+        }
+      }
+
+    }
+
+    .wallet_elements:first-child {
+      display: none !important;
+    }
+
 
   }
 
@@ -2657,6 +2706,26 @@ body {
       .table_chart_area {
         padding: 12px 18px;
       }
+    }
+
+    .row_buy_sel {
+
+      .col-6 {
+        .btn-transparent {
+          position: absolute;
+          top: 2rem;
+          right: 2rem;
+        }
+
+        .bought {
+          .buy_area {
+            margin-top: 16px !important;
+          }
+        }
+
+
+      }
+
     }
 
 
