@@ -12,6 +12,30 @@ body {
 
   }
 
+  .latest_transaction_text {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .total_transaction_text {
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    strong {
+      color: #FFF;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+
   th {
 
     color: #FFF !important;
@@ -2214,7 +2238,6 @@ body {
     .buy_options {
       margin-top: 8px;
 
-
       a {
         color: #FFF;
         font-size: 12px;
@@ -2233,7 +2256,7 @@ body {
       border-right: 1px solid #000;
       background: var(--Light-Blue, #1C2D4A);
       margin-top: 16px;
-      margin-bottom: 16px;
+      margin-bottom: 8px;
 
       .heading_elements {
         display: flex;

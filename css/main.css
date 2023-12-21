@@ -10310,6 +10310,25 @@ body {
   font-family: "Roboto", monospace;
   list-style-type: none;
   text-decoration: none; }
+  body .latest_transaction_text {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; }
+  body .total_transaction_text {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; }
+    body .total_transaction_text strong {
+      color: #FFF;
+      font-family: Roboto;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal; }
   body th {
     color: #FFF !important;
     font-family: "Roboto", monospace;
@@ -11757,7 +11776,7 @@ body {
     border-right: 1px solid #000;
     background: var(--Light-Blue, #1C2D4A);
     margin-top: 16px;
-    margin-bottom: 16px; }
+    margin-bottom: 8px; }
     body .chart_right_area .bought .heading_elements {
       display: flex;
       align-items: center;
