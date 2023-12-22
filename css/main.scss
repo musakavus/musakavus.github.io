@@ -8,9 +8,104 @@ body {
   box-sizing: border-box;
   font-family: "Roboto", monospace;
 
-  #myDoughnutChart {
 
+  .sidebar_wrapper {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    right: -500px;
+    background: #FFB352;
+    transition: right 0.3s ease, opacity 0.3s ease;
+
+
+    .sidebar_area {
+      padding-left: 16px;
+      padding-right: 16px;
+      margin-top: 16px;
+      height: 100%;
+
+      .sidebar_menu {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .mobile_header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .menu-lists {
+
+          ul {
+
+            li {
+              background: transparent;
+              padding-right: 0;
+              padding-left: 0;
+              border-bottom: 1px solid #000;
+              text-align: center;
+
+              a {
+
+                text-decoration: none;
+                list-style-type: none;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                color: var(--Light-Blue, #1C2D4A);
+              }
+            }
+          }
+        }
+
+        .search_area {
+          margin-bottom: 24px;
+          background: #1C2D4A;
+          padding: 1rem 0;
+          border-radius: 4px;
+
+          .input-group {
+
+            input {
+              background: transparent;
+              color: #FFB352;
+              border: none;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+
+            }
+
+            :focus {
+              box-shadow: none;
+            }
+
+            ::placeholder {
+              color: #FFB352;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+
+
+            span {
+              background: #1C2D4A;
+              border: none;
+            }
+
+          }
+        }
+      }
+    }
   }
+
 
   .latest_transaction_text {
     color: #FFF;
