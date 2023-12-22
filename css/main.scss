@@ -9,13 +9,15 @@ body {
   font-family: "Roboto", monospace;
 
 
+
   .sidebar_wrapper {
+    display: none;
     height: 100%;
-    width: 100%;
+    width: 320px;
     position: fixed;
     top: 0;
     z-index: 99;
-    right: -500px;
+    right: -340px;
     background: #FFB352;
     transition: right 0.3s ease, opacity 0.3s ease;
 
@@ -3334,7 +3336,12 @@ body {
     .chart_elements_wrapper {
       margin-top: 16px;
     }
+
+    .sidebar_wrapper {
+      display: block;
+    }
   }
+
 
 }
 

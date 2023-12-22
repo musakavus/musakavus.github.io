@@ -10311,12 +10311,13 @@ body {
   list-style-type: none;
   text-decoration: none; }
   body .sidebar_wrapper {
+    display: none;
     height: 100%;
-    width: 100%;
+    width: 320px;
     position: fixed;
     top: 0;
     z-index: 99;
-    right: -500px;
+    right: -340px;
     background: #FFB352;
     transition: right 0.3s ease, opacity 0.3s ease; }
     body .sidebar_wrapper .sidebar_area {
@@ -12298,6 +12299,8 @@ body {
       body .chart_right_area .bought .buy_area {
         margin-top: 16px; }
       body .chart_elements_wrapper {
-        margin-top: 16px; } }
+        margin-top: 16px; }
+      body .sidebar_wrapper {
+        display: block; } }
 
 /*# sourceMappingURL=main.css.map */
