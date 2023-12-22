@@ -12233,6 +12233,10 @@ body {
       body .wallet .bottom_wallet {
         padding: 0 8px; }
         body .wallet .bottom_wallet .xyzq {
-          margin-top: 32px; } }
+          margin-top: 32px; }
+      body .chart_right_area .bought .buy_area {
+        margin-top: 16px; }
+      body .chart_elements_wrapper {
+        margin-top: 16px; } }
 
 /*# sourceMappingURL=main.css.map */
