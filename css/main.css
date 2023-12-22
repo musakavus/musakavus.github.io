@@ -12030,7 +12030,7 @@ body {
       body .flip-clock-divider.minutes .flip-clock-dot {
         display: none; }
       body .header_main {
-        padding: 0; }
+        padding: 0.5em 0; }
         body .header_main .left_menu {
           margin: 0;
           padding: 0; }
