@@ -10356,7 +10356,8 @@ body {
             body .sidebar_wrapper .sidebar_area .sidebar_menu .menu-lists ul li ul li {
               list-style-type: none;
               text-decoration: none;
-              border: none; }
+              border: none;
+              padding: 0.25rem 0; }
         body .sidebar_wrapper .sidebar_area .sidebar_menu .search_area {
           margin-bottom: 24px;
           background: #1C2D4A;
