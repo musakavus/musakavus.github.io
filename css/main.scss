@@ -424,6 +424,13 @@ body {
 
       .search_bar {
         .search_content {
+          .search {
+            img {
+              width: 32px;
+              height: 32px;
+            }
+          }
+
           .form-control-sm {
             background-color: transparent;
             outline: none;
@@ -504,8 +511,8 @@ body {
 
 
         .ellipse {
-          width: 48px;
-          height: 48px;
+          width: 36px;
+          height: 36px;
           border-radius: 48px;
           background: url(../img/profile.png), lightgray 50% / cover no-repeat;
           position: relative;

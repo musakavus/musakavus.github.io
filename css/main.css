@@ -10584,6 +10584,9 @@ body {
         display: flex;
         align-items: center;
         flex-shrink: 0; }
+        body .header_main .right_menu .search_bar .search_content .search img {
+          width: 32px;
+          height: 32px; }
         body .header_main .right_menu .search_bar .search_content .form-control-sm {
           background-color: transparent;
           outline: none; }
@@ -10635,8 +10638,8 @@ body {
         align-items: flex-start;
         gap: 10px; }
         body .header_main .right_menu .profile_circle .ellipse {
-          width: 48px;
-          height: 48px;
+          width: 36px;
+          height: 36px;
           border-radius: 48px;
           background: url(../img/profile.png), lightgray 50%/cover no-repeat;
           position: relative; }
