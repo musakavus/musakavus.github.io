@@ -327,22 +327,32 @@ body {
       justify-content: space-between;
       align-items: center;
       flex-shrink: 0;
+      margin: auto;
 
-      a {
 
-        text-decoration: none;
-        color: white;
-        font-family: "Roboto", monospace;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-family: "Roboto", monospace;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+
+        }
 
       }
 
-      a:first-child {
-        color: #FFB352;
+      li:first-child {
+        a {
+          color: #FFB352;
+        }
+
       }
+
 
     }
 

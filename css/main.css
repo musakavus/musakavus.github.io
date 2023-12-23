@@ -10520,16 +10520,19 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-shrink: 0; }
-      body .header_main .middle_menu a {
-        text-decoration: none;
-        color: white;
-        font-family: "Roboto", monospace;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal; }
-      body .header_main .middle_menu a:first-child {
+      flex-shrink: 0;
+      margin: auto; }
+      body .header_main .middle_menu li {
+        list-style: none; }
+        body .header_main .middle_menu li a {
+          text-decoration: none;
+          color: white;
+          font-family: "Roboto", monospace;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal; }
+      body .header_main .middle_menu li:first-child a {
         color: #FFB352; }
     body .header_main .phone_menu {
       display: none; }
