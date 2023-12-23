@@ -10518,14 +10518,14 @@ body {
         line-height: normal; }
     body .header_main .middle_menu {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       flex-shrink: 0;
       margin: auto; }
       body .header_main .middle_menu .middle_menu_item {
         list-style: none;
         position: relative;
-        padding: 1rem 0; }
+        padding: 1rem 1rem; }
         body .header_main .middle_menu .middle_menu_item a {
           text-decoration: none;
           color: white;
@@ -10534,6 +10534,8 @@ body {
           font-style: normal;
           font-weight: 500;
           line-height: normal; }
+        body .header_main .middle_menu .middle_menu_item :hover {
+          color: #FFB352; }
         body .header_main .middle_menu .middle_menu_item #closed_menu {
           display: none; }
         body .header_main .middle_menu .middle_menu_item .sub_menu {

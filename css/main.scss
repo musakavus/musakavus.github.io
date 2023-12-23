@@ -323,7 +323,7 @@ body {
 
     .middle_menu {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       flex-shrink: 0;
       margin: auto;
@@ -332,7 +332,7 @@ body {
       .middle_menu_item {
         list-style: none;
         position: relative;
-        padding: 1rem 0;
+        padding: 1rem 1rem;
 
         a {
           text-decoration: none;
@@ -343,6 +343,10 @@ body {
           font-weight: 500;
           line-height: normal;
 
+        }
+
+        :hover {
+          color: #FFB352;
         }
 
         #opened_menu {
