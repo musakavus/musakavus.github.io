@@ -113,11 +113,30 @@ background:#1C2D4A;">
 
             </div>
             <ul class="col middle_menu text-center d-md-none d-lg-flex">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="signup.html">Explore</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="login.html">Sign in</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="middle_menu_item"><a href="index.html">Home</a></li>
+                <li class="middle_menu_item"><a href="signup.html">Explore</a></li>
+                <li class="middle_menu_item" onmouseover="showSubMenu()" onmouseout="hideSubMenu()"><a href="#">Pages</a>
+                    <svg id="opened_menu" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                         fill="none">
+                        <path d="M5.161 8.59263C4.4538 7.78443 5.0278 6.51953 6.1017 6.51953L17.898 6.51953C18.9719 6.51953 19.5459 7.78443 18.8387 8.59263L13.3169 14.9033C12.6196 15.7001 11.3801 15.7001 10.6828 14.9033L5.161 8.59263ZM6.6527 8.01953L11.8117 13.9155C11.9113 14.0294 12.0884 14.0294 12.188 13.9155L17.347 8.01953L6.6527 8.01953Z"
+                              fill="white"/>
+                    </svg>
+                    <svg id="closed_menu" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                         fill="none">
+                        <path d="M18.839 16.4074C19.5462 17.2156 18.9722 18.4805 17.8983 18.4805L6.10204 18.4805C5.02809 18.4805 4.45412 17.2156 5.16132 16.4074L10.6831 10.0967C11.3804 9.29987 12.6199 9.29987 13.3172 10.0967L18.839 16.4074ZM17.3473 16.9805L12.1883 11.0845C12.0887 10.9706 11.9116 10.9706 11.812 11.0845L6.65298 16.9805L17.3473 16.9805Z"
+                              fill="white"/>
+                    </svg>
+
+                    <ul id="sub_men" class="sub_menu" role="menu">
+                        <li><a href="chart.html">Chart</a></li>
+                        <li><a href="wallet.html">Wallet</a></li>
+                        <li><a href="graphic_detail.html">Graphic Detail</a></li>
+                        <li><a href="transactions.html">Transaction</a></li>
+                        <li><a target="_blank" href="https://github.com/musakavus">Github</a></li>
+                    </ul>
+                </li>
+                <li class="middle_menu_item"><a href="login.html">Sign in</a></li>
+                <li class="middle_menu_item"><a href="contact.html">Contact</a></li>
             </ul>
             <div class="col right_menu" style="position: relative">
                 <div class="search_bar">
@@ -127,8 +146,8 @@ background:#1C2D4A;">
                         </button>
                         <label for="search_id"></label>
                         <input id="search_id" type="text"
-                               class="form-control-sm search_text border border-0  shadow-none me-4 "
-                               placeholder="Search">
+                               class="form-control-sm search_text border border-0  shadow-none opacity-50"
+                               placeholder="Search...">
 
                         <!--                    <div class="search_text">-->
                         <!--                        Search...-->

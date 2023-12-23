@@ -40,3 +40,39 @@ function sub_menu() {
         icon_closed.style.display = "inline"
     }
 }
+
+
+// function large_sub_menu() {
+//     var sub_men = document.getElementById("sub_men");
+//     var opened = document.getElementById("opened_menu")
+//     var closed = document.getElementById("closed_menu")
+//     if (sub_men.style.display === "block") {
+//         sub_men.style.display = "none";
+//         opened.style.display = "inline"
+//         closed.style.display = "none"
+//     } else {
+//         sub_men.style.display = "block";
+//         opened.style.display = "none";
+//         closed.style.display = "inline"
+//     }
+// }
+
+function showSubMenu() {
+    var subMenu = document.getElementById("sub_men");
+    var opened = document.getElementById("opened_menu");
+    var closed = document.getElementById("closed_menu");
+
+    subMenu.style.display = "block";
+    opened.style.display = "none";
+    closed.style.display = "inline";
+}
+
+function hideSubMenu() {
+    var subMenu = document.getElementById("sub_men");
+    var opened = document.getElementById("opened_menu");
+    var closed = document.getElementById("closed_menu");
+
+    subMenu.style.display = "none";
+    opened.style.display = "inline";
+    closed.style.display = "none";
+}

@@ -10487,7 +10487,7 @@ body {
     background: #071838; }
   body .header_main {
     display: flex;
-    padding: 12px 24px;
+    padding: 0 24px;
     justify-content: space-between;
     align-items: center; }
     body .header_main .left_menu {
@@ -10522,9 +10522,11 @@ body {
       align-items: center;
       flex-shrink: 0;
       margin: auto; }
-      body .header_main .middle_menu li {
-        list-style: none; }
-        body .header_main .middle_menu li a {
+      body .header_main .middle_menu .middle_menu_item {
+        list-style: none;
+        position: relative;
+        padding: 1rem 0; }
+        body .header_main .middle_menu .middle_menu_item a {
           text-decoration: none;
           color: white;
           font-family: "Roboto", monospace;
@@ -10532,8 +10534,45 @@ body {
           font-style: normal;
           font-weight: 500;
           line-height: normal; }
-      body .header_main .middle_menu li:first-child a {
-        color: #FFB352; }
+        body .header_main .middle_menu .middle_menu_item #closed_menu {
+          display: none; }
+        body .header_main .middle_menu .middle_menu_item .sub_menu {
+          background: #FFB352;
+          position: absolute;
+          top: 100%;
+          visibility: visible;
+          opacity: 1;
+          left: 0;
+          z-index: 99;
+          box-shadow: 0 30px 70px 0 rgba(11, 6, 70, 0.08);
+          transition: all 0.3s ease-out 0s;
+          margin: 0;
+          padding: 0;
+          display: none; }
+          body .header_main .middle_menu .middle_menu_item .sub_menu li {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            display: block;
+            margin: 0;
+            text-align: left;
+            pointer-events: none;
+            width: auto;
+            transition: all 0.3s ease-out 0s; }
+            body .header_main .middle_menu .middle_menu_item .sub_menu li a {
+              color: var(--Light-Blue, #1C2D4A);
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              position: relative;
+              z-index: 1;
+              pointer-events: auto;
+              display: inline-block;
+              width: max-content;
+              padding: 1rem 5rem 1rem 1.5rem; }
+          body .header_main .middle_menu .middle_menu_item .sub_menu li:hover {
+            background: #071838; }
+            body .header_main .middle_menu .middle_menu_item .sub_menu li:hover a {
+              color: #FFB352; }
     body .header_main .phone_menu {
       display: none; }
     body .header_main .right_menu {
@@ -10586,6 +10625,7 @@ body {
             font-weight: 500;
             line-height: normal;
             display: flex;
+            padding: 0;
             justify-content: flex-start;
             align-items: center;
             flex: 1 0 0;

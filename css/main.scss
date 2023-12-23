@@ -281,7 +281,7 @@ body {
 
   .header_main {
     display: flex;
-    padding: 12px 24px;
+    padding: 0 24px;
     justify-content: space-between;
     align-items: center;
 
@@ -313,7 +313,6 @@ body {
 
       .logo_baslik {
         color: #FFF;
-
         font-family: "Roboto", monospace;
         font-size: 16px;
         font-style: normal;
@@ -330,8 +329,10 @@ body {
       margin: auto;
 
 
-      li {
+      .middle_menu_item {
         list-style: none;
+        position: relative;
+        padding: 1rem 0;
 
         a {
           text-decoration: none;
@@ -344,12 +345,66 @@ body {
 
         }
 
-      }
+        #opened_menu {
 
-      li:first-child {
-        a {
-          color: #FFB352;
         }
+
+        #closed_menu {
+
+          display: none;
+
+        }
+
+        .sub_menu {
+          background: #FFB352;
+          position: absolute;
+          top: 100%;
+          visibility: visible;
+          opacity: 1;
+          left: 0;
+          z-index: 99;
+          box-shadow: 0 30px 70px 0 rgba(11, 6, 70, 0.08);
+          transition: all 0.3s ease-out 0s;
+          margin: 0;
+          padding: 0;
+          display: none;
+
+          li {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            display: block;
+            margin: 0;
+            text-align: left;
+            pointer-events: none;
+            width: auto;
+            transition: all 0.3s ease-out 0s;
+
+
+            a {
+              color: var(--Light-Blue, #1C2D4A);
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              position: relative;
+              z-index: 1;
+              pointer-events: auto;
+              display: inline-block;
+              width: max-content;
+              padding: 1rem 5rem 1rem 1.5rem;
+            }
+
+
+          }
+
+          li:hover {
+            background: #071838;
+
+            a {
+              color: #FFB352;
+            }
+          }
+        }
+
 
       }
 
@@ -431,7 +486,7 @@ body {
             font-weight: 500;
             line-height: normal;
             display: flex;
-
+            padding: 0;
 
             justify-content: flex-start;
             align-items: center;
