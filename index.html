@@ -46,11 +46,30 @@
                 </div>
                 <div class="menu-lists">
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item active"><a href="">Home</a></li>
+                        <li class="list-group-item active"><a href="index.html">Home</a></li>
                         <li class="list-group-item"><a href="signup.html">Sign Up</a></li>
-                        <li class="list-group-item"><a href="">Pages</a></li>
-                        <li class="list-group-item"><a href="">Blog</a></li>
-                        <li class="list-group-item"><a href="">Contact</a></li>
+                        <li onclick="sub_menu()" class="list-group-item"><a href="#">Pages
+                            <svg id="open-sub-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="25"
+                                 viewBox="0 0 24 25"
+                                 fill="none">
+                                <path d="M5.161 11.5731C4.4538 10.7649 5.0278 9.5 6.1017 9.5L17.898 9.5C18.9719 9.5 19.5459 10.7649 18.8387 11.5731L13.3169 17.8838C12.6196 18.6806 11.3801 18.6806 10.6828 17.8838L5.161 11.5731ZM6.6527 11L11.8117 16.896C11.9113 17.0099 12.0884 17.0099 12.188 16.896L17.347 11L6.6527 11Z"
+                                      fill="#212121"/>
+                            </svg>
+                            <svg id="close-sub-menu" xmlns="http://www.w3.org/2000/svg" width="16" height="10"
+                                 viewBox="0 0 16 10" fill="none">
+                                <path d="M14.839 7.4269C15.5462 8.2351 14.9722 9.5 13.8983 9.5L2.10204 9.5C1.02809 9.5 0.454121 8.2351 1.16132 7.4269L6.6831 1.1162C7.3804 0.319399 8.6199 0.319399 9.3172 1.1162L14.839 7.4269ZM13.3473 8L8.1883 2.104C8.0887 1.9901 7.9116 1.9901 7.812 2.104L2.65298 8L13.3473 8Z"
+                                      fill="#212121"/>
+                            </svg>
+                            <ul id="sub-menu">
+                                <li><a href="chart.html">Chart</a></li>
+                                <li><a href="wallet.html">Wallet</a></li>
+                                <li><a href="graphic_detail.html">Graphic Detail</a></li>
+                                <li><a href="transactions.html">Transaction</a></li>
+                            </ul>
+
+                        </a></li>
+                        <li class="list-group-item"><a href="login.html">Sign in</a></li>
+                        <li class="list-group-item"><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="search_area">
@@ -94,10 +113,10 @@ background:#1C2D4A;">
 
             </div>
             <div class="col middle_menu text-center d-md-none d-lg-flex">
-                <a href="">Home</a>
+                <a href="index.html">Home</a>
                 <a href="signup.html">Explore</a>
-                <a href="">Pages</a>
-                <a href="">Blog</a>
+                <a href="#">Pages</a>
+                <a href="login.html">Sign in</a>
                 <a href="">Contact</a>
             </div>
             <div class="col right_menu" style="position: relative">
@@ -603,11 +622,11 @@ background:#1C2D4A;">
                     </div>
                 </div>
                 <div class="d-none d-xl-flex col-xl footer_middle">
-                    <a href="">Home</a>
-                    <a href="">Sign up</a>
-                    <a href="">Pages</a>
-                    <a href="">Blog</a>
-                    <a href="">Contact</a>
+                    <a href="index.html">Home</a>
+                    <a href="signup.html">Sign up</a>
+                    <a href="#">Pages</a>
+                    <a href="login.html">Sign in</a>
+                    <a href="contact.html">Contact</a>
                 </div>
                 <div class="col-6 col-lg-6 col-xl  footer_right">
                     <button class="btn"><img src="img/facebooklogo.png" alt=""></button>
@@ -623,7 +642,7 @@ background:#1C2D4A;">
 
             <div class="row">
                 <div class="col-12 col-sm-6 col-lg-3 footer_bottom_left">
-                    <h3 class="text-center">About Us</h3>
+                    <h3 class="text-center">Sign up</h3>
                     <div class="d-flex align-items-center justify-content-center">
                         <p class="text-center">
                             Cras faucibus ornare ipsum, non luctus leo imperdiet sit amet. Praesent egestas orci eu
@@ -655,11 +674,11 @@ background:#1C2D4A;">
                     <h3 class="">Our Services</h3>
                     <div class="content">
                         <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About Us</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="signup.html">Sign up</a></li>
                             <li><a href="">Services</a></li>
-                            <li><a href="">Contact Us</a></li>
-                            <li><a href="">Blog</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="login.html">Sign in</a></li>
                         </ul>
                     </div>
                 </div>

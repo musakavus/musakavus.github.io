@@ -9,7 +9,6 @@ body {
   font-family: "Roboto", monospace;
 
 
-
   .sidebar_wrapper {
     display: none;
     height: 100%;
@@ -60,6 +59,24 @@ body {
                 font-weight: 400;
                 line-height: normal;
                 color: var(--Light-Blue, #1C2D4A);
+
+                #close-sub-menu {
+                  display: none;
+                }
+
+
+              }
+
+              ul {
+                display: none;
+                padding-left: 0 !important;
+
+                li {
+                  list-style-type: none;
+                  text-decoration: none;
+                  border: none;
+
+                }
               }
             }
           }

@@ -10348,6 +10348,15 @@ body {
             font-weight: 400;
             line-height: normal;
             color: var(--Light-Blue, #1C2D4A); }
+            body .sidebar_wrapper .sidebar_area .sidebar_menu .menu-lists ul li a #close-sub-menu {
+              display: none; }
+          body .sidebar_wrapper .sidebar_area .sidebar_menu .menu-lists ul li ul {
+            display: none;
+            padding-left: 0 !important; }
+            body .sidebar_wrapper .sidebar_area .sidebar_menu .menu-lists ul li ul li {
+              list-style-type: none;
+              text-decoration: none;
+              border: none; }
         body .sidebar_wrapper .sidebar_area .sidebar_menu .search_area {
           margin-bottom: 24px;
           background: #1C2D4A;

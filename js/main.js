@@ -25,3 +25,18 @@ function close_sidebar() {
         body_overlay.style.opacity = "1";
     }
 }
+
+function sub_menu() {
+    var sub_menuu = document.getElementById("sub-menu");
+    var icon_opened = document.getElementById("open-sub-menu")
+    var icon_closed = document.getElementById("close-sub-menu")
+    if (sub_menuu.style.display === "block") {
+        sub_menuu.style.display = "none";
+        icon_opened.style.display = "inline"
+        icon_closed.style.display = "none"
+    } else {
+        sub_menuu.style.display = "block";
+        icon_opened.style.display = "none";
+        icon_closed.style.display = "inline"
+    }
+}
