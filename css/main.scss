@@ -9,6 +9,31 @@ body {
   font-family: "Roboto", monospace;
 
 
+  .yellow_bg {
+    position: relative;
+    margin-bottom: 0;
+    display: inline-block;
+    transition: all 0.3s ease-out 0s;
+
+    img {
+      position: absolute;
+      left: 0;
+      bottom: -0.25rem;
+      -webkit-animation: section-animation 3s infinite;
+      animation: section-animation 3s infinite;
+      -webkit-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s;
+
+      height: auto;
+      max-width: 100%;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+
+
+    }
+  }
+
   .sidebar_wrapper {
     display: none;
     height: 100%;
@@ -244,13 +269,43 @@ body {
     transition: background-color 0.3s ease;
     font-family: "Roboto", monospace;
 
+    a {
+      text-decoration: none;
+      color: #FFF;
+    }
+
   }
 
+
   .btn-transparent:hover {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #FFB352;
     font-family: "Roboto", monospace;
     font-weight: 400;
-    color: black;
+    color: #071838;
+
+  }
+
+  .link_transparent {
+    color: #fff; /* İsteğe bağlı: Yazı rengini belirleyebilirsiniz */
+    border-radius: 4px;
+    display: flex;
+    padding: 6px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    transition: background-color 0.3s ease;
+    font-family: "Roboto", monospace;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Beyaz border, %50 saydamlık */
+
+  }
+
+  .link_transparent:hover {
+    background-color: #FFB352;
+    font-family: "Roboto", monospace;
+    font-weight: 400;
+    color: #071838;
   }
 
   .btn_first {
@@ -587,6 +642,8 @@ body {
           font-style: normal;
           font-weight: 700;
           line-height: normal;
+
+
         }
 
         p:nth-child(3) {
