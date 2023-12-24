@@ -10704,13 +10704,11 @@ body {
           color: white; }
   body .elemantor {
     width: 100%;
-    height: 1000px;
     flex-shrink: 0;
     background-size: cover;
     /* veya background-size: contain; */
-    background: lightgray url(../img/oldumu2.webp) center center; }
+    background: url(../img/oldumu.webp) center center; }
     body .elemantor .elemantor_content {
-      height: 336px;
       flex-shrink: 0;
       transform: translateX(0%); }
       body .elemantor .elemantor_content .elemantor_content_inside {
@@ -10719,7 +10717,8 @@ body {
         align-items: flex-start;
         gap: 12px;
         margin-top: 250px;
-        margin-left: 13rem; }
+        margin-bottom: 250px;
+        margin-left: 15rem; }
         body .elemantor .elemantor_content .elemantor_content_inside p:first-child {
           color: #FFB352;
           font-family: "Roboto", sans-serif;
@@ -12224,8 +12223,7 @@ body {
             flex-shrink: 0;
             fill: #FFF; }
       body .elemantor .elemantor_content .elemantor_content_inside {
-        margin-left: 1rem !important;
-        margin-top: 350px !important; }
+        margin-left: 1rem !important; }
         body .elemantor .elemantor_content .elemantor_content_inside p:first-child {
           font-size: 20px; }
         body .elemantor .elemantor_content .elemantor_content_inside p:nth-child(2) {
