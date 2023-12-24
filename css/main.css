@@ -10309,7 +10309,11 @@ body {
   box-sizing: border-box;
   font-family: "Roboto", monospace;
   list-style-type: none;
+  text-underline: none;
+  list-style-type: none;
   text-decoration: none; }
+  body a {
+    text-decoration: none !important; }
   body .yellow_bg {
     position: relative;
     margin-bottom: 0;

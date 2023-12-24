@@ -7,6 +7,12 @@ body {
   background: #071838 !important;
   box-sizing: border-box;
   font-family: "Roboto", monospace;
+  list-style-type: none;
+  text-underline: none;
+
+  a {
+    text-decoration: none !important;
+  }
 
 
   .yellow_bg {
