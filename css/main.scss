@@ -35,7 +35,7 @@ body {
   }
 
   .sidebar_wrapper {
-
+    height: 100%;
     display: block;
     width: 320px;
     position: fixed;
@@ -56,7 +56,7 @@ body {
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+
 
         .mobile_header {
           display: flex;
@@ -2667,6 +2667,12 @@ body {
       display: none !important;
     }
 
+    .elemantor_content_inside {
+      margin-left: 5rem !important;
+      margin-top: 330px !important;
+      margin-bottom: 330px !important;
+    }
+
     .phone_menu {
       margin-right: 8px;
       display: flex !important;
@@ -2697,6 +2703,20 @@ body {
 
     .sidebar_wrapper {
       display: block !important;
+
+      .sidebar_menu {
+
+
+        .menu-lists {
+          margin-top: 5rem;
+        }
+
+        .search_area {
+          margin-top: 5rem;
+        }
+
+      }
+
     }
 
 
@@ -2709,6 +2729,41 @@ body {
     .middle_menu {
       display: none !important;
     }
+
+    .right_menu {
+      display: none !important;
+    }
+
+    .elemantor_content_inside {
+      margin-left: 5rem !important;
+      margin-top: 300px !important;
+      margin-bottom: 300px !important;
+    }
+
+    .phone_menu {
+      margin-right: 8px;
+      display: flex !important;
+      width: auto;
+      height: 26px;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+      color: #FFFFFF;
+      padding: 0;
+    }
+
+    .sidebar_wrapper {
+
+      .menu-lists {
+        margin-top: 2.5rem;
+      }
+
+      .search_area {
+        margin-top: 2.5rem
+      }
+    }
+
+
     .top_chart_exp {
       padding: 0 !important;
     }
@@ -2769,10 +2824,6 @@ body {
         }
       }
 
-    }
-
-    .sidebar_wrapper {
-      display: block;
     }
 
 
@@ -3540,6 +3591,10 @@ body {
     .sidebar_wrapper {
       display: block !important;
       height: 100% !important;
+
+      .sidebar_menu {
+        justify-content: space-between !important;
+      }
     }
   }
 

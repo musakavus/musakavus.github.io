@@ -10329,6 +10329,7 @@ body {
       border-radius: 0;
       box-shadow: none; }
   body .sidebar_wrapper {
+    height: 100%;
     display: block;
     width: 320px;
     position: fixed;
@@ -10345,8 +10346,7 @@ body {
       body .sidebar_wrapper .sidebar_area .sidebar_menu {
         height: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between; }
+        flex-direction: column; }
         body .sidebar_wrapper .sidebar_area .sidebar_menu .mobile_header {
           display: flex;
           justify-content: space-between;
@@ -12032,6 +12032,10 @@ body {
       display: none !important; }
     body .right_menu {
       display: none !important; }
+    body .elemantor_content_inside {
+      margin-left: 5rem !important;
+      margin-top: 330px !important;
+      margin-bottom: 330px !important; }
     body .phone_menu {
       margin-right: 8px;
       display: flex !important;
@@ -12051,12 +12055,36 @@ body {
       top: 2rem;
       right: 2rem; }
     body .sidebar_wrapper {
-      display: block !important; } }
+      display: block !important; }
+      body .sidebar_wrapper .sidebar_menu .menu-lists {
+        margin-top: 5rem; }
+      body .sidebar_wrapper .sidebar_menu .search_area {
+        margin-top: 5rem; } }
   @media (min-width: 768px) and (max-width: 992px) {
     body {
       /* Özel stil kuralları buraya gelecek */ }
       body .middle_menu {
         display: none !important; }
+      body .right_menu {
+        display: none !important; }
+      body .elemantor_content_inside {
+        margin-left: 5rem !important;
+        margin-top: 300px !important;
+        margin-bottom: 300px !important; }
+      body .phone_menu {
+        margin-right: 8px;
+        display: flex !important;
+        width: auto;
+        height: 26px;
+        justify-content: space-between;
+        align-items: center;
+        flex-shrink: 0;
+        color: #FFFFFF;
+        padding: 0; }
+      body .sidebar_wrapper .menu-lists {
+        margin-top: 2.5rem; }
+      body .sidebar_wrapper .search_area {
+        margin-top: 2.5rem; }
       body .top_chart_exp {
         padding: 0 !important; }
       body .element_chart {
@@ -12079,9 +12107,7 @@ body {
         top: 2rem;
         right: 2rem; }
       body .chart_right_area .row_buy_sel .bought .buy_area {
-        margin-top: 16px !important; }
-      body .sidebar_wrapper {
-        display: block; } }
+        margin-top: 16px !important; } }
   @media (min-width: 576px) and (max-width: 768px) {
     body {
       /* Özel stil kuralları buraya gelecek */ }
@@ -12432,6 +12458,8 @@ body {
         margin-top: 16px; }
       body .sidebar_wrapper {
         display: block !important;
-        height: 100% !important; } }
+        height: 100% !important; }
+        body .sidebar_wrapper .sidebar_menu {
+          justify-content: space-between !important; } }
 
 /*# sourceMappingURL=main.css.map */
