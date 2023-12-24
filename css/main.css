@@ -11719,16 +11719,16 @@ body {
         font-style: normal;
         font-weight: 700;
         line-height: normal; }
-      body .wallet .top_wallet .top_left_wallet .row .wallet_value .float-start {
+      body .wallet .top_wallet .top_left_wallet .row .wallet_value .float_value {
         padding-right: 12px; }
-        body .wallet .top_wallet .top_left_wallet .row .wallet_value .float-start p:first-child {
+        body .wallet .top_wallet .top_left_wallet .row .wallet_value .float_value p:first-child {
           color: #FFF;
           font-family: "Roboto", monospace;
           font-size: 16px;
           font-style: normal;
           font-weight: 700;
           line-height: normal; }
-        body .wallet .top_wallet .top_left_wallet .row .wallet_value .float-start p:last-child {
+        body .wallet .top_wallet .top_left_wallet .row .wallet_value .float_value p:last-child {
           color: #FFB352;
           font-family: "Roboto", monospace;
           font-size: 36px;
@@ -12440,7 +12440,9 @@ body {
         body .table_chart .table_chart_area {
           padding: 24px 12px !important; }
       body .wallet .top_wallet .top_left_wallet {
-        gap: 0; }
+        gap: 0;
+        align-items: stretch;
+        text-align: center; }
         body .wallet .top_wallet .top_left_wallet .wallet_heading {
           font-size: 32px !important; }
         body .wallet .top_wallet .top_left_wallet .btn-group {

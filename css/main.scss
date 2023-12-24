@@ -2144,7 +2144,8 @@ body {
 
         .row {
           .wallet_value {
-            .float-start {
+
+            .float_value {
               padding-right: 12px;
 
 
@@ -3549,6 +3550,8 @@ body {
       .top_wallet {
         .top_left_wallet {
           gap: 0;
+          align-items: stretch;
+          text-align: center;
 
           .wallet_heading {
             font-size: 32px !important;
