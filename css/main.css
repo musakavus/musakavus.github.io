@@ -10312,6 +10312,8 @@ body {
   text-underline: none;
   list-style-type: none;
   text-decoration: none; }
+  body .form-control:focus {
+    box-shadow: none; }
   body a {
     text-decoration: none !important; }
   body .yellow_bg {
@@ -10622,7 +10624,8 @@ body {
             body .header_main .middle_menu .middle_menu_item .sub_menu li:hover a {
               color: #FFB352; }
     body .header_main .phone_menu {
-      display: none; }
+      display: none;
+      cursor: pointer; }
     body .header_main .right_menu {
       display: flex;
       justify-content: right;
@@ -10855,6 +10858,7 @@ body {
         height: 60px;
         padding: 16px 32px;
         justify-content: center;
+        font-weight: 600;
         align-items: center;
         gap: 10px;
         flex-shrink: 0;
@@ -11053,13 +11057,13 @@ body {
           padding: 48px 48px;
           max-width: 100%;
           overflow: hidden; }
-          body .packets_elemantor section .row .card_area .card_heading {
+          body .packets_elemantor section .row .card_area .card_heading p {
             flex-shrink: 0;
             color: #FFB352;
             font-family: "Roboto", monospace;
-            font-size: 40px;
+            font-size: 24px;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 600;
             line-height: normal; }
           body .packets_elemantor section .row .card_area .line {
             height: 1px;

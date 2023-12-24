@@ -10,6 +10,10 @@ body {
   list-style-type: none;
   text-underline: none;
 
+  .form-control:focus {
+    box-shadow: none;
+  }
+
   a {
     text-decoration: none !important;
   }
@@ -482,6 +486,7 @@ body {
 
     .phone_menu {
       display: none;
+      cursor: pointer;
     }
 
     .right_menu {
@@ -826,6 +831,7 @@ body {
         height: 60px;
         padding: 16px 32px;
         justify-content: center;
+        font-weight: 600;
         align-items: center;
         gap: 10px;
         flex-shrink: 0;
@@ -1120,13 +1126,17 @@ body {
           overflow: hidden;
 
           .card_heading {
-            flex-shrink: 0;
-            color: #FFB352;
-            font-family: "Roboto", monospace;
-            font-size: 40px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
+            p {
+              flex-shrink: 0;
+              color: #FFB352;
+              font-family: "Roboto", monospace;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+
+            }
+
           }
 
           .line {
@@ -1974,6 +1984,7 @@ body {
             background: #071838;
             border: none;
             text-align: left;
+
 
             .left_content {
               p {
