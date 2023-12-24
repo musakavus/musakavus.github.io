@@ -10329,8 +10329,7 @@ body {
       border-radius: 0;
       box-shadow: none; }
   body .sidebar_wrapper {
-    display: none;
-    height: 100%;
+    display: block;
     width: 320px;
     position: fixed;
     top: 0;
@@ -10528,7 +10527,7 @@ body {
     background: #071838; }
   body .header_main {
     display: flex;
-    padding: 0 24px;
+    padding: 0.75rem 24px;
     justify-content: space-between;
     align-items: center; }
     body .header_main .left_menu {
@@ -12029,6 +12028,20 @@ body {
       line-height: normal;
       background: transparent; }
   @media (min-width: 992px) and (max-width: 1200px) {
+    body .middle_menu {
+      display: none !important; }
+    body .right_menu {
+      display: none !important; }
+    body .phone_menu {
+      margin-right: 8px;
+      display: flex !important;
+      width: auto;
+      height: 26px;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+      color: #FFFFFF;
+      padding: 0; }
     body .elements_area {
       padding: 8px 0; }
     body .wallet_elements {
@@ -12036,10 +12049,14 @@ body {
     body .chart_right_area .btn-transparent {
       position: absolute;
       top: 2rem;
-      right: 2rem; } }
+      right: 2rem; }
+    body .sidebar_wrapper {
+      display: block !important; } }
   @media (min-width: 768px) and (max-width: 992px) {
     body {
       /* Özel stil kuralları buraya gelecek */ }
+      body .middle_menu {
+        display: none !important; }
       body .top_chart_exp {
         padding: 0 !important; }
       body .element_chart {
@@ -12062,7 +12079,9 @@ body {
         top: 2rem;
         right: 2rem; }
       body .chart_right_area .row_buy_sel .bought .buy_area {
-        margin-top: 16px !important; } }
+        margin-top: 16px !important; }
+      body .sidebar_wrapper {
+        display: block; } }
   @media (min-width: 576px) and (max-width: 768px) {
     body {
       /* Özel stil kuralları buraya gelecek */ }
@@ -12095,13 +12114,25 @@ body {
         right: -80px; }
       body .flip-clock-divider.seconds .flip-clock-label {
         right: -84px; }
-      body .header_main .middle_menu {
-        display: none; }
-      body .header_main .phone_menu {
-        display: none; }
+      body .header_main {
+        padding: 0.75rem 24px; }
+        body .header_main .middle_menu {
+          display: none; }
+        body .header_main .right_menu {
+          display: none; }
+        body .header_main .phone_menu {
+          margin-right: 8px;
+          display: flex;
+          width: auto;
+          height: 26px;
+          justify-content: space-between;
+          align-items: center;
+          flex-shrink: 0;
+          color: #FFFFFF;
+          padding: 0; }
       body .elemantor .elemantor_content_inside {
         margin-left: 1rem !important;
-        margin-top: 250px !important; }
+        gap: 17px !important; }
       body .info_banner {
         display: flex;
         height: 64px;
@@ -12400,6 +12431,7 @@ body {
       body .chart_elements_wrapper {
         margin-top: 16px; }
       body .sidebar_wrapper {
-        display: block; } }
+        display: block !important;
+        height: 100% !important; } }
 
 /*# sourceMappingURL=main.css.map */

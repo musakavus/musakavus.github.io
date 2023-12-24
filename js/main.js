@@ -1,28 +1,34 @@
 function myFunction() {
     var sidebar_overlay = document.getElementById("sidebar-overlay");
     var body_overlay = document.getElementById("body_overlay");
-
+    var bodyelement = document.body;
     if (sidebar_overlay.style.right === "0") {
         // sidebar'ı aç
         sidebar_overlay.style.right = "-340px";
         body_overlay.style.opacity = "1";
+        bodyelement.style.overflowY = "visible";
+
     } else {
         // sidebar'ı kapat
         sidebar_overlay.style.right = "0";
 
         body_overlay.style.opacity = "0.5";
+        bodyelement.style.overflowY = "hidden";
     }
 }
 
 function close_sidebar() {
+    var bodyelement = document.body;
     var sidebar_overlay = document.getElementById("sidebar-overlay");
     var body_overlay = document.getElementById("body_overlay");
     if (sidebar_overlay.style.right === "0") {
         sidebar_overlay.style.right = "0";
+        bodyelement.style.overflowY = "hidden";
 
     } else {
         sidebar_overlay.style.right = "-340px";
         body_overlay.style.opacity = "1";
+        bodyelement.style.overflowY = "visible";
     }
 }
 

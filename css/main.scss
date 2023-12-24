@@ -35,8 +35,8 @@ body {
   }
 
   .sidebar_wrapper {
-    display: none;
-    height: 100%;
+
+    display: block;
     width: 320px;
     position: fixed;
     top: 0;
@@ -336,7 +336,7 @@ body {
 
   .header_main {
     display: flex;
-    padding: 0 24px;
+    padding: 0.75rem 24px;
     justify-content: space-between;
     align-items: center;
 
@@ -2659,6 +2659,26 @@ body {
   }
 
   @media (min-width: 992px) and (max-width: 1200px) {
+    .middle_menu {
+      display: none !important;
+    }
+
+    .right_menu {
+      display: none !important;
+    }
+
+    .phone_menu {
+      margin-right: 8px;
+      display: flex !important;
+      width: auto;
+      height: 26px;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+      color: #FFFFFF;
+      padding: 0;
+    }
+
     .elements_area {
       padding: 8px 0;
     }
@@ -2674,11 +2694,21 @@ body {
         right: 2rem;
       }
     }
+
+    .sidebar_wrapper {
+      display: block !important;
+    }
+
+
   }
+
 
   @media (min-width: 768px) and (max-width: 992px) {
     /* Özel stil kuralları buraya gelecek */
 
+    .middle_menu {
+      display: none !important;
+    }
     .top_chart_exp {
       padding: 0 !important;
     }
@@ -2741,6 +2771,10 @@ body {
 
     }
 
+    .sidebar_wrapper {
+      display: block;
+    }
+
 
   }
 
@@ -2797,14 +2831,26 @@ body {
       right: -84px
     }
     .header_main {
-
+      padding: 0.75rem 24px;
 
       .middle_menu {
         display: none;
       }
 
-      .phone_menu {
+      .right_menu {
         display: none;
+      }
+
+      .phone_menu {
+        margin-right: 8px;
+        display: flex;
+        width: auto;
+        height: 26px;
+        justify-content: space-between;
+        align-items: center;
+        flex-shrink: 0;
+        color: #FFFFFF;
+        padding: 0;
       }
 
 
@@ -2814,7 +2860,7 @@ body {
 
       .elemantor_content_inside {
         margin-left: 1rem !important;
-        margin-top: 250px !important;
+        gap: 17px !important;
 
       }
     }
@@ -3492,7 +3538,8 @@ body {
     }
 
     .sidebar_wrapper {
-      display: block;
+      display: block !important;
+      height: 100% !important;
     }
   }
 
