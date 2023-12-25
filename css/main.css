@@ -12082,6 +12082,8 @@ body {
   @media (min-width: 992px) and (max-width: 1200px) {
     body .middle_menu {
       display: none !important; }
+    body .header_main {
+      padding: 0.5em 0.25em; }
     body .right_menu {
       display: none !important; }
     body .elemantor_content_inside {
@@ -12113,6 +12115,8 @@ body {
   @media (min-width: 768px) and (max-width: 992px) {
     body {
       /* Özel stil kuralları buraya gelecek */ }
+      body .header_main {
+        padding: 0.5em 0.25em; }
       body .middle_menu {
         display: none !important; }
       body .right_menu {
@@ -12251,7 +12255,7 @@ body {
           text-align: center !important;
           margin: 0 !important; }
       body .steps_elemantor .container .steps_content_area {
-        margin-top: 72px !important; }
+        margin-top: 72px; }
       body .packets_elemantor section {
         padding: 36px 0 !important; }
         body .packets_elemantor section .no_contrats {
@@ -12290,11 +12294,17 @@ body {
   @media (max-width: 576px) {
     body {
       /* Özel stil kuralları buraya gelecek */ }
+      body .steps_elemantor section {
+        padding: 36px 0 !important; }
+        body .steps_elemantor section .steps_content_area {
+          margin-top: 36px; }
       body .flip-clock-wrapper ul:nth-child(-n+2) {
         margin-bottom: 45px; }
       body .flip-clock-divider.minutes {
         clear: both;
         width: 0; }
+      body .countdown-clock {
+        margin: 24px auto; }
       body .flip-clock-divider.minutes .flip-clock-dot {
         display: none; }
       body .header_main {
@@ -12359,7 +12369,7 @@ body {
         body .token_sale_elemantor .token_sale_elemantor_area .limited_text {
           margin-bottom: 24px !important; }
       body .steps_elemantor .container .steps_content_area {
-        margin-top: 72px !important;
+        margin-top: 36px;
         padding: 0 12px; }
       body .packets_elemantor section {
         padding: 24px 8px !important; }
@@ -12514,6 +12524,8 @@ body {
   @media (max-width: 350px) {
     body .flip {
       width: 50px !important; }
+    body .countdown-clock {
+      margin: 24px auto; }
     body .progress-bar {
       padding: 0 12px !important; }
     body .input-group {

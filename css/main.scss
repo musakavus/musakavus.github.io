@@ -2777,6 +2777,10 @@ body {
       display: none !important;
     }
 
+    .header_main {
+      padding: 0.5em 0.25em;
+    }
+
     .right_menu {
       display: none !important;
     }
@@ -2839,6 +2843,10 @@ body {
 
   @media (min-width: 768px) and (max-width: 992px) {
     /* Özel stil kuralları buraya gelecek */
+
+    .header_main {
+      padding: 0.5em 0.25em;
+    }
 
     .middle_menu {
       display: none !important;
@@ -3107,7 +3115,7 @@ body {
       .container {
 
         .steps_content_area {
-          margin-top: 72px !important;
+          margin-top: 72px;
         }
       }
     }
@@ -3213,6 +3221,18 @@ body {
     /* Özel stil kuralları buraya gelecek */
 
 
+    .steps_elemantor {
+
+      section {
+        padding: 36px 0 !important;
+
+        .steps_content_area {
+          margin-top: 36px;
+        }
+      }
+
+    }
+
     .flip-clock-wrapper ul:nth-child(-n+2) {
       margin-bottom: 45px
     }
@@ -3221,6 +3241,11 @@ body {
       clear: both;
       width: 0
     }
+
+    .countdown-clock {
+      margin: 24px auto;
+    }
+
 
     .flip-clock-divider.minutes .flip-clock-dot {
       display: none
@@ -3360,7 +3385,7 @@ body {
       .container {
 
         .steps_content_area {
-          margin-top: 72px !important;
+          margin-top: 36px;
           padding: 0 12px;
 
         }
@@ -3716,6 +3741,10 @@ body {
 
     .flip {
       width: 50px !important;
+    }
+
+    .countdown-clock {
+      margin: 24px auto;
     }
 
     .progress-bar {
