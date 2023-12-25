@@ -11743,7 +11743,8 @@ body {
             font-weight: 700;
             line-height: normal; }
             body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .balance_area p span {
-              font-weight: 400; }
+              font-weight: 400;
+              color: #FFB352; }
           body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .balance_area .profit_yelid {
             display: flex;
             align-items: center;
@@ -11757,20 +11758,35 @@ body {
             line-height: normal;
             opacity: 0.5; }
         body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .depo_withdral_btn {
-          display: flex; }
+          display: flex;
+          gap: 1rem; }
           body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .depo_withdral_btn .btn {
             flex: 1; }
+          body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .depo_withdral_btn .btn:hover svg {
+            stroke: white; }
+            body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .depo_withdral_btn .btn:hover svg path {
+              fill: white; }
         body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .other_options_btn {
-          display: flex; }
+          display: flex;
+          gap: 1rem; }
           body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .other_options_btn .btn {
             flex: 1; }
+          body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .other_options_btn .btn:hover svg {
+            stroke: white;
+            fill: white; }
+            body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .other_options_btn .btn:hover svg path {
+              fill: white;
+              stroke: white; }
+            body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .other_options_btn .btn:hover svg .linex {
+              fill: white;
+              stroke: white; }
     body .wallet .top_wallet .top_right_wallet .legend_area {
       min-height: 450px;
       background: var(--Dark-Blue, #091835);
       border-radius: 12px;
       padding: 1rem 1rem; }
   body .wallet .bottom_wallet {
-    margin-top: 72px; }
+    margin-top: 32px; }
     body .wallet .bottom_wallet .xyz .supplied_top {
       padding: 12px 24px;
       border-radius: 12px;

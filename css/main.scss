@@ -2179,6 +2179,7 @@ body {
 
                 span {
                   font-weight: 400;
+                  color: #FFB352;
                 }
               }
 
@@ -2202,17 +2203,51 @@ body {
 
             .depo_withdral_btn {
               display: flex;
+              gap: 1rem;
 
               .btn {
                 flex: 1;
+
               }
+
+              .btn:hover {
+
+                svg {
+                  stroke: white;
+
+                  path {
+                    fill: white;
+                  }
+                }
+              }
+
+
             }
 
             .other_options_btn {
               display: flex;
+              gap: 1rem;
 
               .btn {
                 flex: 1;
+              }
+
+              .btn:hover {
+
+                svg {
+                  stroke: white;
+                  fill: white;
+
+                  path {
+                    fill: white;
+                    stroke: white;
+                  }
+
+                  .linex {
+                    fill: white;
+                    stroke: white;
+                  }
+                }
               }
             }
           }
@@ -2234,7 +2269,7 @@ body {
 
     .bottom_wallet {
 
-      margin-top: 72px;
+      margin-top: 32px;
 
       .xyz {
 
