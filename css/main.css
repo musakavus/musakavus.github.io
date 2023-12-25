@@ -11724,6 +11724,7 @@ body {
           right: 2.5rem;
           top: 1rem; }
         body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .wallet_heading {
+          text-align: left;
           color: #FFB352;
           font-family: "Roboto", monospace;
           font-size: 64px;
@@ -11758,8 +11759,7 @@ body {
             line-height: normal;
             opacity: 0.5; }
         body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .depo_withdral_btn {
-          display: flex;
-          gap: 1rem; }
+          display: flex; }
           body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .depo_withdral_btn .btn {
             flex: 1; }
           body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .depo_withdral_btn .btn:hover svg {
@@ -11767,8 +11767,7 @@ body {
             body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .depo_withdral_btn .btn:hover svg path {
               fill: white; }
         body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .other_options_btn {
-          display: flex;
-          gap: 1rem; }
+          display: flex; }
           body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .other_options_btn .btn {
             flex: 1; }
           body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .other_options_btn .btn:hover svg {
