@@ -10596,9 +10596,9 @@ body {
           z-index: 99;
           box-shadow: 0 30px 70px 0 rgba(11, 6, 70, 0.08);
           transition: all 0.3s ease-out 0s;
-          margin: 0;
           padding: 0;
-          display: none; }
+          display: none;
+          margin-top: 0.75rem; }
           body .header_main .middle_menu .middle_menu_item .sub_menu li {
             border-bottom: 1px solid rgba(0, 0, 0, 0.1);
             display: block;
