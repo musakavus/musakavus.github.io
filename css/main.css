@@ -11709,54 +11709,66 @@ body {
     align-items: self-start; }
     body .wallet .top_wallet .top_left_wallet {
       display: flex;
-      flex-direction: column;
-      gap: 56px;
-      align-items: self-start; }
-      body .wallet .top_wallet .top_left_wallet .wallet_heading {
-        color: #FFB352;
-        font-family: "Roboto", monospace;
-        font-size: 64px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal; }
-      body .wallet .top_wallet .top_left_wallet .row .wallet_value .float_value {
-        padding-right: 12px; }
-        body .wallet .top_wallet .top_left_wallet .row .wallet_value .float_value p:first-child {
-          color: #FFF;
-          font-family: "Roboto", monospace;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal; }
-        body .wallet .top_wallet .top_left_wallet .row .wallet_value .float_value p:last-child {
+      flex-direction: column; }
+      body .wallet .top_wallet .top_left_wallet .row .budget_wrapper {
+        background: var(--Dark-Blue, #091835);
+        position: relative;
+        border-radius: 12px;
+        padding: 1rem 2.5rem;
+        min-height: 450px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column; }
+        body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .settings_icon {
+          position: absolute;
+          right: 2.5rem;
+          top: 1rem; }
+        body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .wallet_heading {
           color: #FFB352;
           font-family: "Roboto", monospace;
-          font-size: 36px;
+          font-size: 64px;
           font-style: normal;
           font-weight: 700;
           line-height: normal; }
-      body .wallet .top_wallet .top_left_wallet .wallet_exp {
-        color: #FFF;
-        font-family: "Roboto", monospace;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        opacity: 0.5; }
-    body .wallet .top_wallet .top_right_wallet .net_apy {
-      color: #FFF;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      margin: 0; }
-    body .wallet .top_wallet .top_right_wallet .apy_value {
-      color: #20BF43;
-      font-size: 64px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      margin: 0; }
+        body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .balance_area {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.5rem; }
+          body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .balance_area p {
+            color: #FFF;
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal; }
+            body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .balance_area p span {
+              font-weight: 400; }
+          body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .balance_area .profit_yelid {
+            display: flex;
+            align-items: center;
+            gap: 1rem; }
+          body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .balance_area .wallet_exp {
+            color: #FFF;
+            font-family: "Roboto", monospace;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            opacity: 0.5; }
+        body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .depo_withdral_btn {
+          display: flex; }
+          body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .depo_withdral_btn .btn {
+            flex: 1; }
+        body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .other_options_btn {
+          display: flex; }
+          body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .other_options_btn .btn {
+            flex: 1; }
+    body .wallet .top_wallet .top_right_wallet .legend_area {
+      min-height: 450px;
+      background: var(--Dark-Blue, #091835);
+      border-radius: 12px;
+      padding: 1rem 1rem; }
   body .wallet .bottom_wallet {
     margin-top: 72px; }
     body .wallet .bottom_wallet .xyz .supplied_top {
@@ -11996,45 +12008,43 @@ body {
           font-weight: 500;
           line-height: normal;
           text-align: center; }
-  body .table-responsive {
-    margin-top: 12px; }
-    body .table-responsive .table thead tr {
-      border-radius: 4px; }
-      body .table-responsive .table thead tr th {
-        color: #FFF;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        background: transparent; }
-    body .table-responsive .table tbody tr:nth-child(odd) th {
-      color: #FFF;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-      background: var(--Dark-Blue, #091835); }
-    body .table-responsive .table tbody tr:nth-child(odd) td {
-      background: var(--Dark-Blue, #091835);
+  body .table-responsive .table thead tr {
+    border-radius: 4px; }
+    body .table-responsive .table thead tr th {
       color: #FFF;
       font-size: 12px;
       font-style: normal;
-      font-weight: 500;
-      line-height: normal; }
-    body .table-responsive .table tbody tr:nth-child(even) th {
-      color: #FFF;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       line-height: normal;
       background: transparent; }
-    body .table-responsive .table tbody tr:nth-child(even) td {
-      color: #FFF;
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-      background: transparent; }
+  body .table-responsive .table tbody tr:nth-child(odd) th {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: var(--Dark-Blue, #091835); }
+  body .table-responsive .table tbody tr:nth-child(odd) td {
+    background: var(--Dark-Blue, #091835);
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; }
+  body .table-responsive .table tbody tr:nth-child(even) th {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: transparent; }
+  body .table-responsive .table tbody tr:nth-child(even) td {
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: transparent; }
   @media (min-width: 992px) and (max-width: 1200px) {
     body .middle_menu {
       display: none !important; }

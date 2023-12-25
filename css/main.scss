@@ -2128,79 +2128,106 @@ body {
       .top_left_wallet {
         display: flex;
         flex-direction: column;
-        gap: 56px;
-        align-items: self-start;
 
-
-        .wallet_heading {
-          color: #FFB352;
-          font-family: "Roboto", monospace;
-          font-size: 64px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-
-        }
 
         .row {
-          .wallet_value {
 
-            .float_value {
-              padding-right: 12px;
+          .budget_wrapper {
+            background: var(--Dark-Blue, #091835);
+            position: relative;
+            border-radius: 12px;
+            padding: 1rem 2.5rem;
+            min-height: 450px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
 
 
-              p:first-child {
+            .settings_icon {
+              position: absolute;
+              right: 2.5rem;
+              top: 1rem;
+            }
+
+            .wallet_heading {
+              color: #FFB352;
+              font-family: "Roboto", monospace;
+              font-size: 64px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+
+
+            }
+
+            .balance_area {
+
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 0.5rem;
+
+
+              p {
                 color: #FFF;
-                font-family: "Roboto", monospace;
+
+                text-align: center;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
+
+                span {
+                  font-weight: 400;
+                }
               }
 
-              p:last-child {
-                color: #FFB352;
+              .profit_yelid {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+              }
+
+              .wallet_exp {
+                color: #FFF;
                 font-family: "Roboto", monospace;
-                font-size: 36px;
+                font-size: 12px;
                 font-style: normal;
-                font-weight: 700;
+                font-weight: 400;
                 line-height: normal;
+                opacity: 0.5;
               }
             }
 
-          }
-        }
+            .depo_withdral_btn {
+              display: flex;
 
-        .wallet_exp {
-          color: #FFF;
-          font-family: "Roboto", monospace;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-          opacity: 0.5;
+              .btn {
+                flex: 1;
+              }
+            }
+
+            .other_options_btn {
+              display: flex;
+
+              .btn {
+                flex: 1;
+              }
+            }
+          }
+
         }
 
 
       }
 
       .top_right_wallet {
-        .net_apy {
-          color: #FFF;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-          margin: 0;
-        }
-
-        .apy_value {
-          color: #20BF43;
-          font-size: 64px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-          margin: 0;
+        .legend_area {
+          min-height: 450px;
+          background: var(--Dark-Blue, #091835);
+          border-radius: 12px;
+          padding: 1rem 1rem;
         }
       }
     }
@@ -2607,8 +2634,6 @@ body {
   }
 
   .table-responsive {
-    margin-top: 12px;
-
     .table {
 
       thead {
