@@ -12081,8 +12081,6 @@ body {
       padding: 0; }
     body .elements_area {
       padding: 8px 0; }
-    body .wallet_elements {
-      height: 75px; }
     body .chart_right_area .btn-transparent {
       position: absolute;
       top: 2rem;
@@ -12261,7 +12259,6 @@ body {
           padding: 12px 18px; }
       body .chart_right_area .elements_wallet_wrapper .budiv .wallet_elements {
         border-radius: 8px;
-        height: 153px;
         justify-content: space-between; }
       body .chart_right_area .elements_area_wrapper .elements_area {
         padding: 8px 0 !important; }
@@ -12353,7 +12350,6 @@ body {
         padding: 48px 24px !important; }
       body .chart_right_area .elements_wallet_wrapper .budiv .wallet_elements {
         border-radius: 8px;
-        height: 153px;
         justify-content: space-between; }
       body .chart_right_area .elements_area_wrapper .elements_area {
         padding: 8px 0 !important; }
