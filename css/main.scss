@@ -3712,6 +3712,56 @@ body {
     }
   }
 
+  @media (max-width: 350px) {
+
+    .flip {
+      width: 50px !important;
+    }
+
+    .progress-bar {
+      padding: 0 12px !important;
+    }
+
+    .input-group {
+      height: auto !important;
+    }
+
+    .btn_first {
+      padding: 8px 16px !important;
+      height: auto;
+      border-radius: 4px;
+
+    }
+
+    .btn-transparent {
+      padding: 6px 16px;
+    }
+
+    .footer_logo {
+
+      .footer_left {
+        width: 40%;
+
+        .logo_content {
+          .line {
+            display: none;
+          }
+
+          .logo_text {
+            display: none;
+          }
+        }
+
+      }
+
+      .footer_right {
+        width: 60%;
+
+      }
+    }
+
+  }
+
 
 }
 
