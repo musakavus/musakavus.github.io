@@ -331,13 +331,20 @@ body {
     font-family: "Roboto", monospace;
     font-size: 16px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: normal;
     border: none;
+    transition: all 1s ease-out 0s;
+
+  }
+
+  .btn_first:hover {
+    background: linear-gradient(80deg, #8E44AD 0%, #FFB352 98.38%);
+    color: white;
+
   }
 
 
-  list-style-type: none;
   text-decoration: none;
 
   .background_color_main {
@@ -1570,6 +1577,7 @@ body {
         margin-bottom: 0;
         position: relative;
 
+
         .line_left {
           width: 30px;
           height: 1px;
@@ -1579,11 +1587,13 @@ body {
         span {
           color: #FFF;
           font-family: "Roboto", monospace;
-          font-size: 16px;
+          font-size: 14px;
           font-style: normal;
-          font-weight: 500;
+          font-weight: 400;
           line-height: normal;
+
         }
+
 
         .line_right {
           width: 30px;
@@ -1690,7 +1700,7 @@ body {
         font-family: "Roboto", monospace;
         font-size: 16px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         line-height: normal;
 
         a {
@@ -2489,7 +2499,7 @@ body {
             }
 
             .active {
-              background: #FFB352;
+              background: #F7931A;
               border-radius: 8px;
             }
           }
@@ -2576,6 +2586,11 @@ body {
         line-height: normal;
         text-decoration: none;
         padding: 4px 8px;
+        transition: all 0.3s ease-out 0s;
+      }
+
+      :hover {
+        text-decoration: underline;
       }
 
     }
@@ -2647,6 +2662,19 @@ body {
             display: flex;
             align-items: center;
             gap: 1rem;
+
+            .btn {
+              background-color: #F7931A;
+              border-radius: 12px;
+              border: none;
+            }
+
+            :hover {
+              border: white;
+              color: white;
+              background: #FFB352;
+            }
+
           }
 
           ::placeholder {

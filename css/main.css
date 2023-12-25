@@ -10310,7 +10310,6 @@ body {
   font-family: "Roboto", monospace;
   list-style-type: none;
   text-underline: none;
-  list-style-type: none;
   text-decoration: none; }
   body .form-control:focus {
     box-shadow: none; }
@@ -10526,9 +10525,13 @@ body {
     font-family: "Roboto", monospace;
     font-size: 16px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: normal;
-    border: none; }
+    border: none;
+    transition: all 1s ease-out 0s; }
+  body .btn_first:hover {
+    background: linear-gradient(80deg, #8E44AD 0%, #FFB352 98.38%);
+    color: white; }
   body .background_color_main {
     background: #071838; }
   body .header_main {
@@ -11360,9 +11363,9 @@ body {
         body .login_row .signup_area .login_text_explain span {
           color: #FFF;
           font-family: "Roboto", monospace;
-          font-size: 16px;
+          font-size: 14px;
           font-style: normal;
-          font-weight: 500;
+          font-weight: 400;
           line-height: normal; }
         body .login_row .signup_area .login_text_explain .line_right {
           width: 30px;
@@ -11439,7 +11442,7 @@ body {
         font-family: "Roboto", monospace;
         font-size: 16px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         line-height: normal; }
         body .login_row .signup_area .direct_to_signup a {
           background: linear-gradient(180deg, #FFB352 0%, #9747FF 100%);
@@ -11911,7 +11914,7 @@ body {
           padding-right: 0.5rem;
           padding-left: 0.5rem; }
         body .chart_elements_wrapper .chart_area .search_chart .nav .nav-item .active {
-          background: #FFB352;
+          background: #F7931A;
           border-radius: 8px; }
   body .chart_right_area .elements_area_wrapper {
     display: flex;
@@ -11964,7 +11967,10 @@ body {
       font-weight: 500;
       line-height: normal;
       text-decoration: none;
-      padding: 4px 8px; }
+      padding: 4px 8px;
+      transition: all 0.3s ease-out 0s; }
+    body .chart_right_area .buy_options :hover {
+      text-decoration: underline; }
   body .chart_right_area .bought {
     padding: 24px 16px;
     border-radius: 4px;
@@ -12016,6 +12022,14 @@ body {
           display: flex;
           align-items: center;
           gap: 1rem; }
+          body .chart_right_area .bought .buy_area .want_buy .button_and_eth .btn {
+            background-color: #F7931A;
+            border-radius: 12px;
+            border: none; }
+          body .chart_right_area .bought .buy_area .want_buy .button_and_eth :hover {
+            border: white;
+            color: white;
+            background: #FFB352; }
         body .chart_right_area .bought .buy_area .want_buy ::placeholder {
           color: #D9D9D9;
           font-size: 12px;
