@@ -14,15 +14,41 @@ var chart = new Chart(ctx, {
             {
                 label: 'PLN - Curve',
                 data: barData,
-                backgroundColor: 'rgba(255, 0, 0, 0.5)',
-                color: 'rgba(255, 0, 0, 0.5)',
-                borderColor: 'rgba(255, 0, 0, 0.5)',
+                backgroundColor: 'rgba(255, 0, 0, 0.5)', // Arka plan rengi
+                borderColor: 'rgba(255, 0, 0, 1)', // Çerçeve rengi
+                color: 'rgba(255, 0, 0, 1)', // Font rengi
             },
-
         ]
     },
-
+    options: {
+        plugins: {
+            legend: {
+                labels: {
+                    color: '#FFB352', // Legend font rengi
+                },
+            },
+        },
+        scales: {
+            y: {
+                ticks: { color: '#FFB352', beginAtZero: true }
+            },
+            x: {
+                ticks: { color: '#FFB352', beginAtZero: true }
+            }
+        }
+    },
+    plugins: [{
+        beforeDraw: function (c) {
+            var legends = c.legend.legendItems;
+            legends.forEach(function (e) {
+                e.fillStyle = '#FFB352'; // Background rengi
+                e.strokeStyle = '#FFB352'; // Border rengi
+            });
+        },
+    }],
 });
+
+Chart.defaults.plugins.legend.boxBackgroundColor = 'green';
 
 function randomNumber(min, max) {
     return Math.random() * (max - min) + min;
@@ -39,7 +65,6 @@ function randomBar(date, lastClose) {
         h: high,
         l: low,
         c: close,
-
     };
 }
 
@@ -47,11 +72,10 @@ function getRandomData(dateStr, count) {
     var date = luxon.DateTime.fromRFC2822(dateStr);
     var data = [randomBar(date, 30)];
     while (data.length < count) {
-        date = date.plus({days: 1});
+        date = date.plus({ days: 1 });
         if (date.weekday <= 5) {
             data.push(randomBar(date, data[data.length - 1].c));
         }
     }
     return data;
 }
-
