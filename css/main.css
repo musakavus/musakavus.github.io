@@ -12302,6 +12302,8 @@ body {
   @media (max-width: 576px) {
     body {
       /* Özel stil kuralları buraya gelecek */ }
+      body .budget_wrapper {
+        padding: 1rem 2rem !important; }
       body .steps_elemantor section {
         padding: 36px 0 !important; }
         body .steps_elemantor section .steps_content_area {
@@ -12500,7 +12502,8 @@ body {
       body .wallet .top_wallet .top_left_wallet {
         gap: 0;
         align-items: stretch;
-        text-align: center; }
+        text-align: center;
+        padding: 1rem 1.5rem; }
         body .wallet .top_wallet .top_left_wallet .wallet_heading {
           font-size: 32px !important; }
         body .wallet .top_wallet .top_left_wallet .btn-group {
@@ -12511,7 +12514,7 @@ body {
           margin-top: 8px !important;
           font-size: 12px !important; }
       body .wallet .top_wallet .top_right_wallet {
-        margin-top: 8px; }
+        margin-top: 16px; }
         body .wallet .top_wallet .top_right_wallet .net_apy {
           font-size: 12px !important; }
         body .wallet .top_wallet .top_right_wallet .apy_value {

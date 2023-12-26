@@ -3239,6 +3239,10 @@ body {
   @media (max-width: 576px) {
     /* Özel stil kuralları buraya gelecek */
 
+    .budget_wrapper {
+      padding: 1rem 2rem !important;
+    }
+
 
     .steps_elemantor {
 
@@ -3690,6 +3694,7 @@ body {
           gap: 0;
           align-items: stretch;
           text-align: center;
+          padding: 1rem 1.5rem;
 
           .wallet_heading {
             font-size: 32px !important;
@@ -3708,7 +3713,7 @@ body {
         }
 
         .top_right_wallet {
-          margin-top: 8px;
+          margin-top: 16px;
 
           .net_apy {
             font-size: 12px !important;
