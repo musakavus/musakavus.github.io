@@ -47,6 +47,23 @@ function sub_menu() {
     }
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+    var cryptoImages = document.querySelectorAll(".yellow_bg img");
+
+    cryptoImages.forEach(function (cryptoImg) {
+        setInterval(function () {
+            toggleImage(cryptoImg);
+        }, 3000);
+    });
+
+    function toggleImage(img) {
+        if (img.style.opacity === "0") {
+            img.style.opacity = "1";
+        } else {
+            img.style.opacity = "0";
+        }
+    }
+});
 
 function showSubMenu() {
     var subMenu = document.getElementById("sub_men");
