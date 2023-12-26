@@ -69,11 +69,33 @@ function hideSubMenu() {
 }
 
 
+window.onload = function () {
+    const buttonsContainer = document.querySelector('.nav-pills');
+    const buttons = buttonsContainer.querySelectorAll('.nav-item');
+
+    buttons.forEach(button => {
+        button.style.backgroundColor = "";
+    });
+
+    // Ardından eth_btn'nin arka plan rengini belirle
+    const eth_btn = document.getElementById('eth_btn');
+    eth_btn.style.backgroundColor = "#F7931A";
+}
+
 function showDiv(divId) {
     const eth = document.getElementById('eth_filter');
     const btc = document.getElementById('btc_filter');
     const usd = document.getElementById('usd_filter');
     const busd = document.getElementById('busd_filter');
+    const eth_btn = document.getElementById('eth_btn');
+    const btc_btn = document.getElementById('btc_btn');
+    const usd_btn = document.getElementById('usd_btn');
+    const busd_btn = document.getElementById('busd_btn');
+    const cryptoText = document.getElementById('crypto_text');
+
+    // Butonların bulunduğu parent elementi seçin
+    const buttonsContainer = document.querySelector('.nav-pills');
+    const buttons = buttonsContainer.querySelectorAll('.nav-item');
 
     function hideAll() {
         eth.style.opacity = "0";
@@ -95,26 +117,40 @@ function showDiv(divId) {
 
     hideAll();
 
+    // Tüm butonların arka plan rengini sıfırla ve aktif olan butona sınıf ekle
+    buttons.forEach(button => {
+        button.style.backgroundColor = "";
+    });
+
     switch (divId) {
         case 'eth_filter':
             eth.style.display = "block";
             eth.style.visibility = "visible";
             eth.style.opacity = "1";
+            setTimeout(() => cryptoText.innerText = "ETH/PLN", 500); // 0.5 saniye gecikme
+            setTimeout(() => eth_btn.style.background = "#F7931A", 500); // 0.5 saniye gecikme
+
             break;
         case 'btc_filter':
             btc.style.display = "block";
             btc.style.visibility = "visible";
             btc.style.opacity = "1";
+            setTimeout(() => cryptoText.innerText = "BTC/PLN", 500); // 0.5 saniye gecikme
+            setTimeout(() => btc_btn.style.background = "#F7931A", 500); // 0.5 saniye gecikme
             break;
         case 'usd_filter':
             usd.style.display = "block";
             usd.style.visibility = "visible";
             usd.style.opacity = "1";
+            setTimeout(() => cryptoText.innerText = "USD/PLN", 500); // 0.5 saniye gecikme
+            setTimeout(() => usd_btn.style.background = "#F7931A", 500); // 0.5 saniye gecikme
             break;
         case 'busd_filter':
             busd.style.display = "block";
             busd.style.visibility = "visible";
             busd.style.opacity = "1";
+            setTimeout(() => cryptoText.innerText = "BUSD/PLN", 500); // 0.5 saniye gecikme
+            setTimeout(() => busd_btn.style.background = "#F7931A", 500); // 0.5 saniye gecikme
             break;
         default:
             break;
@@ -128,6 +164,7 @@ function showDiv(divId) {
         busd.style.transition = "opacity 0.5s ease-in-out, visibility 0.5s ease-in-out";
     }, 0);
 }
+
 
 
 
