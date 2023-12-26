@@ -2451,13 +2451,17 @@ body {
         align-items: center;
 
         .input-group {
+          a {
+            margin: auto;
 
-          .input-group-text {
-            background: transparent;
-            border: none;
-            padding-right: 0;
-            padding-left: 0;
+            .input-group-text {
+              background: transparent;
+              border: none;
+              padding-right: 0;
+              padding-left: 0;
+            }
           }
+
 
           input {
             background: transparent;

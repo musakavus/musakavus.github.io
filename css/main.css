@@ -11879,11 +11879,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
-    body .chart_elements_wrapper .chart_area .search_chart .input-group .input-group-text {
-      background: transparent;
-      border: none;
-      padding-right: 0;
-      padding-left: 0; }
+    body .chart_elements_wrapper .chart_area .search_chart .input-group a {
+      margin: auto; }
+      body .chart_elements_wrapper .chart_area .search_chart .input-group a .input-group-text {
+        background: transparent;
+        border: none;
+        padding-right: 0;
+        padding-left: 0; }
     body .chart_elements_wrapper .chart_area .search_chart .input-group input {
       background: transparent;
       border: none;
