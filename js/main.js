@@ -48,21 +48,6 @@ function sub_menu() {
 }
 
 
-// function large_sub_menu() {
-//     var sub_men = document.getElementById("sub_men");
-//     var opened = document.getElementById("opened_menu")
-//     var closed = document.getElementById("closed_menu")
-//     if (sub_men.style.display === "block") {
-//         sub_men.style.display = "none";
-//         opened.style.display = "inline"
-//         closed.style.display = "none"
-//     } else {
-//         sub_men.style.display = "block";
-//         opened.style.display = "none";
-//         closed.style.display = "inline"
-//     }
-// }
-
 function showSubMenu() {
     var subMenu = document.getElementById("sub_men");
     var opened = document.getElementById("opened_menu");
@@ -83,20 +68,70 @@ function hideSubMenu() {
     closed.style.display = "none";
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-    var cryptoImages = document.querySelectorAll(".yellow_bg img");
 
-    cryptoImages.forEach(function (cryptoImg) {
-        setInterval(function () {
-            toggleImage(cryptoImg);
-        }, 3000);
-    });
+function showDiv(divId) {
+    const eth = document.getElementById('eth_filter');
+    const btc = document.getElementById('btc_filter');
+    const usd = document.getElementById('usd_filter');
+    const busd = document.getElementById('busd_filter');
 
-    function toggleImage(img) {
-        if (img.style.opacity === "0") {
-            img.style.opacity = "1";
-        } else {
-            img.style.opacity = "0";
-        }
+    function hideAll() {
+        eth.style.opacity = "0";
+        eth.style.visibility = "hidden";
+        eth.style.display = "none";
+
+        btc.style.opacity = "0";
+        btc.style.visibility = "hidden";
+        btc.style.display = "none";
+
+        usd.style.opacity = "0";
+        usd.style.visibility = "hidden";
+        usd.style.display = "none";
+
+        busd.style.opacity = "0";
+        busd.style.visibility = "hidden";
+        busd.style.display = "none";
     }
-});
+
+    hideAll();
+
+    switch (divId) {
+        case 'eth_filter':
+            eth.style.display = "block";
+            eth.style.visibility = "visible";
+            eth.style.opacity = "1";
+            break;
+        case 'btc_filter':
+            btc.style.display = "block";
+            btc.style.visibility = "visible";
+            btc.style.opacity = "1";
+            break;
+        case 'usd_filter':
+            usd.style.display = "block";
+            usd.style.visibility = "visible";
+            usd.style.opacity = "1";
+            break;
+        case 'busd_filter':
+            busd.style.display = "block";
+            busd.style.visibility = "visible";
+            busd.style.opacity = "1";
+            break;
+        default:
+            break;
+    }
+
+    // SetTimeout kullanarak geçiş efekti eklemek
+    setTimeout(function () {
+        eth.style.transition = "opacity 0.5s ease-in-out, visibility 0.5s ease-in-out";
+        btc.style.transition = "opacity 0.5s ease-in-out, visibility 0.5s ease-in-out";
+        usd.style.transition = "opacity 0.5s ease-in-out, visibility 0.5s ease-in-out";
+        busd.style.transition = "opacity 0.5s ease-in-out, visibility 0.5s ease-in-out";
+    }, 0);
+}
+
+
+
+
+
+
+

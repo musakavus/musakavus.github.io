@@ -10313,6 +10313,8 @@ body {
   text-decoration: none; }
   body .form-control:focus {
     box-shadow: none; }
+  body .filter {
+    display: none; }
   body a {
     text-decoration: none !important; }
   body .yellow_bg {
