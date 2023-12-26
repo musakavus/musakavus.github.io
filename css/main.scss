@@ -11,7 +11,6 @@ body {
   text-underline: none;
 
 
-
   .form-control:focus {
     box-shadow: none;
   }
@@ -2582,7 +2581,7 @@ body {
     }
 
     .buy_options {
-      margin-top: 8px;
+
 
       a {
         color: #FFF;
@@ -2609,7 +2608,7 @@ body {
       border-radius: 4px;
       border-right: 1px solid #000;
       background: var(--Light-Blue, #1C2D4A);
-      margin-top: 32px;
+      margin-top: 28px;
 
       .heading_elements {
         display: flex;
