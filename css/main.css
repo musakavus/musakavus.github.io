@@ -11727,7 +11727,7 @@ body {
         body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .settings_icon {
           position: absolute;
           right: 2.5rem;
-          top: 1rem; }
+          top: 2rem; }
         body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .wallet_heading {
           text-align: left;
           color: #FFB352;
@@ -11754,7 +11754,10 @@ body {
           body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .balance_area .profit_yelid {
             display: flex;
             align-items: center;
-            gap: 1rem; }
+            gap: 1rem;
+            width: 100%; }
+            body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .balance_area .profit_yelid p {
+              text-align: left; }
           body .wallet .top_wallet .top_left_wallet .row .budget_wrapper .balance_area .wallet_exp {
             color: #FFF;
             font-family: "Roboto", monospace;
@@ -11814,6 +11817,9 @@ body {
         font-style: normal;
         font-weight: 700;
         line-height: normal; }
+      body .wallet .bottom_wallet .xyz .supplied_top .supplied_piece .first-span {
+        display: inline-flex;
+        align-items: center; }
     body .wallet .bottom_wallet .xyz .supplied_bottom {
       margin-top: 32px;
       padding: 12px 24px;
@@ -12538,6 +12544,11 @@ body {
       border-radius: 4px; }
     body .btn-transparent {
       padding: 6px 16px; }
+    body .supplied_top {
+      padding: 12px 0; }
+      body .supplied_top .supplied_piece .first-span {
+        display: inline-flex;
+        align-items: center; }
     body .footer_logo .footer_left {
       width: 40%; }
       body .footer_logo .footer_left .logo_content .line {

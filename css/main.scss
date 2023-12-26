@@ -2161,7 +2161,7 @@ body {
             .settings_icon {
               position: absolute;
               right: 2.5rem;
-              top: 1rem;
+              top: 2rem;
             }
 
             .wallet_heading {
@@ -2202,6 +2202,11 @@ body {
                 display: flex;
                 align-items: center;
                 gap: 1rem;
+                width: 100%;
+
+                p {
+                  text-align: left;
+                }
 
               }
 
@@ -2315,6 +2320,11 @@ body {
               font-style: normal;
               font-weight: 700;
               line-height: normal;
+            }
+
+            .first-span {
+              display: inline-flex;
+              align-items: center;
             }
           }
         }
@@ -3773,6 +3783,18 @@ body {
 
     .btn-transparent {
       padding: 6px 16px;
+    }
+
+    .supplied_top {
+      padding: 12px 0;
+
+      .supplied_piece {
+        .first-span {
+          display: inline-flex;
+          align-items: center;
+        }
+      }
+
     }
 
     .footer_logo {
