@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
 body {
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
   background: #071838 !important;
@@ -46,6 +49,88 @@ body {
       box-shadow: none;
 
 
+    }
+  }
+
+  .forzerofor_left {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+
+    .forzerofor_text_area {
+      width: 50%;
+
+      .looklike {
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+
+      a {
+        color: #FFB352;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border: none;
+      }
+    }
+
+  }
+
+  .forzerofor_right {
+    background: url("../img/404yellow.svg") no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+
+    .forzerofor_number_area {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        padding: 0;
+        margin: 0;
+      }
+
+
+      .top_notfound {
+        color: #FFF;
+        font-family: 'Righteous', sans-serif;
+        //font-family: Righteous;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .middle_notfound {
+        color: #FFF;
+        font-family: 'Righteous', sans-serif;
+        //font-family: Righteous;
+        font-size: 128px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+      }
+
+      .bottom_notfound {
+        color: #FFF;
+        font-family: 'Righteous', sans-serif;
+        //font-family: Righteous;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
     }
   }
 

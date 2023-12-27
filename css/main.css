@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 :root,
 [data-bs-theme="light"] {
   --bs-blue: #0d6efd;
@@ -10335,6 +10336,62 @@ body {
       border: none;
       border-radius: 0;
       box-shadow: none; }
+  body .forzerofor_left {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center; }
+    body .forzerofor_left .forzerofor_text_area {
+      width: 50%; }
+      body .forzerofor_left .forzerofor_text_area .looklike {
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal; }
+      body .forzerofor_left .forzerofor_text_area a {
+        color: #FFB352;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border: none; }
+  body .forzerofor_right {
+    background: url("../img/404yellow.svg") no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center; }
+    body .forzerofor_right .forzerofor_number_area {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      body .forzerofor_right .forzerofor_number_area p {
+        padding: 0;
+        margin: 0; }
+      body .forzerofor_right .forzerofor_number_area .top_notfound {
+        color: #FFF;
+        font-family: 'Righteous', sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; }
+      body .forzerofor_right .forzerofor_number_area .middle_notfound {
+        color: #FFF;
+        font-family: 'Righteous', sans-serif;
+        font-size: 128px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; }
+      body .forzerofor_right .forzerofor_number_area .bottom_notfound {
+        color: #FFF;
+        font-family: 'Righteous', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; }
   body .sidebar_wrapper {
     height: 100%;
     display: block;
