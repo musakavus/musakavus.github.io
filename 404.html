@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Ruinchain Page Not Found</title>
     <link rel="icon" type="image/x-icon" href="img/Logo%20PNG.svg">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -24,6 +24,7 @@
         }
 
         .btcethusdt {
+            position: absolute;
             width: 128px; /* Genişlik */
             height: 128px; /* Yükseklik */
         }
@@ -127,9 +128,9 @@
     <!-- Diğer svg objeleri buraya ekleyin -->
 </div>
 <div class="slider2">
-    <object data="img/crypto-logos/btc_svg.svg" type="image/svg+xml" class="falling-svg btcethusdt"></object>
-    <object data="img/crypto-logos/bnb-bnb-logo.svg" type="image/svg+xml" class="falling-svg btcethusdt"></object>
-    <object data="img/crypto-logos/tether-usdt-logo.svg" type="image/svg+xml" class="falling-svg btcethusdt"></object>
+    <object data="img/crypto-logos/btc_svg.svg" type="image/svg+xml" class="falling-svg1 btcethusdt"></object>
+    <object data="img/crypto-logos/bnb-bnb-logo.svg" type="image/svg+xml" class="falling-svg1 btcethusdt"></object>
+    <object data="img/crypto-logos/tether-usdt-logo.svg" type="image/svg+xml" class="falling-svg1 btcethusdt"></object>
     <!-- Diğer svg objeleri buraya ekleyin -->
 </div>
 
@@ -158,6 +159,7 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const svgElements = document.querySelectorAll(".falling-svg");
+        const svgElements1 = document.querySelectorAll(".falling-svg1");
 
         function animateSVG(svg) {
             const bounceHeight = 50;
@@ -173,6 +175,20 @@
             });
         }
 
+        function animateSVG1(svg) {
+            const bounceHeight = 50;
+
+            gsap.to(svg, {
+                y: "87vh",
+                duration: 2 + Math.random() * 3,
+                ease: "power1.inOut",
+                onComplete: () => {
+                    gsap.set(svg, {display: "block"}); // SVG'yi gizle
+                    checkIfAllHidden1(); // Tüm SVG'ler gizlendi mi kontrol et
+                },
+            });
+        }
+
         function checkIfAllHidden() {
             const allHidden = Array.from(svgElements).every(svg => gsap.getProperty(svg, 'display') === 'none');
             if (allHidden) {
@@ -181,9 +197,22 @@
             }
         }
 
+        function checkIfAllHidden1() {
+
+            const allHidden1 = Array.from(svgElements1).every(svg => gsap.getProperty(svg, 'display') === 'none');
+            if (allHidden1) {
+                // Tüm SVG'ler gizlendiyse animasyonu durdur
+                gsap.globalTimeline.pause();
+            }
+        }
+
         svgElements.forEach((svg, i) => {
             gsap.set(svg, {x: Math.random() * window.innerWidth, y: -Math.random() * window.innerHeight});
             animateSVG(svg);
+        });
+        svgElements1.forEach((svg, i) => {
+            gsap.set(svg, {x: Math.random() * window.innerWidth, y: -Math.random() * window.innerHeight});
+            animateSVG1(svg);
         });
     });
 
