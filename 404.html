@@ -14,25 +14,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
           rel="stylesheet">
+    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
     <script src="js/main.js"></script>
     <style>
         .falling-svg {
             position: absolute;
-            visibility: hidden;
-            opacity: 1;
-            transition: opacity 1s ease-in-out;
             width: 48px; /* Genişlik */
             height: 48px; /* Yükseklik */
         }
 
-        .btcethusdt{
+        .btcethusdt {
             width: 128px; /* Genişlik */
             height: 128px; /* Yükseklik */
         }
     </style>
 </head>
 
-<body>
+<body style="overflow: hidden">
 <div class="slider1">
     <object data="img/crypto-logos/icon1.svg" type="image/svg+xml" class="falling-svg"></object>
     <object data="img/crypto-logos/icon2.svg" type="image/svg+xml" class="falling-svg"></object>
@@ -44,6 +42,19 @@
     <object data="img/crypto-logos/icon8.svg" type="image/svg+xml" class="falling-svg"></object>
     <object data="img/crypto-logos/icon9.svg" type="image/svg+xml" class="falling-svg"></object>
     <object data="img/crypto-logos/icon10.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon11.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon12.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon13.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon14.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon15.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon16.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon17.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon18.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon19.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon20.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon21.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon22.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon23.svg" type="image/svg+xml" class="falling-svg"></object>
     <object data="img/crypto-logos/icon24.svg" type="image/svg+xml" class="falling-svg"></object>
     <object data="img/crypto-logos/icon25.svg" type="image/svg+xml" class="falling-svg"></object>
     <object data="img/crypto-logos/icon26.svg" type="image/svg+xml" class="falling-svg"></object>
@@ -51,39 +62,94 @@
     <object data="img/crypto-logos/icon28.svg" type="image/svg+xml" class="falling-svg"></object>
     <object data="img/crypto-logos/icon29.svg" type="image/svg+xml" class="falling-svg"></object>
     <object data="img/crypto-logos/icon30.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon31.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon32.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon33.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon34.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon35.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon36.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon37.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon38.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon39.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon40.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon41.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon42.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon43.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon44.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon45.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon46.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon47.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon48.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon49.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon50.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon51.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon52.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon53.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon54.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon55.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon56.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon57.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon58.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon59.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon60.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon61.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon62.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon63.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon64.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon65.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon66.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon67.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon68.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon69.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon70.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon71.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon72.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon73.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon74.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon75.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon76.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon77.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon78.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon79.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon80.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon81.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon82.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon83.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon84.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon85.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon86.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon87.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon88.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon89.svg" type="image/svg+xml" class="falling-svg"></object>
+    <object data="img/crypto-logos/icon90.svg" type="image/svg+xml" class="falling-svg"></object>
 
 
+    <!-- Diğer svg objeleri buraya ekleyin -->
 </div>
 <div class="slider2">
     <object data="img/crypto-logos/btc_svg.svg" type="image/svg+xml" class="falling-svg btcethusdt"></object>
     <object data="img/crypto-logos/bnb-bnb-logo.svg" type="image/svg+xml" class="falling-svg btcethusdt"></object>
     <object data="img/crypto-logos/tether-usdt-logo.svg" type="image/svg+xml" class="falling-svg btcethusdt"></object>
-
-
+    <!-- Diğer svg objeleri buraya ekleyin -->
 </div>
+
 <div class="container-fluid">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-6 forzerofor_left">
-                <div class="forzerofor_text_area">
-                    <p class="looklike">
-                        Looks like you're lost. Perhaps you stumbled into a crypto maze. Turn back, go to the homepage,
-                        and
-                        start anew. The crypto world is vast; you need to venture a bit!
-                    </p>
-                    <a href="index.html">Go Back <span class="yellow_bg"><img src="img/yellow-bg.png"
-                                                                              alt="">Home Page</span></a>
-                </div>
-
-
+    <div class="row">
+        <div class="col-6 forzerofor_left">
+            <div class="forzerofor_text_area">
+                <p class="looklike">
+                    Looks like you're lost. Perhaps you stumbled into a crypto maze. Turn back, go to the homepage, and
+                    start anew. The crypto world is vast; you need to venture a bit!
+                </p>
+                <a href="index.html">Go Back <span class="yellow_bg"><img src="img/yellow-bg.png"
+                                                                          alt="">Home Page</span></a>
             </div>
-            <div class="col-6 forzerofor_right">
-                <div class="forzerofor_number_area">
-                    <p class="top_notfound">oops</p>
-                    <p class="middle_notfound">404</p>
-                    <p class="bottom_notfound">page not found</p>
-                </div>
-
+        </div>
+        <div class="col-6 forzerofor_right">
+            <div class="forzerofor_number_area">
+                <p class="top_notfound">oops</p>
+                <p class="middle_notfound">404</p>
+                <p class="bottom_notfound">page not found</p>
             </div>
         </div>
     </div>
@@ -91,78 +157,36 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        const svgSets = [
-            document.querySelectorAll(".slider1 .falling-svg"),
-            document.querySelectorAll(".slider2 .falling-svg"),
-        ];
+        const svgElements = document.querySelectorAll(".falling-svg");
 
-        function animateSet(svgs) {
-            svgs.forEach((svg, i) => {
-                const bounceHeight = 50;
+        function animateSVG(svg) {
+            const bounceHeight = 50;
 
-                function fall() {
-                    const speedX = (Math.random() - 0.5) * 3;
-                    const speedY = Math.random() * 2 + 1;
-
-                    const currentTop = parseFloat(svg.style.top) + speedY;
-                    svg.style.top = `${currentTop}px`;
-
-                    const svgBottom = currentTop + svg.clientHeight;
-
-                    if (svgBottom > window.innerHeight) {
-                        svg.style.top = `${window.innerHeight - svg.clientHeight}px`;
-                        svg.style.animation = `bounce ${bounceHeight / speedY}s ease-in-out`;
-
-                        svg.addEventListener('animationend', function () {
-                            svg.style.animation = 'none';
-                            resetPosition();
-                        }, {once: true});
-                    } else {
-                        requestAnimationFrame(fall);
-                    }
-                }
-
-                function resetPosition() {
-                    const randomX = Math.random() * (window.innerWidth - svg.clientWidth);
-                    const randomY = Math.random() * -window.innerHeight;
-
-                    svg.style.left = `${randomX}px`;
-                    svg.style.top = `${randomY}px`;
-
-                    svg.style.visibility = 'hidden';
-                    fall();
-                }
-
-                resetPosition();
-                setTimeout(() => {
-                    svg.style.visibility = 'visible';
-                    fall();
-                }, i * 100);
+            gsap.to(svg, {
+                y: "100vh",
+                duration: 2 + Math.random() * 3,
+                ease: "power1.inOut",
+                onComplete: () => {
+                    gsap.set(svg, {display: "none"}); // SVG'yi gizle
+                    checkIfAllHidden(); // Tüm SVG'ler gizlendi mi kontrol et
+                },
             });
         }
 
-        function clearAllBalls() {
-            svgSets.forEach((set) => {
-                set.forEach((svg) => {
-                    svg.style.opacity = 0;
-                });
-            });
+        function checkIfAllHidden() {
+            const allHidden = Array.from(svgElements).every(svg => gsap.getProperty(svg, 'display') === 'none');
+            if (allHidden) {
+                // Tüm SVG'ler gizlendiyse animasyonu durdur
+                gsap.globalTimeline.pause();
+            }
         }
 
-        animateSet(svgSets[0]);
-
-        let setIndex = 1;
-        const intervalId = setInterval(() => {
-            animateSet(svgSets[setIndex]);
-            setIndex = 1 - setIndex;
-
-            // Durdurmak için bu satırı ekleyin
-            clearInterval(intervalId);
-
-            // Tüm toplar düştükten sonra temizle
-            setTimeout(clearAllBalls, 5000);
-        }, 5000);
+        svgElements.forEach((svg, i) => {
+            gsap.set(svg, {x: Math.random() * window.innerWidth, y: -Math.random() * window.innerHeight});
+            animateSVG(svg);
+        });
     });
+
 </script>
 </body>
 
