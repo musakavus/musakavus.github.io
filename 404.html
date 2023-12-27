@@ -127,7 +127,7 @@
 
     <!-- Diğer svg objeleri buraya ekleyin -->
 </div>
-<div class="slider2">
+<div class="slider2" style="position: relative">
     <object data="img/crypto-logos/btc_svg.svg" type="image/svg+xml" class="falling-svg1 btcethusdt"></object>
     <object data="img/crypto-logos/bnb-bnb-logo.svg" type="image/svg+xml" class="falling-svg1 btcethusdt"></object>
     <object data="img/crypto-logos/tether-usdt-logo.svg" type="image/svg+xml" class="falling-svg1 btcethusdt"></object>
@@ -145,7 +145,7 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-6 forzerofor_left">
+        <div class="col-12 col-md-6 forzerofor_left">
             <div class="forzerofor_text_area">
                 <p class="looklike">
                     Looks like you're lost. Perhaps you stumbled into a crypto maze. Turn back, go to the homepage, and
@@ -155,7 +155,7 @@
                                                                           alt="">Home Page</span></a>
             </div>
         </div>
-        <div class="col-6 forzerofor_right">
+        <div class="col-12 col-md-6 forzerofor_right">
             <div class="forzerofor_number_area">
                 <p class="top_notfound">oops</p>
                 <p class="middle_notfound">404</p>
@@ -188,11 +188,11 @@
             const bounceHeight = 50;
 
             gsap.to(svg, {
-                y: "87vh",
+                y: "100vh",
                 duration: 2 + Math.random() * 3,
                 ease: "power1.inOut",
                 onComplete: () => {
-                    gsap.set(svg, {display: "block"}); // SVG'yi gizle
+                    gsap.set(svg, {display: "none"}); // SVG'yi gizle
                     checkIfAllHidden1(); // Tüm SVG'ler gizlendi mi kontrol et
                 },
             });

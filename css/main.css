@@ -10348,7 +10348,8 @@ body {
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
-        line-height: normal; }
+        line-height: normal;
+        font-family: "Roboto", monospace; }
       body .forzerofor_left .forzerofor_text_area a {
         color: #FFB352;
         font-size: 16px;
@@ -12361,6 +12362,10 @@ body {
       /* Özel stil kuralları buraya gelecek */ }
       body .budget_wrapper {
         padding: 1rem 2rem !important; }
+      body .forzerofor_left {
+        height: 50vh; }
+      body .forzerofor_right {
+        height: 50vh; }
       body .steps_elemantor section {
         padding: 36px 0 !important; }
         body .steps_elemantor section .steps_content_area {
@@ -12602,6 +12607,14 @@ body {
       padding: 8px 16px !important;
       height: auto;
       border-radius: 4px; }
+    body .forzerofor_left {
+      height: 50vh; }
+      body .forzerofor_left .forzerofor_text_area {
+        width: 75%; }
+        body .forzerofor_left .forzerofor_text_area .looklike {
+          font-weight: 300 !important; }
+    body .forzerofor_right {
+      height: 50vh; }
     body .btn-transparent {
       padding: 6px 16px; }
     body .supplied_top {

@@ -67,6 +67,7 @@ body {
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        font-family: "Roboto", monospace;
       }
 
       a {
@@ -76,6 +77,7 @@ body {
         font-weight: 500;
         line-height: normal;
         border: none;
+
       }
     }
 
@@ -3133,6 +3135,7 @@ body {
 
     }
 
+
     .elemantor {
 
       .elemantor_content_inside {
@@ -3326,6 +3329,14 @@ body {
 
     .budget_wrapper {
       padding: 1rem 2rem !important;
+    }
+
+    .forzerofor_left {
+      height: 50vh;
+    }
+
+    .forzerofor_right {
+      height: 50vh;
     }
 
 
@@ -3870,6 +3881,23 @@ body {
       border-radius: 4px;
 
     }
+
+    .forzerofor_left {
+      height: 50vh;
+
+      .forzerofor_text_area {
+        width: 75%;
+
+        .looklike {
+          font-weight: 300 !important;
+        }
+      }
+    }
+
+    .forzerofor_right {
+      height: 50vh;
+    }
+
 
     .btn-transparent {
       padding: 6px 16px;
