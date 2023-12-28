@@ -12830,6 +12830,8 @@ body {
         margin-top: 16px; }
       body .chart_elements_wrapper {
         margin-top: 16px; }
+        body .chart_elements_wrapper .chart_area .chart_elements_top {
+          padding: 12px 6px; }
       body .sidebar_wrapper {
         display: block !important;
         height: 100% !important; }

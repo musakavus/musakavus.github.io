@@ -4234,6 +4234,13 @@ body {
 
     .chart_elements_wrapper {
       margin-top: 16px;
+
+      .chart_area {
+
+        .chart_elements_top {
+          padding: 12px 6px !important;
+        }
+      }
     }
 
     .sidebar_wrapper {
