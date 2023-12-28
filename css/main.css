@@ -12844,6 +12844,8 @@ body {
       padding: 0 12px !important; }
     body .input-group {
       height: auto !important; }
+    body .adress_wrapper {
+      padding-inline: 1rem; }
     body .news_detail_wrapper .bottom_info {
       flex-direction: column;
       gap: 1rem; }
