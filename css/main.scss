@@ -4268,6 +4268,21 @@ body {
       padding-inline: 1rem;
     }
 
+    .social_media_wrapper {
+      display: flex;
+      gap: 1rem;
+
+      svg {
+        width: 36px !important;
+        height: 36px !important;
+      }
+
+      img {
+        width: 36px !important;
+        height: 36px !important;
+      }
+    }
+
     .news_detail_wrapper {
       .bottom_info {
         flex-direction: column;

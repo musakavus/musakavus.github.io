@@ -12846,6 +12846,15 @@ body {
       height: auto !important; }
     body .adress_wrapper {
       padding-inline: 1rem; }
+    body .social_media_wrapper {
+      display: flex;
+      gap: 1rem; }
+      body .social_media_wrapper svg {
+        width: 36px !important;
+        height: 36px !important; }
+      body .social_media_wrapper img {
+        width: 36px !important;
+        height: 36px !important; }
     body .news_detail_wrapper .bottom_info {
       flex-direction: column;
       gap: 1rem; }
