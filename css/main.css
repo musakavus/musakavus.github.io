@@ -10319,6 +10319,8 @@ body {
       padding: 1rem;
       border-radius: 8px;
       background: var(--Dark-Blue, #091835); }
+      body .card-wrapper .card .card-img-top {
+        height: auto; }
       body .card-wrapper .card .card-body .news_tag a {
         color: var(--Light-Orange, #FFB352);
         font-family: "Roboto", monospace;
