@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
           rel="stylesheet">
     <script src="js/main.js"></script>
+
 </head>
 <body>
 
@@ -136,11 +137,11 @@
 
                     <ul id="sub_men" class="sub_menu" role="menu">
                         <li><a href="chart.html">Chart</a></li>
-                                <li><a href="news.html">News</a></li>
+                        <li><a href="news.html">News</a></li>
                         <li><a href="wallet.html">Wallet</a></li>
                         <li><a href="graphic_detail.html">Graphic Detail</a></li>
                         <li><a href="transactions.html">Transaction</a></li>
-                                <li><a href="404.html">404</a></li>
+                        <li><a href="404.html">404</a></li>
                         <li><a target="_blank" href="https://github.com/musakavus">Github</a></li>
                     </ul>
                 </li>
@@ -509,15 +510,18 @@
 
 
                 <div class="btn-group d-flex justify-content-center pt-5">
-                    <button class="btn_first text-center border border-0" style="border-radius: 0 !important;">Monthly
+                    <button class="btn_first active text-center border border-0" onclick="showMonthlyPlans()"
+                            style="border-radius: 0 !important;">
+                        Monthly
                         Plan
                     </button>
-                    <button class="btn_first text-center border border-0" style="border-radius: 0 !important;">Yearly
+                    <button class="btn_first text-center border border-0" onclick="showYearlyPlans()"
+                            style="border-radius: 0 !important;">Yearly
                         Plan
                     </button>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 col-lg">
+                <div id="monthlyPlans" class="row">
+                    <div class="col-12 col-lg-6 card_wrapper">
                         <div class="card_area">
                             <div class="card_heading">
                                 <p>Gold</p>
@@ -526,6 +530,45 @@
                             <div class="line"></div>
                             <div class="card_price_group">
                                 <span class="big_price">$59</span>
+                                <span class="small_price">.99 / annualy</span>
+                            </div>
+                            <div class="checked_elements">
+                                <div class="text_group  d-flex align-items-center ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                         fill="none">
+                                        <path d="M0 0.952393H24V24.9524H0V0.952393Z" fill="white" fill-opacity="0.01"/>
+                                        <path d="M21 9.95239V20.4524C21 21.2808 20.3285 21.9524 19.5 21.9524H4.5C3.67158 21.9524 3 21.2808 3 20.4524V5.45239C3 4.62397 3.67158 3.95239 4.5 3.95239H16"
+                                              stroke="#FFB352" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.99902 10.9524L11.999 14.9524L20.999 3.95239" stroke="#FFB352"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Discounts and Special Offers</span>
+                                </div>
+                                <div class="text_group d-flex align-items-center ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                         fill="none">
+                                        <path d="M0 0.952393H24V24.9524H0V0.952393Z" fill="white" fill-opacity="0.01"/>
+                                        <path d="M21 9.95239V20.4524C21 21.2808 20.3285 21.9524 19.5 21.9524H4.5C3.67158 21.9524 3 21.2808 3 20.4524V5.45239C3 4.62397 3.67158 3.95239 4.5 3.95239H16"
+                                              stroke="#FFB352" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.99902 10.9524L11.999 14.9524L20.999 3.95239" stroke="#FFB352"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Early Access</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 card_wrapper">
+                        <div class="card_area">
+                            <div class="card_heading">
+                                <p>Diamond</p>
+                            </div>
+                            <p>Perfect for small marketing teams</p>
+                            <div class="line"></div>
+                            <div class="card_price_group">
+                                <span class="big_price">$99</span>
                                 <span class="small_price">.99 / annualy</span>
                             </div>
                             <div class="checked_elements">
@@ -571,13 +614,54 @@
                                         <path d="M6.99902 10.9524L11.999 14.9524L20.999 3.95239" stroke="#FFB352"
                                               stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
-                                    <span class="flex-wrap">Educational Resources</span>
+                                    <span>Educational Resources</span>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <div class="col-md-12 col-lg">
+                </div>
+                <div id="yearlyPlans" style="display: none" class="row">
+                    <div class="col-12 col-lg-6 card_wrapper">
+                        <div class="card_area">
+                            <div class="card_heading">
+                                <p>Gold</p>
+                            </div>
+                            <p>Perfect for small marketing teams</p>
+                            <div class="line"></div>
+                            <div class="card_price_group">
+                                <span class="big_price">$129</span>
+                                <span class="small_price">.99 / annualy</span>
+                            </div>
+                            <div class="checked_elements">
+                                <div class="text_group  d-flex align-items-center ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                         fill="none">
+                                        <path d="M0 0.952393H24V24.9524H0V0.952393Z" fill="white" fill-opacity="0.01"/>
+                                        <path d="M21 9.95239V20.4524C21 21.2808 20.3285 21.9524 19.5 21.9524H4.5C3.67158 21.9524 3 21.2808 3 20.4524V5.45239C3 4.62397 3.67158 3.95239 4.5 3.95239H16"
+                                              stroke="#FFB352" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.99902 10.9524L11.999 14.9524L20.999 3.95239" stroke="#FFB352"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Discounts and Special Offers</span>
+                                </div>
+                                <div class="text_group d-flex align-items-center ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+                                         fill="none">
+                                        <path d="M0 0.952393H24V24.9524H0V0.952393Z" fill="white" fill-opacity="0.01"/>
+                                        <path d="M21 9.95239V20.4524C21 21.2808 20.3285 21.9524 19.5 21.9524H4.5C3.67158 21.9524 3 21.2808 3 20.4524V5.45239C3 4.62397 3.67158 3.95239 4.5 3.95239H16"
+                                              stroke="#FFB352" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.99902 10.9524L11.999 14.9524L20.999 3.95239" stroke="#FFB352"
+                                              stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span>Early Access</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 card_wrapper">
                         <div class="card_area">
                             <div class="card_heading">
                                 <p>Diamond</p>
@@ -585,7 +669,7 @@
                             <p>Perfect for small marketing teams</p>
                             <div class="line"></div>
                             <div class="card_price_group">
-                                <span class="big_price">$99</span>
+                                <span class="big_price">$199</span>
                                 <span class="small_price">.99 / annualy</span>
                             </div>
                             <div class="checked_elements">
@@ -764,6 +848,28 @@
 <script src="js/jquery-3.3.1.slim.min.js"></script>
 <script src="js/plugins/flipclock.min.js"></script>
 <script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".btn-group .btn_first").click(function () {
+            $(".btn-group .btn_first").removeClass("active");
+            $(this).addClass("active");
+        });
+    });
+</script>
+
+<script>
+    function showMonthlyPlans() {
+        document.getElementById('monthlyPlans').style.display = 'flex';
+        document.getElementById('yearlyPlans').style.display = 'none';
+    }
+
+    function showYearlyPlans() {
+        document.getElementById('monthlyPlans').style.display = 'none';
+        document.getElementById('yearlyPlans').style.display = 'flex';
+    }
+</script>
+
 
 
 </html>

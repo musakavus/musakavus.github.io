@@ -10669,7 +10669,7 @@ body {
     font-weight: 500;
     line-height: normal;
     border: none;
-    transition: all 1s ease-out 0s; }
+    transition: all 0.5s ease-out; }
   body .btn_first:hover {
     background: linear-gradient(80deg, #8E44AD 0%, #FFB352 98.38%);
     color: white; }
@@ -11189,79 +11189,93 @@ body {
         line-height: normal; }
       body .packets_elemantor section .btn-group {
         text-align: center; }
+        body .packets_elemantor section .btn-group .active {
+          background: linear-gradient(80deg, #8E44AD 0%, #FFB352 98.38%);
+          color: white;
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+          transform: scale(1.1);
+          /* Büyüklük efekti */
+          transition: transform 0.3s ease-out; }
       body .packets_elemantor section .row {
         display: flex;
-        align-items: flex-start;
-        gap: 32px;
+        flex-wrap: wrap;
+        justify-content: center;
         margin-top: 64px; }
-        body .packets_elemantor section .row .card_area {
-          flex: 1 0 0;
-          border-radius: 8px;
-          background: var(--Light-Blue, #1C2D4A);
-          padding: 48px 48px;
-          max-width: 100%;
-          overflow: hidden; }
-          body .packets_elemantor section .row .card_area .card_heading p {
-            flex-shrink: 0;
-            color: #FFB352;
-            font-family: "Roboto", monospace;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal; }
-          body .packets_elemantor section .row .card_area .line {
-            height: 1px;
-            opacity: 0.2;
-            background: #FFF; }
-          body .packets_elemantor section .row .card_area .card_price_group {
-            margin: 24px 0;
-            flex-shrink: 0;
-            color: #FFB352;
-            font-family: "Roboto", monospace;
-            font-size: 15px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            opacity: 0.8; }
-            body .packets_elemantor section .row .card_area .card_price_group .big_price {
+        body .packets_elemantor section .row .card_wrapper {
+          flex: 1;
+          margin: 10px; }
+          body .packets_elemantor section .row .card_wrapper .card_area {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            flex: 1 0 0;
+            border-radius: 8px;
+            background: var(--Light-Blue, #1C2D4A);
+            padding: 48px 48px;
+            max-width: 100%;
+            overflow: hidden; }
+            body .packets_elemantor section .row .card_wrapper .card_area .card_heading p {
+              flex-shrink: 0;
               color: #FFB352;
-              text-align: center;
               font-family: "Roboto", monospace;
-              font-size: 40px;
+              font-size: 24px;
               font-style: normal;
-              font-weight: 700;
+              font-weight: 600;
               line-height: normal; }
-            body .packets_elemantor section .row .card_area .card_price_group .small_price {
+            body .packets_elemantor section .row .card_wrapper .card_area .line {
+              height: 1px;
+              opacity: 0.2;
+              background: #FFF; }
+            body .packets_elemantor section .row .card_wrapper .card_area .card_price_group {
+              margin: 24px 0;
               flex-shrink: 0;
               color: #FFB352;
               font-family: "Roboto", monospace;
               font-size: 15px;
               font-style: normal;
               font-weight: 400;
-              line-height: 200.391%;
-              /* 30.059px */ }
-          body .packets_elemantor section .row .card_area .checked_elements {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap; }
-            body .packets_elemantor section .row .card_area .checked_elements .text_group {
-              padding: 4px 0;
-              display: flex;
-              align-items: center;
-              margin-right: 20px; }
-              body .packets_elemantor section .row .card_area .checked_elements .text_group svg {
-                width: 24px;
-                height: 24px;
-                flex-shrink: 0; }
-              body .packets_elemantor section .row .card_area .checked_elements .text_group span {
+              line-height: normal;
+              opacity: 0.8; }
+              body .packets_elemantor section .row .card_wrapper .card_area .card_price_group .big_price {
                 color: #FFB352;
+                text-align: center;
+                font-family: "Roboto", monospace;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal; }
+              body .packets_elemantor section .row .card_wrapper .card_area .card_price_group .small_price {
                 flex-shrink: 0;
+                color: #FFB352;
                 font-family: "Roboto", monospace;
                 font-size: 15px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: normal; }
+                line-height: 200.391%;
+                /* 30.059px */ }
+            body .packets_elemantor section .row .card_wrapper .card_area .checked_elements {
+              display: flex;
+              flex-direction: column;
+              flex-wrap: wrap; }
+              body .packets_elemantor section .row .card_wrapper .card_area .checked_elements .text_group {
+                padding: 4px 0;
+                display: flex;
+                align-items: center;
+                margin-right: 20px; }
+                body .packets_elemantor section .row .card_wrapper .card_area .checked_elements .text_group svg {
+                  width: 24px;
+                  height: 24px;
+                  flex-shrink: 0; }
+                body .packets_elemantor section .row .card_wrapper .card_area .checked_elements .text_group span {
+                  color: #FFB352;
+                  flex-shrink: 0;
+                  font-family: "Roboto", monospace;
+                  font-size: 15px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal; }
   body .footer {
+    padding-bottom: 1rem;
     background: var(--Light-Blue, #1C2D4A); }
     body .footer .footer-top {
       margin-top: 24px;
@@ -12396,6 +12410,8 @@ body {
           flex-shrink: 0;
           color: #FFFFFF;
           padding: 0; }
+      body .card_wrapper {
+        flex: auto !important; }
       body .news-top-wrapper {
         flex-direction: column; }
       body .elemantor .elemantor_content_inside {
@@ -12534,6 +12550,8 @@ body {
           body .header_main .phone_menu .menu_line {
             flex-shrink: 0;
             fill: #FFF; }
+      body .card_wrapper {
+        flex: auto !important; }
       body .elemantor .elemantor_content .elemantor_content_inside {
         margin-left: 1rem !important; }
         body .elemantor .elemantor_content .elemantor_content_inside p:first-child {
@@ -12571,8 +12589,10 @@ body {
         padding: 24px 8px !important; }
         body .packets_elemantor section .no_contrats {
           margin: auto !important; }
-      body .packets_elemantor .row .card_area {
-        padding: 48px 24px !important; }
+      body .packets_elemantor .row .card_wrapper {
+        flex: auto; }
+        body .packets_elemantor .row .card_wrapper .card_area {
+          padding: 48px 24px !important; }
       body .chart_right_area .elements_wallet_wrapper .budiv .wallet_elements {
         border-radius: 8px;
         justify-content: space-between; }
