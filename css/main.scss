@@ -105,9 +105,17 @@ body {
 
     }
 
+    .latest_head {
+      color: #FFF;
+      font-family: "Roboto", monospace;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-top: 1rem;
+    }
 
     .lates_card-wrapper {
-      padding-top: 1rem;
       padding-bottom: 1rem;
 
       .card {

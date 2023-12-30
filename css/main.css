@@ -10370,8 +10370,15 @@ body {
           color: white;
           background: #FFB352;
           border: none; }
+  body .news-card .latest_head {
+    color: #FFF;
+    font-family: "Roboto", monospace;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 1rem; }
   body .news-card .lates_card-wrapper {
-    padding-top: 1rem;
     padding-bottom: 1rem; }
     body .news-card .lates_card-wrapper .card {
       background: var(--Dark-Blue, #091835); }
@@ -12830,8 +12837,6 @@ body {
         margin-top: 16px; }
       body .chart_elements_wrapper {
         margin-top: 16px; }
-        body .chart_elements_wrapper .chart_area .chart_elements_top {
-          padding: 12px 6px !important; }
       body .sidebar_wrapper {
         display: block !important;
         height: 100% !important; }
