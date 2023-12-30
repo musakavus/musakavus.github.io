@@ -625,7 +625,7 @@ body {
     align-items: center;
     flex-shrink: 0;
     border-radius: 8px;
-    background: linear-gradient(80deg, #FFB352 0%, #9747FF 98.38%);
+    background: #FFB352;
     color: #FFF;
     font-family: "Roboto", monospace;
     font-size: 16px;
@@ -638,7 +638,7 @@ body {
   }
 
   .btn_first:hover {
-    background: linear-gradient(80deg, #8E44AD 0%, #FFB352 98.38%);
+    background: #F7931A;
     color: white;
 
   }
@@ -1847,7 +1847,7 @@ body {
           .rect {
             display: flex;
             border-radius: 8px;
-            background: linear-gradient(180deg, #FFB352 0%, #9747FF 100%);
+            background: #FFB352;
             padding: 16px 32px;
 
             img {
@@ -1937,7 +1937,7 @@ body {
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        background: linear-gradient(180deg, #9747FF 7.22%, #FFB352 100%);
+        background: white;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -1975,7 +1975,7 @@ body {
           font-size: 14px;
           display: inline-block;
           font-family: "Roboto", monospace;
-          background: linear-gradient(180deg, #9747FF 7.22%, #FFB352 100%);
+          background: #FFB352;
           background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -2032,7 +2032,7 @@ body {
         line-height: normal;
 
         a {
-          background: linear-gradient(180deg, #FFB352 0%, #9747FF 100%);
+          background: #FFB352;
           background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;

@@ -10704,7 +10704,7 @@ body {
     align-items: center;
     flex-shrink: 0;
     border-radius: 8px;
-    background: linear-gradient(80deg, #FFB352 0%, #9747FF 98.38%);
+    background: #FFB352;
     color: #FFF;
     font-family: "Roboto", monospace;
     font-size: 16px;
@@ -10714,7 +10714,7 @@ body {
     border: none;
     transition: all 0.5s ease-out; }
   body .btn_first:hover {
-    background: linear-gradient(80deg, #8E44AD 0%, #FFB352 98.38%);
+    background: #F7931A;
     color: white; }
   body .background_color_main {
     background: #071838; }
@@ -11520,7 +11520,7 @@ body {
           body .login_row .signup_area .login_with_btn_area .logo .rect {
             display: flex;
             border-radius: 8px;
-            background: linear-gradient(180deg, #FFB352 0%, #9747FF 100%);
+            background: #FFB352;
             padding: 16px 32px; }
             body .login_row .signup_area .login_with_btn_area .logo .rect img {
               width: 24px;
@@ -11578,7 +11578,7 @@ body {
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        background: linear-gradient(180deg, #9747FF 7.22%, #FFB352 100%);
+        background: white;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
@@ -11603,7 +11603,7 @@ body {
         font-size: 14px;
         display: inline-block;
         font-family: "Roboto", monospace;
-        background: linear-gradient(180deg, #9747FF 7.22%, #FFB352 100%);
+        background: #FFB352;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; }
@@ -11646,7 +11646,7 @@ body {
         font-weight: 400;
         line-height: normal; }
         body .login_row .signup_area .direct_to_signup a {
-          background: linear-gradient(180deg, #FFB352 0%, #9747FF 100%);
+          background: #FFB352;
           background-clip: text;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
