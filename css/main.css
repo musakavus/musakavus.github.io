@@ -12470,6 +12470,11 @@ body {
         flex-shrink: 0;
         color: #FFFFFF;
         padding: 0; }
+      body .maybe_like {
+        flex-direction: column;
+        gap: 1rem; }
+        body .maybe_like .pagination .active .page-link {
+          background: #FFB352; }
       body .sidebar_wrapper .menu-lists {
         margin-top: 2.5rem; }
       body .sidebar_wrapper .search_area {
@@ -12545,8 +12550,11 @@ body {
           flex-shrink: 0;
           color: #FFFFFF;
           padding: 0; }
-      body .maybe_like .maybe_like_card {
+      body .maybe_like {
+        flex-direction: column;
         gap: 1rem; }
+        body .maybe_like .pagination .active .page-link {
+          background: #FFB352; }
       body .card_wrapper {
         flex: auto !important; }
       body .news-top-wrapper {
@@ -12641,6 +12649,13 @@ body {
         height: 50vh; }
       body .forzerofor_right {
         height: 50vh; }
+      body .maybe_like {
+        flex-direction: column;
+        gap: 1rem; }
+        body .maybe_like .maybe_like_card {
+          gap: 1rem; }
+        body .maybe_like .pagination .active .page-link {
+          background: #FFB352; }
       body .news-top-wrapper {
         flex-direction: column; }
       body .steps_elemantor section {
@@ -12889,6 +12904,13 @@ body {
       width: 50px !important; }
     body .countdown-clock {
       margin: 24px auto; }
+    body .maybe_like {
+      flex-direction: column;
+      gap: 1rem; }
+      body .maybe_like .maybe_like_card {
+        gap: 1rem; }
+      body .maybe_like .pagination .active .page-link {
+        background: #FFB352; }
     body .progress-bar {
       padding: 0 12px !important; }
     body .input-group {
