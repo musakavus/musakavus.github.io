@@ -12374,6 +12374,46 @@ body {
         body .news_detail_wrapper .bottom_info .share_area .social-media-icon {
           display: flex;
           gap: 0.5rem; }
+  body .maybe_like {
+    display: flex;
+    align-items: center;
+    padding-bottom: 3rem; }
+    body .maybe_like .maybe_like_card {
+      display: flex;
+      justify-content: center; }
+      body .maybe_like .maybe_like_card .card-wrapper .card {
+        height: 100%;
+        background: #FFB352; }
+        body .maybe_like .maybe_like_card .card-wrapper .card .card-body h5, body .maybe_like .maybe_like_card .card-wrapper .card .card-body .h5 {
+          color: rgba(255, 255, 255, 0.5);
+          font-family: "Roboto", monospace;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal; }
+        body .maybe_like .maybe_like_card .card-wrapper .card .card-body .maybe-text {
+          color: #FFF;
+          font-family: "Roboto", monospace;
+          font-size: 16px;
+          font-style: normal;
+          line-height: normal;
+          font-weight: 400; }
+        body .maybe_like .maybe_like_card .card-wrapper .card .card-body .date-time {
+          color: #FFF;
+          font-family: "Roboto", monospace;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal; }
+        body .maybe_like .maybe_like_card .card-wrapper .card .card-img-top {
+          height: 12rem; }
+      body .maybe_like .maybe_like_card .card-wrapper:hover {
+        transform: scale(1.05);
+        /* Kartın boyutunu 1.05 kat büyüt */
+        transition: transform 0.3s ease; }
+    body .maybe_like .svg_icon:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease; }
   @media (min-width: 992px) and (max-width: 1200px) {
     body .middle_menu {
       display: none !important; }

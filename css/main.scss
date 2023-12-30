@@ -3237,6 +3237,75 @@ body {
 
   }
 
+  .maybe_like {
+    display: flex;
+    align-items: center;
+    padding-bottom: 3rem;
+
+
+    .maybe_like_card {
+      display: flex;
+      justify-content: center;
+
+      .card-wrapper {
+        .card {
+          height: 100%;
+          background: #FFB352;
+
+
+          .card-body {
+            h5 {
+              color: rgba(255, 255, 255, 0.50);
+
+              font-family: "Roboto", monospace;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            }
+
+            .maybe-text {
+              color: #FFF;
+
+              font-family: "Roboto", monospace;
+              font-size: 16px;
+              font-style: normal;
+              line-height: normal;
+              font-weight: 400;
+            }
+
+            .date-time {
+              color: #FFF;
+              font-family: "Roboto", monospace;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            }
+          }
+
+          .card-img-top {
+            height: 12rem;
+          }
+        }
+      }
+
+      .card-wrapper:hover {
+        transform: scale(1.05); /* Kartın boyutunu 1.05 kat büyüt */
+        transition: transform 0.3s ease;
+      }
+
+
+    }
+
+    .svg_icon:hover {
+
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
+
+    }
+  }
+
   @media (min-width: 992px) and (max-width: 1200px) {
     .middle_menu {
       display: none !important;
