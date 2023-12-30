@@ -10312,9 +10312,23 @@ body {
   list-style-type: none;
   text-underline: none;
   text-decoration: none; }
-  body .contact_area .get_intouch {
-    background: none;
-    border: none; }
+  body .contact_area {
+    margin-block: 3rem; }
+    body .contact_area .get_intouch {
+      background: none;
+      border: none; }
+  body .signup_wrapper {
+    padding-block: 3rem; }
+  body .chart_wrapper {
+    padding-block: 3rem; }
+  body .wallet_wrapper {
+    padding-block: 3rem; }
+  body .graphic_wrapper {
+    padding-block: 3rem; }
+  body .transaction_wrapper {
+    padding-block: 3rem; }
+  body .signin_wrapper {
+    padding-block: 3rem; }
   body .pagination {
     display: flex;
     justify-content: center; }
@@ -11493,211 +11507,208 @@ body {
                 line-height: normal;
                 text-decoration: none;
                 text-underline: none; }
-  body .login_row {
-    padding-bottom: 145px;
-    padding-top: 100px; }
-    body .login_row .signup_area {
+  body .login_row .signup_area {
+    display: flex;
+    padding: 2.5rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(20, 36, 66, 0.8); }
+    body .login_row .signup_area .login_with_btn_area {
       display: flex;
-      padding: 2.5rem 2rem;
-      flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      gap: 16px;
-      flex-shrink: 0;
+      align-content: center;
+      flex-wrap: wrap;
       border-radius: 8px;
-      background: rgba(20, 36, 66, 0.8); }
-      body .login_row .signup_area .login_with_btn_area {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
-        border-radius: 8px;
-        background: #071838;
-        -webkit-border-radius: 6px;
-        -moz-border-radius: 6px;
-        position: relative;
-        z-index: 1;
-        overflow: hidden;
-        font-size: 16px;
-        padding-right: 5rem;
-        transition: all 0.3s ease-out 0s; }
-        body .login_row .signup_area .login_with_btn_area .logo {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 10px; }
-          body .login_row .signup_area .login_with_btn_area .logo .rect {
-            display: flex;
-            border-radius: 8px;
-            background: #FFB352;
-            padding: 16px 32px; }
-            body .login_row .signup_area .login_with_btn_area .logo .rect img {
-              width: 24px;
-              height: 24px; }
-        body .login_row .signup_area .login_with_btn_area span {
-          flex: 1 0 0;
-          color: #FFF;
-          text-align: center;
-          font-family: "Roboto", monospace;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
-          margin-left: 1rem; }
-      body .login_row .signup_area .input-group {
-        height: 64px; }
-        body .login_row .signup_area .input-group input {
-          background: #071838;
-          border: none;
-          color: #bdc3c7; }
-        body .login_row .signup_area .input-group ::placeholder {
-          color: #FFF;
-          opacity: 0.5;
-          font-family: "Roboto", monospace;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal; }
-        body .login_row .signup_area .input-group span {
-          border: none;
-          background: #071838; }
-      body .login_row .signup_area .login_text_explain {
-        display: flex;
-        align-items: center;
-        gap: 31px;
-        margin-bottom: 0;
-        position: relative; }
-        body .login_row .signup_area .login_text_explain .line_left {
-          width: 30px;
-          height: 1px;
-          background: #62688F; }
-        body .login_row .signup_area .login_text_explain span {
-          color: #FFF;
-          font-family: "Roboto", monospace;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal; }
-        body .login_row .signup_area .login_text_explain .line_right {
-          width: 30px;
-          height: 1px;
-          background: #62688F; }
-      body .login_row .signup_area .forgot_text {
-        font-family: "Roboto", monospace;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        background: white;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent; }
-      body .login_row .signup_area .login_logo img {
-        width: 64px;
-        height: 64px; }
-      body .login_row .signup_area .sign__action input {
-        margin: 0;
-        display: block;
-        width: 14px;
-        height: 14px;
-        background: transparent;
-        border: 1px solid #7a797f;
-        outline: none;
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        border-radius: 4px;
-        transition: all 0.3s ease-out 0s; }
-      body .login_row .signup_area .sign__action label {
-        padding-left: 10px;
-        font-size: 14px;
-        display: inline-block;
-        font-family: "Roboto", monospace;
-        background: #FFB352;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent; }
-        body .login_row .signup_area .sign__action label a {
-          color: #0e1133;
-          font-weight: 500;
-          outline: none;
-          border: none;
-          transition: all 0.3s ease-out 0s;
-          text-decoration: none; }
-      body .login_row .signup_area .contact__form-input {
-        line-height: 1.1;
-        resize: none;
-        transition: all 0.3s ease-out 0s;
-        flex: 0 0 auto;
-        width: 100%; }
-        body .login_row .signup_area .contact__form-input ::placeholder {
-          color: #FFFFFF;
-          opacity: 0.8; }
-        body .login_row .signup_area .contact__form-input textarea {
-          width: 100%;
-          height: 150px;
-          line-height: 54px;
-          padding: 0 23px;
-          background: #071838;
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          border-radius: 4px;
-          color: #FFFFFF;
-          font-size: 15px;
-          margin-bottom: 20px;
-          border: none;
-          resize: none;
-          outline: none; }
-      body .login_row .signup_area .direct_to_signup {
-        color: #FFF;
-        font-family: "Roboto", monospace;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal; }
-        body .login_row .signup_area .direct_to_signup a {
-          background: #FFB352;
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          font-family: Roboto, monospace;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal; }
-      body .login_row .signup_area .adress_wrapper .adress_1 {
-        padding: 24px 0; }
-        body .login_row .signup_area .adress_wrapper .adress_1 .adress_heading {
-          color: #FFF;
-          font-family: "Roboto", monospace;
-          font-size: 24px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal; }
-        body .login_row .signup_area .adress_wrapper .adress_1 .adress_long {
-          color: rgba(255, 255, 255, 0.8);
-          font-family: "Roboto", monospace;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-          text-decoration-line: underline; }
-      body .login_row .signup_area .follow_wrapper {
-        margin-block: 2.5rem;
+      background: #071838;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      font-size: 16px;
+      padding-right: 5rem;
+      transition: all 0.3s ease-out 0s; }
+      body .login_row .signup_area .login_with_btn_area .logo {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 16px;
+        gap: 10px; }
+        body .login_row .signup_area .login_with_btn_area .logo .rect {
+          display: flex;
+          border-radius: 8px;
+          background: #FFB352;
+          padding: 16px 32px; }
+          body .login_row .signup_area .login_with_btn_area .logo .rect img {
+            width: 24px;
+            height: 24px; }
+      body .login_row .signup_area .login_with_btn_area span {
+        flex: 1 0 0;
+        color: #FFF;
+        text-align: center;
+        font-family: "Roboto", monospace;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-left: 1rem; }
+    body .login_row .signup_area .input-group {
+      height: 64px; }
+      body .login_row .signup_area .input-group input {
+        background: #071838;
+        border: none;
+        color: #bdc3c7; }
+      body .login_row .signup_area .input-group ::placeholder {
+        color: #FFF;
+        opacity: 0.5;
+        font-family: "Roboto", monospace;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal; }
+      body .login_row .signup_area .input-group span {
+        border: none;
+        background: #071838; }
+    body .login_row .signup_area .login_text_explain {
+      display: flex;
+      align-items: center;
+      gap: 31px;
+      margin-bottom: 0;
+      position: relative; }
+      body .login_row .signup_area .login_text_explain .line_left {
+        width: 30px;
+        height: 1px;
+        background: #62688F; }
+      body .login_row .signup_area .login_text_explain span {
+        color: #FFF;
+        font-family: "Roboto", monospace;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; }
+      body .login_row .signup_area .login_text_explain .line_right {
+        width: 30px;
+        height: 1px;
+        background: #62688F; }
+    body .login_row .signup_area .forgot_text {
+      font-family: "Roboto", monospace;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      background: white;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    body .login_row .signup_area .login_logo img {
+      width: 64px;
+      height: 64px; }
+    body .login_row .signup_area .sign__action input {
+      margin: 0;
+      display: block;
+      width: 14px;
+      height: 14px;
+      background: transparent;
+      border: 1px solid #7a797f;
+      outline: none;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      transition: all 0.3s ease-out 0s; }
+    body .login_row .signup_area .sign__action label {
+      padding-left: 10px;
+      font-size: 14px;
+      display: inline-block;
+      font-family: "Roboto", monospace;
+      background: #FFB352;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+      body .login_row .signup_area .sign__action label a {
+        color: #0e1133;
+        font-weight: 500;
+        outline: none;
+        border: none;
+        transition: all 0.3s ease-out 0s;
+        text-decoration: none; }
+    body .login_row .signup_area .contact__form-input {
+      line-height: 1.1;
+      resize: none;
+      transition: all 0.3s ease-out 0s;
+      flex: 0 0 auto;
+      width: 100%; }
+      body .login_row .signup_area .contact__form-input ::placeholder {
+        color: #FFFFFF;
+        opacity: 0.8; }
+      body .login_row .signup_area .contact__form-input textarea {
+        width: 100%;
+        height: 150px;
+        line-height: 54px;
+        padding: 0 23px;
+        background: #071838;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #FFFFFF;
+        font-size: 15px;
+        margin-bottom: 20px;
+        border: none;
+        resize: none;
+        outline: none; }
+    body .login_row .signup_area .direct_to_signup {
+      color: #FFF;
+      font-family: "Roboto", monospace;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal; }
+      body .login_row .signup_area .direct_to_signup a {
+        background: #FFB352;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Roboto, monospace;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal; }
+    body .login_row .signup_area .adress_wrapper .adress_1 {
+      padding: 24px 0; }
+      body .login_row .signup_area .adress_wrapper .adress_1 .adress_heading {
         color: #FFF;
         font-family: "Roboto", monospace;
         font-size: 24px;
         font-style: normal;
         font-weight: 700;
         line-height: normal; }
-      body .login_row .signup_area .social_media_wrapper {
-        display: flex;
-        align-items: center;
-        gap: 1rem; }
+      body .login_row .signup_area .adress_wrapper .adress_1 .adress_long {
+        color: rgba(255, 255, 255, 0.8);
+        font-family: "Roboto", monospace;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: underline; }
+    body .login_row .signup_area .follow_wrapper {
+      margin-block: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      color: #FFF;
+      font-family: "Roboto", monospace;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal; }
+    body .login_row .signup_area .social_media_wrapper {
+      display: flex;
+      align-items: center;
+      gap: 1rem; }
   body .portfolio {
     border-radius: 12px;
     opacity: 0.9;
@@ -12543,8 +12554,8 @@ body {
         color: #FFFFFF;
         padding: 0; }
       body .get_intouch {
-        padding-bottom: 32px;
-        padding-top: 32px; }
+        padding-bottom: 32px !important;
+        padding-top: 32px !important; }
       body .maybe_like {
         flex-direction: column;
         gap: 1rem; }
@@ -12867,47 +12878,42 @@ body {
             body .footer .footer-top .footer_right .btn img {
               width: 36px;
               height: 36px; }
-      body .login_row {
-        padding-bottom: 50px;
-        padding-top: 50px; }
-        body .login_row .signup_area {
-          padding: 50px 0 45px;
-          margin: 0; }
-          body .login_row .signup_area .adress_wrapper {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center; }
-            body .login_row .signup_area .adress_wrapper .adress_1 {
-              padding: 12px 0 !important;
-              text-align: center; }
-          body .login_row .signup_area .follow_wrapper {
-            margin-top: 0 !important; }
-            body .login_row .signup_area .follow_wrapper p {
-              color: #FFF;
-              font-size: 24px;
-              font-style: normal;
-              font-weight: 700;
-              line-height: normal; }
-          body .login_row .signup_area .login_with_btn_area {
-            padding-right: 1rem !important;
-            text-align: left !important;
-            flex-wrap: nowrap; }
-        body .login_row .login_text_explain {
-          gap: 0 !important;
-          width: 100%;
-          justify-content: space-evenly; }
-        body .login_row .forgot_text {
-          margin: 0 24px;
-          text-align: center; }
-        body .login_row .input-group {
-          padding: 0 24px; }
-        body .login_row .contact__form-input {
-          padding: 0 24px; }
+      body .login_row .signup_area {
+        padding: 2rem 0;
+        margin: 0; }
+        body .login_row .signup_area .adress_wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center; }
+          body .login_row .signup_area .adress_wrapper .adress_1 {
+            padding: 12px 0 !important;
+            text-align: center; }
+        body .login_row .signup_area .follow_wrapper {
+          margin-top: 0 !important; }
+          body .login_row .signup_area .follow_wrapper p {
+            color: #FFF;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal; }
+        body .login_row .signup_area .login_with_btn_area {
+          padding-right: 1rem !important;
+          text-align: left !important;
+          flex-wrap: nowrap; }
+      body .login_row .login_text_explain {
+        gap: 0 !important;
+        width: 100%;
+        justify-content: space-evenly; }
+      body .login_row .forgot_text {
+        margin: 0 24px;
+        text-align: center; }
+      body .login_row .input-group {
+        padding: 0 24px; }
+      body .login_row .contact__form-input {
+        padding: 0 24px; }
       body .get_intouch {
-        padding-bottom: 0 !important;
-        padding-top: 0 !important;
-        margin-top: 32px; }
+        padding-block: 1rem !important; }
       body .transaction {
         padding: 24px 24px !important; }
         body .transaction .search_wrapper {

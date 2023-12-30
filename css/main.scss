@@ -14,12 +14,37 @@ body {
   text-underline: none;
 
   .contact_area {
+    margin-block: 3rem;
+
     .get_intouch {
       background: none;
       border: none;
     }
   }
 
+  .signup_wrapper {
+    padding-block: 3rem;
+  }
+
+  .chart_wrapper {
+    padding-block: 3rem;
+  }
+
+  .wallet_wrapper {
+    padding-block: 3rem;
+  }
+
+  .graphic_wrapper {
+    padding-block: 3rem;
+  }
+
+  .transaction_wrapper {
+    padding-block: 3rem;
+  }
+
+  .signin_wrapper {
+    padding-block: 3rem;
+  }
 
   .pagination {
     display: flex;
@@ -1836,8 +1861,6 @@ body {
   }
 
   .login_row {
-    padding-bottom: 145px;
-    padding-top: 100px;
 
     .signup_area {
       display: flex;
@@ -3534,8 +3557,8 @@ body {
     }
 
     .get_intouch {
-      padding-bottom: 32px;
-      padding-top: 32px;
+      padding-bottom: 32px !important;
+      padding-top: 32px !important;
 
     }
 
@@ -4276,11 +4299,8 @@ body {
     .login_row {
 
 
-      padding-bottom: 50px;
-      padding-top: 50px;
-
       .signup_area {
-        padding: 50px 0 45px;
+        padding: 2rem 0;
         margin: 0;
 
         .adress_wrapper {
@@ -4338,9 +4358,7 @@ body {
     }
 
     .get_intouch {
-      padding-bottom: 0 !important;
-      padding-top: 0 !important;
-      margin-top: 32px;
+      padding-block: 1rem !important;
 
     }
 
