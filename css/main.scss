@@ -13,6 +13,28 @@ body {
   list-style-type: none;
   text-underline: none;
 
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+
+    .active {
+      .page-link {
+        background: #FFB352;
+        color: #091835;
+
+      }
+    }
+
+    .page-item {
+
+      a {
+        color: #091835;
+      }
+
+    }
+  }
+
   .news-card {
     .card-wrapper {
       padding-top: 1rem;
@@ -2156,11 +2178,16 @@ body {
 
 
     .search_wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
       .search_control_area {
         border-radius: 25px;
         background: #1E3051;
 
         .input-group {
+          padding: 0;
 
           span {
             background: transparent;
@@ -2191,8 +2218,12 @@ body {
       }
 
       .filter_area {
+        display: flex;
+        align-items: center;
+        justify-content: end;
         gap: 8px;
       }
+
 
     }
 
@@ -2210,6 +2241,11 @@ body {
         }
 
 
+      }
+
+      .pagination {
+        display: flex;
+        justify-content: center;
       }
     }
 
@@ -4282,11 +4318,12 @@ body {
       padding: 24px 24px !important;
 
       .search_wrapper {
+        flex-direction: column;
+        gap: 1rem;
+
         .search_control_area {
           .input-group {
-            input {
-              height: 36px !important;
-            }
+
           }
         }
 
@@ -4295,6 +4332,8 @@ body {
         }
 
         .filter_area {
+          justify-content: space-between;
+
           .btn-transparent {
             gap: 0;
             padding: 5px 12px !important;
@@ -4311,14 +4350,17 @@ body {
             }
           }
         }
+
+
       }
     }
 
     .portfolio {
-      padding: 8px 0 !important;
+      padding: 1rem 1rem !important;
 
       .portfolio_wrapper {
         flex-direction: column;
+        padding-inline: 0.5rem !important;
 
         .portfolio_selection {
           text-align: center;
@@ -4456,6 +4498,13 @@ body {
 
     .countdown-clock {
       margin: 24px auto;
+    }
+
+    .portfolio_buttons {
+
+      .btn-transparent {
+        padding: 6px 12px !important;
+      }
     }
 
     .maybe_like {

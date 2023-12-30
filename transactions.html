@@ -135,12 +135,12 @@
 
                     <ul id="sub_men" class="sub_menu" role="menu">
                         <li><a href="chart.html">Chart</a></li>
-                                <li><a href="news.html">News</a></li>
-                                <li><a href="news-detail.html">News Detail</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="news-detail.html">News Detail</a></li>
                         <li><a href="wallet.html">Wallet</a></li>
                         <li><a href="graphic_detail.html">Graphic Detail</a></li>
                         <li><a href="transactions.html">Transaction</a></li>
-                                <li><a href="404.html">404</a></li>
+                        <li><a href="404.html">404</a></li>
                         <li><a target="_blank" href="https://github.com/musakavus">Github</a></li>
                     </ul>
                 </li>
@@ -197,7 +197,7 @@
     <div class="page_wrapper">
         <div class="container">
             <div class="row">
-                <div class="login_row">
+                <div class="login_row" style="padding-top: 48px;">
                     <h1 style="color: #FFF; font-size: 36px; font-style: normal; font-weight: 500; line-height: normal; text-align: center;">
                         Transaction</h1>
                     <div class="portfolio">
@@ -222,7 +222,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-8 d-flex justify-content-md-end justify-content-center portfolio_buttons">
+                            <div class="col-12 col-md-8 d-flex justify-content-md-end justify-content-between  portfolio_buttons">
                                 <button class="btn btn-transparent">Select Portfolio</button>
                                 <button class="btn btn-transparent">Add Wallet</button>
                             </div>
@@ -230,8 +230,8 @@
 
                     </div>
                     <div class="transaction">
-                        <div class="row search_wrapper d-flex align-items-center justify-content-center">
-                            <div class="col-4 col-md-6 col-lg-8 search_control_area">
+                        <div class="row search_wrapper">
+                            <div class="col-12 col-md-6 col-lg-8 search_control_area">
                                 <form class="d-flex flex-column">
                                     <div class="input-group">
                                     <span class="input-group-text" id="basic-addon1">
@@ -241,13 +241,13 @@
         fill="white"/>
 </svg>
                                     </span>
-                                        <input type="text" class="form-control" placeholder="Search  for transactions"
+                                        <input type="text" class="form-control" placeholder="search..."
                                                aria-label="transaction"
                                                aria-describedby="basic-addon1">
                                     </div>
                                 </form>
                             </div>
-                            <div class="col-8 col-md-6 col-lg-4 filter_area d-flex align-items-center justify-content-end ">
+                            <div class="col-12  col-md-6 col-lg-4 filter_area">
                                 <button class="btn btn-transparent float-start">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                                          fill="none">
@@ -470,6 +470,15 @@
                                 <!-- Diğer satırları ekleyebilirsiniz -->
                                 </tbody>
                             </table>
+                            <nav aria-label="...">
+                                <ul class="pagination pagination-sm">
+                                    <li class="page-item active" aria-current="page">
+                                        <span class="page-link">1</span>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                </ul>
+                            </nav>
                         </div>
                         <p class="table_info">Explore recent account activities to review your latest trades and
                             transactions. For any

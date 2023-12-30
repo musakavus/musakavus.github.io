@@ -10312,6 +10312,14 @@ body {
   list-style-type: none;
   text-underline: none;
   text-decoration: none; }
+  body .pagination {
+    display: flex;
+    justify-content: center; }
+    body .pagination .active .page-link {
+      background: #FFB352;
+      color: #091835; }
+    body .pagination .page-item a {
+      color: #091835; }
   body .news-card .card-wrapper {
     padding-top: 1rem;
     padding-bottom: 1rem; }
@@ -11729,31 +11737,43 @@ body {
     padding: 72px 72px;
     background: #071838;
     margin-top: 16px; }
-    body .transaction .search_wrapper .search_control_area {
-      border-radius: 25px;
-      background: #1E3051; }
-      body .transaction .search_wrapper .search_control_area .input-group span {
-        background: transparent;
-        border: none;
-        color: #FFFFFF; }
-      body .transaction .search_wrapper .search_control_area .input-group input {
-        background: transparent;
-        border: none;
-        color: #FFFFFF;
-        height: 48px; }
-      body .transaction .search_wrapper .search_control_area .input-group :focus {
-        box-shadow: none !important; }
-      body .transaction .search_wrapper .search_control_area .input-group ::placeholder {
-        color: #FFFFFF;
-        opacity: 0.8; }
-    body .transaction .search_wrapper .filter_area {
-      gap: 8px; }
+    body .transaction .search_wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      body .transaction .search_wrapper .search_control_area {
+        border-radius: 25px;
+        background: #1E3051; }
+        body .transaction .search_wrapper .search_control_area .input-group {
+          padding: 0; }
+          body .transaction .search_wrapper .search_control_area .input-group span {
+            background: transparent;
+            border: none;
+            color: #FFFFFF; }
+          body .transaction .search_wrapper .search_control_area .input-group input {
+            background: transparent;
+            border: none;
+            color: #FFFFFF;
+            height: 48px; }
+          body .transaction .search_wrapper .search_control_area .input-group :focus {
+            box-shadow: none !important; }
+          body .transaction .search_wrapper .search_control_area .input-group ::placeholder {
+            color: #FFFFFF;
+            opacity: 0.8; }
+      body .transaction .search_wrapper .filter_area {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 8px; }
     body .transaction .table-responsive table {
       border-collapse: inherit;
       border-spacing: 0 10px;
       white-space: nowrap; }
       body .transaction .table-responsive table tr td {
         background: transparent; }
+    body .transaction .table-responsive .pagination {
+      display: flex;
+      justify-content: center; }
     body .transaction .table_info {
       color: rgba(255, 255, 255, 0.5);
       text-align: center;
@@ -12872,17 +12892,21 @@ body {
         margin-top: 32px; }
       body .transaction {
         padding: 24px 24px !important; }
-        body .transaction .search_wrapper .search_control_area .input-group input {
-          height: 36px !important; }
-        body .transaction .search_wrapper .input-group-text {
-          padding: 0.375rem 0 !important; }
-        body .transaction .search_wrapper .filter_area .btn-transparent {
-          gap: 0;
-          padding: 5px 12px !important; }
+        body .transaction .search_wrapper {
+          flex-direction: column;
+          gap: 1rem; }
+          body .transaction .search_wrapper .input-group-text {
+            padding: 0.375rem 0 !important; }
+          body .transaction .search_wrapper .filter_area {
+            justify-content: space-between; }
+            body .transaction .search_wrapper .filter_area .btn-transparent {
+              gap: 0;
+              padding: 5px 12px !important; }
       body .portfolio {
-        padding: 8px 0 !important; }
+        padding: 1rem 1rem !important; }
         body .portfolio .portfolio_wrapper {
-          flex-direction: column; }
+          flex-direction: column;
+          padding-inline: 0.5rem !important; }
           body .portfolio .portfolio_wrapper .portfolio_selection {
             text-align: center; }
             body .portfolio .portfolio_wrapper .portfolio_selection p {
@@ -12944,6 +12968,8 @@ body {
       width: 50px !important; }
     body .countdown-clock {
       margin: 24px auto; }
+    body .portfolio_buttons .btn-transparent {
+      padding: 6px 12px !important; }
     body .maybe_like {
       flex-direction: column;
       gap: 1rem; }
