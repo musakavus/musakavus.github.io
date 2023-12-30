@@ -144,7 +144,7 @@ function showDiv(divId) {
             eth.style.display = "block";
             eth.style.visibility = "visible";
             eth.style.opacity = "1";
-            setTimeout(() => cryptoText.innerText = "ETH/PLN", 500); // 0.5 saniye gecikme
+            setTimeout(() => cryptoText.innerText = "ETH/AVAX", 500); // 0.5 saniye gecikme
             setTimeout(() => eth_btn.style.background = "#F7931A", 500); // 0.5 saniye gecikme
 
             break;
@@ -152,21 +152,21 @@ function showDiv(divId) {
             btc.style.display = "block";
             btc.style.visibility = "visible";
             btc.style.opacity = "1";
-            setTimeout(() => cryptoText.innerText = "BTC/PLN", 500); // 0.5 saniye gecikme
+            setTimeout(() => cryptoText.innerText = "BTC/AVAX", 500); // 0.5 saniye gecikme
             setTimeout(() => btc_btn.style.background = "#F7931A", 500); // 0.5 saniye gecikme
             break;
         case 'usd_filter':
             usd.style.display = "block";
             usd.style.visibility = "visible";
             usd.style.opacity = "1";
-            setTimeout(() => cryptoText.innerText = "USD/PLN", 500); // 0.5 saniye gecikme
+            setTimeout(() => cryptoText.innerText = "USD/AVAX", 500); // 0.5 saniye gecikme
             setTimeout(() => usd_btn.style.background = "#F7931A", 500); // 0.5 saniye gecikme
             break;
         case 'busd_filter':
             busd.style.display = "block";
             busd.style.visibility = "visible";
             busd.style.opacity = "1";
-            setTimeout(() => cryptoText.innerText = "BUSD/PLN", 500); // 0.5 saniye gecikme
+            setTimeout(() => cryptoText.innerText = "BUSD/AVAX", 500); // 0.5 saniye gecikme
             setTimeout(() => busd_btn.style.background = "#F7931A", 500); // 0.5 saniye gecikme
             break;
         default:

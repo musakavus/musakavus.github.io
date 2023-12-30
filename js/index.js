@@ -12,7 +12,7 @@ var chart = new Chart(ctx, {
     data: {
         datasets: [
             {
-                label: 'PLN - Curve',
+                label: 'AVAX - Curve',
                 data: barData,
                 backgroundColor: 'rgba(255, 0, 0, 0.5)', // Arka plan rengi
                 borderColor: 'rgba(255, 0, 0, 1)', // Çerçeve rengi

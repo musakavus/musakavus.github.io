@@ -225,6 +225,7 @@ body {
     box-shadow: none;
   }
 
+
   .filter {
     display: none;
   }
@@ -1880,11 +1881,12 @@ body {
         input {
           background: #071838;
           border: none;
-          color: #FFFFFF;
+          color: #bdc3c7;
         }
 
         ::placeholder {
           color: #FFF;
+          opacity: 0.5;
           font-family: "Roboto", monospace;
           font-size: 14px;
           font-style: normal;
@@ -1955,7 +1957,6 @@ body {
 
         input {
           margin: 0;
-          -moz-appearance: none;
           display: block;
           width: 14px;
           height: 14px;
@@ -3007,6 +3008,7 @@ body {
             background: var(--Dark-Blue, #091835);
             padding-top: 1rem;
             padding-bottom: 1rem;
+            text-align: center;
 
           }
 
@@ -4260,6 +4262,7 @@ body {
 
       .input-group {
         padding: 0 24px;
+
       }
 
       .contact__form-input {

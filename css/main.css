@@ -11540,9 +11540,10 @@ body {
         body .login_row .signup_area .input-group input {
           background: #071838;
           border: none;
-          color: #FFFFFF; }
+          color: #bdc3c7; }
         body .login_row .signup_area .input-group ::placeholder {
           color: #FFF;
+          opacity: 0.5;
           font-family: "Roboto", monospace;
           font-size: 14px;
           font-style: normal;
@@ -11587,7 +11588,6 @@ body {
         height: 64px; }
       body .login_row .signup_area .sign__action input {
         margin: 0;
-        -moz-appearance: none;
         display: block;
         width: 14px;
         height: 14px;
@@ -12229,7 +12229,8 @@ body {
           border: none;
           background: var(--Dark-Blue, #091835);
           padding-top: 1rem;
-          padding-bottom: 1rem; }
+          padding-bottom: 1rem;
+          text-align: center; }
         body .chart_right_area .bought .buy_area .want_buy .button_and_eth {
           display: flex;
           align-items: center;
