@@ -13,6 +13,13 @@ body {
   list-style-type: none;
   text-underline: none;
 
+  .contact_area {
+    .get_intouch {
+      background: none;
+      border: none;
+    }
+  }
+
 
   .pagination {
     display: flex;
@@ -1834,8 +1841,7 @@ body {
 
     .signup_area {
       display: flex;
-      padding: 50px 70px 45px;
-      margin: 0 30px;
+      padding: 2.5rem 2rem;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -2094,11 +2100,23 @@ body {
       }
 
       .follow_wrapper {
-        margin-top: 77px;
+        margin-block: 2.5rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
+        color: #FFF;
+        font-family: "Roboto", monospace;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      .social_media_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
       }
     }
   }
@@ -3515,6 +3533,12 @@ body {
       padding: 0;
     }
 
+    .get_intouch {
+      padding-bottom: 32px;
+      padding-top: 32px;
+
+    }
+
     .maybe_like {
 
       flex-direction: column;
@@ -3685,6 +3709,12 @@ body {
         padding: 0;
       }
 
+
+    }
+
+    .get_intouch {
+      padding-bottom: 32px;
+      padding-top: 32px;
 
     }
 
@@ -4311,6 +4341,7 @@ body {
       padding-bottom: 0 !important;
       padding-top: 0 !important;
       margin-top: 32px;
+
     }
 
 

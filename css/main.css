@@ -10312,6 +10312,9 @@ body {
   list-style-type: none;
   text-underline: none;
   text-decoration: none; }
+  body .contact_area .get_intouch {
+    background: none;
+    border: none; }
   body .pagination {
     display: flex;
     justify-content: center; }
@@ -11495,8 +11498,7 @@ body {
     padding-top: 100px; }
     body .login_row .signup_area {
       display: flex;
-      padding: 50px 70px 45px;
-      margin: 0 30px;
+      padding: 2.5rem 2rem;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -11681,11 +11683,21 @@ body {
           line-height: normal;
           text-decoration-line: underline; }
       body .login_row .signup_area .follow_wrapper {
-        margin-top: 77px;
+        margin-block: 2.5rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 16px; }
+        gap: 16px;
+        color: #FFF;
+        font-family: "Roboto", monospace;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal; }
+      body .login_row .signup_area .social_media_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 1rem; }
   body .portfolio {
     border-radius: 12px;
     opacity: 0.9;
@@ -12530,6 +12542,9 @@ body {
         flex-shrink: 0;
         color: #FFFFFF;
         padding: 0; }
+      body .get_intouch {
+        padding-bottom: 32px;
+        padding-top: 32px; }
       body .maybe_like {
         flex-direction: column;
         gap: 1rem; }
@@ -12610,6 +12625,9 @@ body {
           flex-shrink: 0;
           color: #FFFFFF;
           padding: 0; }
+      body .get_intouch {
+        padding-bottom: 32px;
+        padding-top: 32px; }
       body .maybe_like {
         flex-direction: column;
         gap: 1rem; }
