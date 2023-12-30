@@ -1080,6 +1080,11 @@ body {
           flex-shrink: 0;
           margin: 12px 0;
 
+          img {
+            width: 32px;
+            height: 32px;
+          }
+
           .proud_list_item_logo {
             width: 32px;
             height: 32px;
@@ -1101,7 +1106,7 @@ body {
             font-family: "Roboto", monospace;
             font-size: 16px;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 400;
             line-height: normal;
             opacity: 0.5;
           }

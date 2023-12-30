@@ -11001,6 +11001,9 @@ body {
           gap: 9px;
           flex-shrink: 0;
           margin: 12px 0; }
+          body .elemantor_proud .container .proud_list .proud_list_item img {
+            width: 32px;
+            height: 32px; }
           body .elemantor_proud .container .proud_list .proud_list_item .proud_list_item_logo {
             width: 32px;
             height: 32px;
@@ -11018,7 +11021,7 @@ body {
             font-family: "Roboto", monospace;
             font-size: 16px;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 400;
             line-height: normal;
             opacity: 0.5; }
       body .elemantor_proud .container .proud_explain_bottom {
