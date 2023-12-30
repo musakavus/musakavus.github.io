@@ -3564,6 +3564,12 @@ body {
 
     }
 
+    .maybe_like {
+      .maybe_like_card {
+        gap: 1rem;
+      }
+    }
+
     .card_wrapper {
       flex: auto !important;
     }
