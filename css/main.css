@@ -10394,6 +10394,29 @@ body {
     padding-bottom: 1rem; }
     body .news-card .lates_card-wrapper .card {
       background: var(--Dark-Blue, #091835); }
+      body .news-card .lates_card-wrapper .card .card-newsletter {
+        color: #FFF;
+        font-family: "Roboto", monospace;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; }
+      body .news-card .lates_card-wrapper .card .newsletter-btn {
+        color: #FFB352;
+        font-family: "Roboto", monospace;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; }
+      body .news-card .lates_card-wrapper .card .newsletter-input input {
+        background: transparent;
+        color: #FFB352;
+        font-family: "Roboto", monospace;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border: 1px solid #FFB352; }
       body .news-card .lates_card-wrapper .card img {
         width: 100%;
         height: 100%; }

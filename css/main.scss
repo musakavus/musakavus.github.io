@@ -49,7 +49,10 @@ body {
             font-weight: 500;
             line-height: normal;
           }
+
+
         }
+
 
         .card-footer {
           display: flex;
@@ -144,8 +147,41 @@ body {
     .lates_card-wrapper {
       padding-bottom: 1rem;
 
+
       .card {
         background: var(--Dark-Blue, #091835);
+
+        .card-newsletter {
+          color: #FFF;
+          font-family: "Roboto", monospace;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        .newsletter-btn {
+          color: #FFB352;
+          font-family: "Roboto", monospace;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        .newsletter-input {
+
+          input {
+            background: transparent;
+            color: #FFB352;
+            font-family: "Roboto", monospace;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            border: 1px solid #FFB352;
+          }
+        }
 
         img {
           width: 100%;
