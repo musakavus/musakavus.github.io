@@ -105,6 +105,11 @@ body {
 
     }
 
+    .card-wrapper:hover {
+      transform: scale(1.05); /* Kartın boyutunu 1.05 kat büyüt */
+      transition: transform 0.3s ease;
+    }
+
     .latest_head {
       color: #FFF;
       font-family: "Roboto", monospace;
