@@ -10374,6 +10374,14 @@ body {
     transform: scale(1.05);
     /* Kartın boyutunu 1.05 kat büyüt */
     transition: transform 0.3s ease; }
+  body .news-card .pagination {
+    display: flex;
+    justify-content: center; }
+    body .news-card .pagination .active .page-link {
+      background: #FFB352;
+      color: #091835; }
+    body .news-card .pagination .page-item a {
+      color: #091835; }
   body .news-card .latest_head {
     color: #FFF;
     font-family: "Roboto", monospace;

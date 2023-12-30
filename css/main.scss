@@ -110,6 +110,27 @@ body {
       transition: transform 0.3s ease;
     }
 
+    .pagination {
+      display: flex;
+      justify-content: center;
+
+      .active {
+        .page-link {
+          background: #FFB352;
+          color: #091835;
+
+        }
+      }
+
+      .page-item {
+
+        a {
+          color: #091835;
+        }
+
+      }
+    }
+
     .latest_head {
       color: #FFF;
       font-family: "Roboto", monospace;
