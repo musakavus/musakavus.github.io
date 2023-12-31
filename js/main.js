@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     cryptoImages.forEach(function (cryptoImg) {
         setInterval(function () {
             toggleImage(cryptoImg);
-        }, 3000);
+        }, 2000);
     });
 
     function toggleImage(img) {
@@ -290,7 +290,7 @@ function showCookiePreferences() {
     cookiePreferencesElement.style.display = 'block';
 
     // Scroll işlemi kontrolü
-    var scrollThreshold = 500; // Belirli bir eşik değeri (örneğin 300 piksel)
+    var scrollThreshold = 1000; // Belirli bir eşik değeri (örneğin 300 piksel)
     var scrolled = false;
 
     var scrollTimeout;
