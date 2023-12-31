@@ -229,9 +229,89 @@ function rejectCookies() {
 // }
 
 
+// function showCookiePreferences() {
+//     // Tüm cihazlarda
+//     document.getElementById('cookiePreferences').style.display = 'block'; // aşağı scroll yapılırsa display none olsun
+//
+//
+//     document.getElementById('cookieConsent').style.display = 'none';
+//
+//     // Sadece mobil cihazlarda çalışacak kısım
+//     if (window.matchMedia("(max-width: 767px)").matches) {
+//         window.scrollTo({
+//             top: 0,
+//             behavior: "smooth"
+//         });
+//     }
+// }
+
+// function showCookiePreferences() {
+//     // Tüm cihazlarda
+//     var cookiePreferencesElement = document.getElementById('cookiePreferences');
+//     cookiePreferencesElement.style.display = 'block';
+//
+//     // Scroll işlemi kontrolü
+//     var scrollThreshold = 500; // Belirli bir eşik değeri (örneğin 300 piksel)
+//     var scrolled = false;
+//
+//     var scrollTimeout;
+//
+//     window.addEventListener('scroll', function () {
+//         clearTimeout(scrollTimeout);
+//
+//         scrollTimeout = setTimeout(function () {
+//             var scrollPosition = window.scrollY || window.pageYOffset;
+//
+//             if (!scrolled && scrollPosition >= scrollThreshold) {
+//                 // Belirli bir eşik değerine ulaşıldığında
+//                 cookiePreferencesElement.style.display = 'none';
+//                 scrolled = true; // İlk scroll olayında display'ı değiştir ve daha fazla kontrol etme
+//             }
+//         }, 200); // İki olay arasındaki minimum gecikme süresi
+//     });
+//
+//     // Tüm cihazlarda çalışacak kısım
+//     document.getElementById('cookieConsent').style.display = 'none';
+//
+//     // Sadece mobil cihazlarda çalışacak kısım
+//     if (window.matchMedia("(max-width: 767px)").matches) {
+//         window.scrollTo({
+//             top: 0,
+//             behavior: "smooth"
+//         });
+//     }
+// }
+
+
+
 function showCookiePreferences() {
     // Tüm cihazlarda
-    document.getElementById('cookiePreferences').style.display = 'block';
+    var cookiePreferencesElement = document.getElementById('cookiePreferences');
+    cookiePreferencesElement.style.display = 'block';
+
+    // Scroll işlemi kontrolü
+    var scrollThreshold = 500; // Belirli bir eşik değeri (örneğin 300 piksel)
+    var scrolled = false;
+
+    var scrollTimeout;
+
+    window.addEventListener('scroll', function () {
+        clearTimeout(scrollTimeout);
+
+        scrollTimeout = setTimeout(function () {
+            var scrollPosition = window.scrollY || window.pageYOffset;
+
+            if (!scrolled && scrollPosition >= scrollThreshold) {
+                // Belirli bir eşik değerine ulaşıldığında sadece mobil cihazlarda
+                if (window.matchMedia("(max-width: 767px)").matches) {
+                    cookiePreferencesElement.style.display = 'none';
+                    scrolled = true; // İlk scroll olayında display'ı değiştir ve daha fazla kontrol etme
+                }
+            }
+        }, 200); // İki olay arasındaki minimum gecikme süresi
+    });
+
+    // Tüm cihazlarda çalışacak kısım
     document.getElementById('cookieConsent').style.display = 'none';
 
     // Sadece mobil cihazlarda çalışacak kısım
@@ -242,7 +322,6 @@ function showCookiePreferences() {
         });
     }
 }
-
 
 
 function saveCookiePreferences() {
