@@ -10333,6 +10333,7 @@ body {
     body .backToTopBtn .arrow {
       position: absolute; }
   body .cookie-consent-container, body .cookie-preferences-container {
+    font-family: "Roboto", monospace;
     background-color: #1C2D4A;
     color: #FFB352;
     position: fixed;
@@ -10341,21 +10342,25 @@ body {
     width: 100%;
     padding: 15px;
     text-align: center;
-    z-index: 1000; }
+    z-index: 1000;
+    font-weight: 500; }
     body .cookie-consent-container .btn-container, body .cookie-preferences-container .btn-container {
       margin-top: 10px; }
       body .cookie-consent-container .btn-container .accept-btn, body .cookie-consent-container .btn-container .reject-btn, body .cookie-consent-container .btn-container .preferences-btn, body .cookie-consent-container .btn-container .save-preferences-btn, body .cookie-preferences-container .btn-container .accept-btn, body .cookie-preferences-container .btn-container .reject-btn, body .cookie-preferences-container .btn-container .preferences-btn, body .cookie-preferences-container .btn-container .save-preferences-btn {
+        font-family: "Roboto", monospace;
         background-color: #FFB352;
-        color: #1C2D4A;
+        color: #FFF;
         border: none;
         padding: 10px 20px;
         margin: 5px;
-        cursor: pointer; }
+        cursor: pointer;
+        font-weight: 400; }
   body .cookie-preferences-container {
+    font-family: "Roboto", monospace;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    max-width: 50rem;
     margin: 50px auto;
     padding: 20px; }
     body .cookie-preferences-container h2, body .cookie-preferences-container .h2, body .cookie-preferences-container h3, body .cookie-preferences-container .h3 {
