@@ -222,4 +222,9 @@ function saveCookiePreferences() {
     // Burada çerez tercihleri ile ilgili işlemleri gerçekleştirebilirsiniz.
     // Örneğin, kullanıcının tercihlerini bir çerezde saklama gibi.
     document.getElementById('cookiePreferences').style.display = 'none';
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 }
+

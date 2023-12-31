@@ -12793,10 +12793,9 @@ body {
       /* Özel stil kuralları buraya gelecek */ }
       body .cookie-preferences-container {
         opacity: 0.95;
-        position: absolute;
+        position: sticky;
         max-width: 100%;
-        margin: 0 auto;
-        bottom: -5rem; }
+        bottom: inherit; }
       body .cookie-consent-container .btn-container {
         display: flex;
         font-size: small;
