@@ -39,6 +39,61 @@ body {
 
   }
 
+  .cookie-consent-container, .cookie-preferences-container {
+    background-color: #1C2D4A;
+    color: #FFB352;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+
+    .btn-container {
+      margin-top: 10px;
+
+      .accept-btn, .reject-btn, .preferences-btn, .save-preferences-btn {
+        background-color: #FFB352;
+        color: #1C2D4A;
+        border: none;
+        padding: 10px 20px;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+    }
+  }
+
+
+  .cookie-preferences-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+
+    h2, h3 {
+      color: #1C2D4A;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .save-preferences-btn {
+      background-color: #FFB352;
+      color: #1C2D4A;
+      border: none;
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+
+    }
+  }
+
 
   .contact_area {
     margin-block: 3rem;
@@ -3990,6 +4045,9 @@ body {
   @media (max-width: 576px) {
     /* Özel stil kuralları buraya gelecek */
 
+    .cookie-preferences-container {
+      
+    }
     .budget_wrapper {
       padding: 1rem 2rem !important;
     }

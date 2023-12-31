@@ -131,7 +131,41 @@
         </svg>
     </button>
 
+    <div class="cookie-consent-container" id="cookieConsent">
+        <p>This website uses cookies to ensure you get the best experience on our website.</p>
+        <div class="btn-container">
+            <button class="accept-btn" onclick="acceptCookies()">Accept</button>
+            <button class="reject-btn" onclick="rejectCookies()">Reject</button>
+            <button class="preferences-btn" onclick="showCookiePreferences()">Cookie Preferences</button>
+        </div>
+    </div>
 
+
+    <div class="cookie-preferences-container" id="cookiePreferences" style="display: none;">
+        <p>Cookie Preferences</p>
+        <h2>Cookie Policy</h2>
+        <p>This website uses cookies to ensure you get the best experience on our website.</p>
+
+        <h3>What are Cookies?</h3>
+        <p>Cookies are small text files that are stored on your computer or mobile device when you visit a website. They
+            allow the website to remember your actions and preferences (such as login, language, font size, and other
+            display preferences) over a period of time, so you don’t have to keep re-entering them whenever you come
+            back to the site or browse from one page to another.</p>
+
+        <h3>How We Use Cookies</h3>
+        <p>We use cookies for various purposes including to analyze and improve our website, to personalize your
+            experience, and to show you personalized advertisements.</p>
+
+        <h3>Your Choices Regarding Cookies</h3>
+        <p>You can choose to accept or decline cookies. Most web browsers automatically accept cookies, but you can
+            usually modify your browser setting to decline cookies if you prefer. However, this may prevent you from
+            taking full advantage of the website.</p>
+
+        <h3>Changes to Our Cookie Policy</h3>
+        <p>We may update our Cookie Policy from time to time. We encourage you to periodically review this page for the
+            latest information on our cookie practices.</p>
+        <button class="save-preferences-btn" onclick="saveCookiePreferences()">Save Preferences</button>
+    </div>
 
 
     <div class="container-fluid">
@@ -176,7 +210,7 @@
                         <li><a href="graphic_detail.html">Graphic Detail</a></li>
                         <li><a href="transactions.html">Transaction</a></li>
                         <li><a href="404.html">404</a></li>
-                                <li><a href="forgot.html">Forgot Password</a></li>
+                        <li><a href="forgot.html">Forgot Password</a></li>
                         <li><a target="_blank" href="https://github.com/musakavus">Github</a></li>
                     </ul>
                 </li>
