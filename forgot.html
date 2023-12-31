@@ -98,6 +98,31 @@
 
 </div>
 <div id="body_overlay" class="body-overlay">
+
+    <button class="backToTopBtn" id="backToTopBtn" onclick="scrollToTop()">
+        <svg class="narrow-elipse" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46"
+             fill="none">
+            <circle cx="23" cy="23" r="22.5" stroke="url(#paint0_linear_16_342)" stroke-opacity="1"/>
+            <defs>
+                <linearGradient id="paint0_linear_16_342" x1="23" y1="0" x2="23" y2="46" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFB352"/>
+                    <stop offset="1" stop-color="#9747FF"/>
+                </linearGradient>
+            </defs>
+        </svg>
+
+        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="21" height="32" viewBox="0 0 21 32" fill="none">
+            <path d="M0.795997 9.70326L9.41094 1.08774C9.92096 0.577757 10.7189 0.530971 11.2816 0.947674L11.4428 1.08659L20.0772 9.70213C20.6392 10.2629 20.6401 11.1731 20.0793 11.7351C19.5695 12.246 18.771 12.2932 18.2079 11.8763L18.0465 11.7373L11.8693 5.57163L11.8706 29.9052C11.8706 30.633 11.3297 31.2344 10.628 31.3297L10.4331 31.3427C9.70533 31.3427 9.10389 30.802 9.00863 30.1003L8.99559 29.9052L8.99425 5.5678L2.82901 11.7361C2.31867 12.2464 1.52008 12.293 0.957305 11.8754L0.796074 11.7362C0.285704 11.2259 0.239283 10.4273 0.656828 9.86449L0.795997 9.70326Z"
+                  fill="url(#paint0_linear_16_343)" fill-opacity="1"/>
+            <defs>
+                <linearGradient id="paint0_linear_16_343" x1="10.4371" y1="0.666668" x2="10.4371" y2="31.3427"
+                                gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFB352"/>
+                    <stop offset="1" stop-color="#9747FF"/>
+                </linearGradient>
+            </defs>
+        </svg>
+    </button>
     <div class="container-fluid">
         <div class="row header_main background_color_main" style="background:#1C2D4A;">
             <div class="col-3  left_menu">
@@ -134,8 +159,8 @@
 
                     <ul id="sub_men" class="sub_menu" role="menu">
                         <li><a href="chart.html">Chart</a></li>
-                                <li><a href="news.html">News</a></li>
-                                <li><a href="news-detail.html">News Detail</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="news-detail.html">News Detail</a></li>
                         <li><a href="wallet.html">Wallet</a></li>
                         <li><a href="graphic_detail.html">Graphic Detail</a></li>
                         <li><a href="transactions.html">Transaction</a></li>
@@ -193,7 +218,7 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-xxl-6 offset-xxl-3 col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 login_row">
+            <div class="col-xxl-6 offset-xxl-3 col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 login_row forgot_wrapper">
                 <div class="signup_area ">
                     <div class="login_logo"><img src="img/Warn.png" alt=""></div>
                     <p class="forgot_text">Enter your email and we'll send you a link to reset your password</p>
@@ -217,7 +242,7 @@
                     </div>
 
                     <button class="btn btn_first">Reset my Password</button>
-                    <p class="direct_to_signup">Back to <a href="">Login</a></p>
+                    <p class="direct_to_signup">Back to <a href="login.html">Login</a></p>
 
                 </div>
             </div>

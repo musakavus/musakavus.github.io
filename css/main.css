@@ -10348,6 +10348,8 @@ body {
     padding-block: 3rem; }
   body .signin_wrapper {
     padding-block: 3rem; }
+  body .forgot_wrapper {
+    padding-block: 3rem; }
   body .pagination {
     display: flex;
     justify-content: center; }
