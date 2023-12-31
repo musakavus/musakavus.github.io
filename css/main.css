@@ -10317,7 +10317,7 @@ body {
     align-items: center;
     background: transparent;
     border: none;
-    display: inline-flex;
+    display: none;
     position: fixed;
     bottom: 10rem;
     right: 20px;
