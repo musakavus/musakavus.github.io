@@ -20,12 +20,13 @@ body {
     border: none;
     display: inline-flex;
     position: fixed;
-    bottom: 20px;
+    bottom: 10rem;
     right: 20px;
     color: #fff;
     padding: 10px;
     border-radius: 50%; /* Yuvarlak kenarlık ekleniyor */
     cursor: pointer;
+    z-index: 2000;
 
 
     .narrow-elipse {

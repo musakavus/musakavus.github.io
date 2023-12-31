@@ -214,14 +214,36 @@ function rejectCookies() {
 
 }
 
+// function showCookiePreferences() {
+//
+//     //tüm cihazlarda
+//     document.getElementById('cookiePreferences').style.display = 'block';
+//     document.getElementById('cookieConsent').style.display = 'none';
+//
+//
+//     //sadece mobil cihazlarda çalışacak kısım
+//     window.scrollTo({
+//         top: 0,
+//         behavior: "smooth"
+//     });
+// }
+
+
 function showCookiePreferences() {
+    // Tüm cihazlarda
     document.getElementById('cookiePreferences').style.display = 'block';
     document.getElementById('cookieConsent').style.display = 'none';
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+
+    // Sadece mobil cihazlarda çalışacak kısım
+    if (window.matchMedia("(max-width: 767px)").matches) {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
 }
+
+
 
 function saveCookiePreferences() {
     // Burada çerez tercihleri ile ilgili işlemleri gerçekleştirebilirsiniz.

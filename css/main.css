@@ -10319,13 +10319,14 @@ body {
     border: none;
     display: inline-flex;
     position: fixed;
-    bottom: 20px;
+    bottom: 10rem;
     right: 20px;
     color: #fff;
     padding: 10px;
     border-radius: 50%;
     /* Yuvarlak kenarlık ekleniyor */
-    cursor: pointer; }
+    cursor: pointer;
+    z-index: 2000; }
     body .backToTopBtn .narrow-elipse {
       stroke-width: 1px;
       stroke: #FFB352; }
