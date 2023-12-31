@@ -86,100 +86,125 @@ function hideSubMenu() {
 }
 
 
-window.onload = function () {
-    const buttonsContainer = document.querySelector('.nav-pills');
-    const buttons = buttonsContainer.querySelectorAll('.nav-item');
+if (window.location.pathname.includes("chart.html")) {
+    function showDiv(divId) {
+        const eth = document.getElementById('eth_filter');
+        const btc = document.getElementById('btc_filter');
+        const usd = document.getElementById('usd_filter');
+        const busd = document.getElementById('busd_filter');
+        const eth_btn = document.getElementById('eth_btn');
+        const btc_btn = document.getElementById('btc_btn');
+        const usd_btn = document.getElementById('usd_btn');
+        const busd_btn = document.getElementById('busd_btn');
+        const cryptoText = document.getElementById('crypto_text');
 
-    buttons.forEach(button => {
-        button.style.backgroundColor = "";
-    });
+        // Butonların bulunduğu parent elementi seçin
+        const buttonsContainer = document.querySelector('.nav-pills');
+        const buttons = buttonsContainer.querySelectorAll('.nav-item');
 
-    // Ardından eth_btn'nin arka plan rengini belirle
-    const eth_btn = document.getElementById('eth_btn');
-    eth_btn.style.backgroundColor = "#F7931A";
+        function hideAll() {
+            eth.style.opacity = "0";
+            eth.style.visibility = "hidden";
+            eth.style.display = "none";
+
+            btc.style.opacity = "0";
+            btc.style.visibility = "hidden";
+            btc.style.display = "none";
+
+            usd.style.opacity = "0";
+            usd.style.visibility = "hidden";
+            usd.style.display = "none";
+
+            busd.style.opacity = "0";
+            busd.style.visibility = "hidden";
+            busd.style.display = "none";
+        }
+
+        hideAll();
+
+        // Tüm butonların arka plan rengini sıfırla ve aktif olan butona sınıf ekle
+        buttons.forEach(button => {
+            button.style.backgroundColor = "";
+        });
+
+        switch (divId) {
+            case 'eth_filter':
+                eth.style.display = "block";
+                eth.style.visibility = "visible";
+                eth.style.opacity = "1";
+                setTimeout(() => cryptoText.innerText = "ETH/AVAX", 500); // 0.5 saniye gecikme
+                setTimeout(() => eth_btn.style.background = "#F7931A", 500); // 0.5 saniye gecikme
+
+                break;
+            case 'btc_filter':
+                btc.style.display = "block";
+                btc.style.visibility = "visible";
+                btc.style.opacity = "1";
+                setTimeout(() => cryptoText.innerText = "BTC/AVAX", 500); // 0.5 saniye gecikme
+                setTimeout(() => btc_btn.style.background = "#F7931A", 500); // 0.5 saniye gecikme
+                break;
+            case 'usd_filter':
+                usd.style.display = "block";
+                usd.style.visibility = "visible";
+                usd.style.opacity = "1";
+                setTimeout(() => cryptoText.innerText = "USD/AVAX", 500); // 0.5 saniye gecikme
+                setTimeout(() => usd_btn.style.background = "#F7931A", 500); // 0.5 saniye gecikme
+                break;
+            case 'busd_filter':
+                busd.style.display = "block";
+                busd.style.visibility = "visible";
+                busd.style.opacity = "1";
+                setTimeout(() => cryptoText.innerText = "BUSD/AVAX", 500); // 0.5 saniye gecikme
+                setTimeout(() => busd_btn.style.background = "#F7931A", 500); // 0.5 saniye gecikme
+                break;
+            default:
+                break;
+        }
+
+        // SetTimeout kullanarak geçiş efekti eklemek
+        setTimeout(function () {
+            eth.style.transition = "opacity 0.5s ease-in-out, visibility 0.5s ease-in-out";
+            btc.style.transition = "opacity 0.5s ease-in-out, visibility 0.5s ease-in-out";
+            usd.style.transition = "opacity 0.5s ease-in-out, visibility 0.5s ease-in-out";
+            busd.style.transition = "opacity 0.5s ease-in-out, visibility 0.5s ease-in-out";
+        }, 0);
+    }
 }
 
-function showDiv(divId) {
-    const eth = document.getElementById('eth_filter');
-    const btc = document.getElementById('btc_filter');
-    const usd = document.getElementById('usd_filter');
-    const busd = document.getElementById('busd_filter');
-    const eth_btn = document.getElementById('eth_btn');
-    const btc_btn = document.getElementById('btc_btn');
-    const usd_btn = document.getElementById('usd_btn');
-    const busd_btn = document.getElementById('busd_btn');
-    const cryptoText = document.getElementById('crypto_text');
 
-    // Butonların bulunduğu parent elementi seçin
-    const buttonsContainer = document.querySelector('.nav-pills');
-    const buttons = buttonsContainer.querySelectorAll('.nav-item');
+if (window.location.pathname.includes("chart.html")) {
+    window.onload = function () {
+        const pillsContainer = document.querySelector('.nav-pills');
 
-    function hideAll() {
-        eth.style.opacity = "0";
-        eth.style.visibility = "hidden";
-        eth.style.display = "none";
+        // Kontrol ekle: .nav-pills elemanı bulunamazsa
+        if (!pillsContainer) {
+            console.error('.nav-pills elemanı bulunamadı.');
+            return;
+        }
 
-        btc.style.opacity = "0";
-        btc.style.visibility = "hidden";
-        btc.style.display = "none";
+        const buttons = pillsContainer.querySelectorAll('.nav-item');
 
-        usd.style.opacity = "0";
-        usd.style.visibility = "hidden";
-        usd.style.display = "none";
+        // Kontrol ekle: .nav-item elemanları bulunamazsa
+        if (buttons.length === 0) {
+            console.error('.nav-item elemanları bulunamadı.');
+            return;
+        }
 
-        busd.style.opacity = "0";
-        busd.style.visibility = "hidden";
-        busd.style.display = "none";
-    }
+        buttons.forEach(button => {
+            button.style.backgroundColor = "";
+        });
 
-    hideAll();
+        // Ardından eth_btn'nin arka plan rengini belirle
+        const eth_btn = document.getElementById('eth_btn');
 
-    // Tüm butonların arka plan rengini sıfırla ve aktif olan butona sınıf ekle
-    buttons.forEach(button => {
-        button.style.backgroundColor = "";
-    });
+        // Kontrol ekle: #eth_btn elemanı bulunamazsa
+        if (!eth_btn) {
+            console.error('#eth_btn elemanı bulunamadı.');
+            return;
+        }
 
-    switch (divId) {
-        case 'eth_filter':
-            eth.style.display = "block";
-            eth.style.visibility = "visible";
-            eth.style.opacity = "1";
-            setTimeout(() => cryptoText.innerText = "ETH/AVAX", 500); // 0.5 saniye gecikme
-            setTimeout(() => eth_btn.style.background = "#F7931A", 500); // 0.5 saniye gecikme
-
-            break;
-        case 'btc_filter':
-            btc.style.display = "block";
-            btc.style.visibility = "visible";
-            btc.style.opacity = "1";
-            setTimeout(() => cryptoText.innerText = "BTC/AVAX", 500); // 0.5 saniye gecikme
-            setTimeout(() => btc_btn.style.background = "#F7931A", 500); // 0.5 saniye gecikme
-            break;
-        case 'usd_filter':
-            usd.style.display = "block";
-            usd.style.visibility = "visible";
-            usd.style.opacity = "1";
-            setTimeout(() => cryptoText.innerText = "USD/AVAX", 500); // 0.5 saniye gecikme
-            setTimeout(() => usd_btn.style.background = "#F7931A", 500); // 0.5 saniye gecikme
-            break;
-        case 'busd_filter':
-            busd.style.display = "block";
-            busd.style.visibility = "visible";
-            busd.style.opacity = "1";
-            setTimeout(() => cryptoText.innerText = "BUSD/AVAX", 500); // 0.5 saniye gecikme
-            setTimeout(() => busd_btn.style.background = "#F7931A", 500); // 0.5 saniye gecikme
-            break;
-        default:
-            break;
-    }
-
-    // SetTimeout kullanarak geçiş efekti eklemek
-    setTimeout(function () {
-        eth.style.transition = "opacity 0.5s ease-in-out, visibility 0.5s ease-in-out";
-        btc.style.transition = "opacity 0.5s ease-in-out, visibility 0.5s ease-in-out";
-        usd.style.transition = "opacity 0.5s ease-in-out, visibility 0.5s ease-in-out";
-        busd.style.transition = "opacity 0.5s ease-in-out, visibility 0.5s ease-in-out";
-    }, 0);
+        eth_btn.style.backgroundColor = "#F7931A";
+    };
 }
 
 
@@ -281,7 +306,6 @@ function rejectCookies() {
 //         });
 //     }
 // }
-
 
 
 function showCookiePreferences() {
