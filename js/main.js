@@ -314,7 +314,7 @@ function showCookiePreferences() {
     cookiePreferencesElement.style.display = 'block';
 
     // Scroll işlemi kontrolü
-    var scrollThreshold = 1000; // Belirli bir eşik değeri (örneğin 300 piksel)
+    var scrollThreshold = 954; // Belirli bir eşik değeri (örneğin 300 piksel)
     var scrolled = false;
 
     var scrollTimeout;
