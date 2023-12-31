@@ -12791,6 +12791,12 @@ body {
   @media (max-width: 576px) {
     body {
       /* Özel stil kuralları buraya gelecek */ }
+      body .cookie-preferences-container {
+        opacity: 0.95;
+        position: absolute;
+        max-width: 100%;
+        margin: 0 auto;
+        bottom: -5rem; }
       body .budget_wrapper {
         padding: 1rem 2rem !important; }
       body .forzerofor_left {
