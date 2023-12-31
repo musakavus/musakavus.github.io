@@ -13,6 +13,33 @@ body {
   list-style-type: none;
   text-underline: none;
 
+  .backToTopBtn {
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    display: inline-flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%; /* Yuvarlak kenarlık ekleniyor */
+    cursor: pointer;
+
+
+    .narrow-elipse {
+      stroke-width: 1px;
+      stroke: #FFB352;
+    }
+
+    .arrow {
+      position: absolute;
+    }
+
+  }
+
+
   .contact_area {
     margin-block: 3rem;
 
@@ -3741,6 +3768,7 @@ body {
 
     }
 
+
     .maybe_like {
 
       flex-direction: column;
@@ -3968,6 +3996,11 @@ body {
 
     .forzerofor_right {
       height: 50vh;
+    }
+    .backToTopBtn {
+      padding: 0;
+      right: 0.3rem;
+
     }
 
 

@@ -183,9 +183,24 @@ function showDiv(divId) {
 }
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    var backToTopBtn = document.getElementById("backToTopBtn");
 
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+            backToTopBtn.style.display = "inline-flex";
+        } else {
+            backToTopBtn.style.display = "none";
+        }
+    });
 
-
+    backToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
 
 
 

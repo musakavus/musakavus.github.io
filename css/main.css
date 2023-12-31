@@ -10312,6 +10312,25 @@ body {
   list-style-type: none;
   text-underline: none;
   text-decoration: none; }
+  body .backToTopBtn {
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    display: inline-flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    /* Yuvarlak kenarlık ekleniyor */
+    cursor: pointer; }
+    body .backToTopBtn .narrow-elipse {
+      stroke-width: 1px;
+      stroke: #FFB352; }
+    body .backToTopBtn .arrow {
+      position: absolute; }
   body .contact_area {
     margin-block: 3rem; }
     body .contact_area .get_intouch {
@@ -12738,6 +12757,9 @@ body {
         height: 50vh; }
       body .forzerofor_right {
         height: 50vh; }
+      body .backToTopBtn {
+        padding: 0;
+        right: 0.3rem; }
       body .maybe_like {
         flex-direction: column;
         gap: 1rem; }
