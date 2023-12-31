@@ -211,20 +211,25 @@ function rejectCookies() {
     // Burada çerezleri reddetme işlemlerini gerçekleştirebilirsiniz.
     // Örneğin, çerezleri tamamen silme gibi.
     document.getElementById('cookieConsent').style.display = 'none';
+
 }
 
 function showCookiePreferences() {
     document.getElementById('cookiePreferences').style.display = 'block';
     document.getElementById('cookieConsent').style.display = 'none';
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 }
 
 function saveCookiePreferences() {
     // Burada çerez tercihleri ile ilgili işlemleri gerçekleştirebilirsiniz.
     // Örneğin, kullanıcının tercihlerini bir çerezde saklama gibi.
     document.getElementById('cookiePreferences').style.display = 'none';
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+
 }
+
+
+
 
