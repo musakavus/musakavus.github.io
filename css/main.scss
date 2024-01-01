@@ -129,7 +129,7 @@ body {
   }
 
   .transaction_wrapper {
-    padding-block: 3rem;
+    padding-block: 2rem;
   }
 
   .signin_wrapper {
@@ -2268,7 +2268,7 @@ body {
     border-radius: 12px;
     opacity: 0.9;
     padding: 18px 72px;
-    background: #071838;
+    background: #1E3051;
 
     .portfolio_wrapper {
       display: flex;
@@ -2334,7 +2334,7 @@ body {
     border-radius: 12px;
     opacity: 0.9;
     padding: 72px 72px;
-    background: #071838;
+    background: #1E3051;
     margin-top: 16px;
 
 
@@ -2345,7 +2345,7 @@ body {
 
       .search_control_area {
         border-radius: 25px;
-        background: #1E3051;
+        background: var(--Dark-Blue, #091835);
 
         .input-group {
           padding: 0;

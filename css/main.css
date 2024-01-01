@@ -10389,7 +10389,7 @@ body {
   body .graphic_wrapper {
     padding-block: 3rem; }
   body .transaction_wrapper {
-    padding-block: 3rem; }
+    padding-block: 2rem; }
   body .signin_wrapper {
     padding-block: 3rem; }
   body .forgot_wrapper {
@@ -11795,7 +11795,7 @@ body {
     border-radius: 12px;
     opacity: 0.9;
     padding: 18px 72px;
-    background: #071838; }
+    background: #1E3051; }
     body .portfolio .portfolio_wrapper {
       display: flex;
       align-items: center; }
@@ -11840,7 +11840,7 @@ body {
     border-radius: 12px;
     opacity: 0.9;
     padding: 72px 72px;
-    background: #071838;
+    background: #1E3051;
     margin-top: 16px; }
     body .transaction .search_wrapper {
       display: flex;
@@ -11848,7 +11848,7 @@ body {
       justify-content: center; }
       body .transaction .search_wrapper .search_control_area {
         border-radius: 25px;
-        background: #1E3051; }
+        background: var(--Dark-Blue, #091835); }
         body .transaction .search_wrapper .search_control_area .input-group {
           padding: 0; }
           body .transaction .search_wrapper .search_control_area .input-group span {
