@@ -361,7 +361,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Menü bağlantılarını seç
     var menuLinks = document.querySelectorAll('ul.col-6.middle_menu.text-center.d-md-none.d-lg-flex li.middle_menu_item a');
-
+    var submenuLinks = document.querySelectorAll('ul#sub_men.sub_menu a');
     // Her bir bağlantıyı kontrol et
     menuLinks.forEach(function (link) {
         // Bağlantının href özelliğini al
@@ -369,7 +369,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Eğer bağlantının href'i, bulunduğumuz sayfanın URL'si ile aynıysa rengini turuncu yap
         if (currentPage.endsWith(linkHref)) {
-            link.style.color = 'orange';
+            link.style.color = '#FFB352';
+        }
+    });
+
+    submenuLinks.forEach(function (link) {
+        // Bağlantının href özelliğini al
+        var linkHref = link.getAttribute('href');
+
+        // Eğer bağlantının href'i, bulunduğumuz sayfanın URL'si ile aynıysa rengini turuncu yap
+        if (currentPage.endsWith(linkHref)) {
+            link.style.color = '#FFF';
         }
     });
 });
