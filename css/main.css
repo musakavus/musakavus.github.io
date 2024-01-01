@@ -12656,6 +12656,14 @@ body {
         margin-top: 2.5rem; }
       body .sidebar_wrapper .search_area {
         margin-top: 2.5rem; }
+      body .chart_wrapper .chart_right_area .row_buy_sel .heading_elements {
+        margin-block: 0.25rem; }
+      body .chart_wrapper .chart_right_area .row_buy_sel .button_and_eth .btn-transparent {
+        position: absolute;
+        top: 2.25rem;
+        right: 2rem; }
+      body .chart_wrapper .chart_elements_wrapper {
+        margin-block: 1rem; }
       body .top_chart_exp {
         padding: 0 !important; }
       body .element_chart {
@@ -12809,17 +12817,18 @@ body {
         padding: 0 36px; }
         body .table_chart .table_chart_area {
           padding: 12px 18px; }
-      body .chart_right_area .elements_wallet_wrapper .budiv .wallet_elements {
-        border-radius: 8px;
-        justify-content: space-between; }
-      body .chart_right_area .elements_area_wrapper .elements_area {
+      body .chart_wrapper .chart_right_area .elements_area_wrapper .elements_area {
         padding: 8px 0 !important; }
-      body .chart_right_area .row_buy_sel .col-6 .btn-transparent {
-        position: absolute;
-        top: 2rem;
-        right: 2rem; }
-      body .chart_right_area .row_buy_sel .col-6 .bought .buy_area {
-        margin-top: 16px !important; } }
+      body .chart_wrapper .chart_right_area .row_buy_sel .bought .heading_elements {
+        margin-block: 0.25rem; }
+      body .chart_wrapper .chart_right_area .row_buy_sel .bought .buy_area {
+        margin-top: 16px !important; }
+        body .chart_wrapper .chart_right_area .row_buy_sel .bought .buy_area .want_buy .button_and_eth .btn-transparent {
+          position: absolute;
+          top: 2.25rem;
+          right: 1.5rem; }
+      body .chart_wrapper .chart_elements_wrapper {
+        margin-block: 1rem; } }
   @media (max-width: 576px) {
     body {
       /* Özel stil kuralları buraya gelecek */ }
