@@ -12278,7 +12278,7 @@ body {
       background: var(--Light-Blue, #1C2D4A);
       display: flex;
       align-items: center;
-      padding: 8px 12px;
+      padding: 1rem 12px;
       gap: 1rem; }
       body .chart_right_area .elements_wallet_wrapper .budiv .wallet_elements .wallet_elements_piece div {
         color: #FFF;
@@ -12293,6 +12293,12 @@ body {
           font-weight: 500;
           line-height: normal;
           opacity: 0.5; }
+      body .chart_right_area .elements_wallet_wrapper .budiv .wallet_elements .wallet_elements_piece a {
+        color: green;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal; }
   body .chart_right_area .buy_options a {
     color: #FFF;
     font-size: 12px;

@@ -356,5 +356,20 @@ function saveCookiePreferences() {
 }
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    var currentPage = window.location.pathname;
 
+    // Menü bağlantılarını seç
+    var menuLinks = document.querySelectorAll('ul.col-6.middle_menu.text-center.d-md-none.d-lg-flex li.middle_menu_item a');
 
+    // Her bir bağlantıyı kontrol et
+    menuLinks.forEach(function (link) {
+        // Bağlantının href özelliğini al
+        var linkHref = link.getAttribute('href');
+
+        // Eğer bağlantının href'i, bulunduğumuz sayfanın URL'si ile aynıysa rengini turuncu yap
+        if (currentPage.endsWith(linkHref)) {
+            link.style.color = 'orange';
+        }
+    });
+});

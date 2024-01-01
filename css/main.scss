@@ -3090,7 +3090,7 @@ body {
           background: var(--Light-Blue, #1C2D4A);
           display: flex;
           align-items: center;
-          padding: 8px 12px;
+          padding: 1rem 12px;
           gap: 1rem;
 
           .wallet_elements_piece {
@@ -3109,7 +3109,18 @@ body {
                 line-height: normal;
                 opacity: 0.5;
               }
+
+
             }
+
+            a {
+              color: green;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+            }
+
           }
         }
       }
