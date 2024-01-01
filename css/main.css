@@ -10714,8 +10714,7 @@ body {
     background: #1E3051; }
   body .page_wrapper {
     opacity: 0.9;
-    background-size: cover;
-    background: lightgray url(../img/background.jpg) center center; }
+    background-size: cover; }
   body .countdown-clock {
     width: auto;
     display: inline-block;
@@ -11892,14 +11891,14 @@ body {
     display: flex;
     align-items: center; }
     body .top_chart_exp h1, body .top_chart_exp .h1 {
-      color: #FFF;
+      color: #FFB352;
       font-family: Roboto, monospace;
       font-size: 48px;
       font-style: normal;
       font-weight: 700;
       line-height: normal; }
     body .top_chart_exp span {
-      color: #FFF;
+      color: #FFB352;
       opacity: 0.5;
       font-family: "Roboto", monospace;
       font-size: 14px;
@@ -11907,7 +11906,7 @@ body {
       font-weight: 400;
       line-height: normal; }
     body .top_chart_exp strong {
-      color: #FFF;
+      color: #FFB352;
       font-family: "Roboto", monospace;
       font-size: 24px;
       font-style: normal;
@@ -11919,6 +11918,7 @@ body {
     padding: 72px 72px;
     border-radius: 12px; }
     body .element_chart .col_canvas_chart {
+      padding-block: 1rem;
       background: var(--Light-Blue, #1C2D4A);
       border-radius: 12px; }
       body .element_chart .col_canvas_chart ul li a {
@@ -11952,7 +11952,7 @@ body {
       body .element_chart .col_input_chart .trade-1 .input-group {
         border-radius: 12px; }
         body .element_chart .col_input_chart .trade-1 .input-group .input-group-text {
-          background: #071838;
+          background: var(--Light-Blue, #1C2D4A);
           border: none;
           text-align: left; }
           body .element_chart .col_input_chart .trade-1 .input-group .input-group-text .left_content p {
@@ -12001,7 +12001,7 @@ body {
     padding: 0 72px;
     border-radius: 12px; }
     body .table_chart h3, body .table_chart .h3 {
-      color: #FFF;
+      color: #FFB352;
       text-align: center;
       font-family: "Roboto", monospace;
       font-size: 24px;
@@ -13042,6 +13042,8 @@ body {
             margin-top: 12px; }
           body .element_chart .col_input_chart .text-center svg {
             margin-bottom: 12px; }
+          body .element_chart .col_input_chart .trade-1 {
+            width: 100% !important; }
           body .element_chart .col_input_chart .bottom_paragraph {
             margin-top: 12px; }
       body .top_chart_exp {
