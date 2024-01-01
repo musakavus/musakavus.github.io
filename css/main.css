@@ -11743,28 +11743,46 @@ body {
         line-height: normal; }
     body .login_row .signup_area .adress_wrapper .adress_1 {
       padding: 24px 0; }
-      body .login_row .signup_area .adress_wrapper .adress_1 .adress_heading {
-        color: #FFF;
-        font-family: "Roboto", monospace;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal; }
+      body .login_row .signup_area .adress_wrapper .adress_1 .location {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem; }
+        body .login_row .signup_area .adress_wrapper .adress_1 .location .adress_heading {
+          color: #FFF;
+          font-family: "Roboto", monospace;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal; }
+      body .login_row .signup_area .adress_wrapper .adress_1 .adress-tag {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem; }
+        body .login_row .signup_area .adress_wrapper .adress_1 .adress-tag .adress_heading {
+          color: #FFF;
+          font-family: "Roboto", monospace;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal; }
       body .login_row .signup_area .adress_wrapper .adress_1 .adress_long {
         color: rgba(255, 255, 255, 0.8);
         font-family: "Roboto", monospace;
         font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        text-decoration-line: underline; }
+        line-height: normal; }
+        body .login_row .signup_area .adress_wrapper .adress_1 .adress_long a {
+          color: rgba(255, 255, 255, 0.8);
+          font-family: "Roboto", monospace;
+          font-size: 14px;
+          line-height: normal;
+          text-decoration: none; }
     body .login_row .signup_area .follow_wrapper {
-      margin-block: 2.5rem;
+      margin-block: 2.3rem;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 16px;
-      color: #FFF;
+      color: #FFB352;
       font-family: "Roboto", monospace;
       font-size: 24px;
       font-style: normal;

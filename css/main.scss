@@ -2194,35 +2194,62 @@ body {
         .adress_1 {
           padding: 24px 0;
 
-          .adress_heading {
-            color: #FFF;
+          .location {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
 
-            font-family: "Roboto", monospace;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
+            .adress_heading {
+              color: #FFF;
+              font-family: "Roboto", monospace;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            }
           }
+
+          .adress-tag {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            .adress_heading {
+              color: #FFF;
+              font-family: "Roboto", monospace;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            }
+          }
+
 
           .adress_long {
             color: rgba(255, 255, 255, 0.80);
             font-family: "Roboto", monospace;
             font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
             line-height: normal;
-            text-decoration-line: underline;
+
+            a {
+              color: rgba(255, 255, 255, 0.80);
+              font-family: "Roboto", monospace;
+              font-size: 14px;
+              line-height: normal;
+              text-decoration: none;
+            }
+
           }
         }
       }
 
       .follow_wrapper {
-        margin-block: 2.5rem;
+        margin-block: 2.3rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 16px;
-        color: #FFF;
+        color: #FFB352;
         font-family: "Roboto", monospace;
         font-size: 24px;
         font-style: normal;
