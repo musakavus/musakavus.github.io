@@ -12609,9 +12609,11 @@ body {
       padding: 0; }
     body .elements_area {
       padding: 8px 0; }
+    body .heading_elements {
+      margin-block: 0.25rem; }
     body .chart_right_area .btn-transparent {
       position: absolute;
-      top: 2rem;
+      top: 2.25rem;
       right: 2rem; }
     body .sidebar_wrapper {
       display: block !important; }
